@@ -28,8 +28,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @Import({PersistenceContext.class})
 @EnableSpringDataWebSupport
 public class  AppConfig {
-        @Bean
-        public CacheManager cacheManager()
+        @Bean public CacheManager cacheManager()
         {
                 return new ConcurrentMapCacheManager();
         }

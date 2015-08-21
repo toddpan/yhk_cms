@@ -1,13 +1,13 @@
 package com.ykh.vo.res;
-public interface Response<T> {
-	public Header getHead();
+public class Response {
+	private Header head=new Header();
 
-	public void setHead(Header head);
+	public Header getHead() {
+		return head;
+	}
 
-	public T getBody();
+	public void setHead(Header head) {
+		this.head = head;
+	}
 
-	public void setBody(T body);
-
-
-	
 }

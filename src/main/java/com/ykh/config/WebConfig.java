@@ -2,7 +2,7 @@ package com.ykh.config;
 
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import com.google.common.collect.Lists;
-import com.hm.engine.common.Constants;
+import com.maxc.rest.common.Constants;
 import com.ykh.config.PersistenceContext;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.*;

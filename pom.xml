@@ -241,8 +241,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>hm.engine</groupId>
-			<artifactId>huimeitimes_engine_common</artifactId>
+			<groupId>rest_common</groupId>
+			<artifactId>rest_common</artifactId>
 			<version>1.0</version>
 		</dependency>
 

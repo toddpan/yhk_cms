@@ -2,15 +2,12 @@ package com.ykh.dao.conference.domain;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-import javax.persistence.Transient;
+import javax.persistence.*;
 
+import com.ykh.common.ParseJSON;
+import com.ykh.tang.agent.vo.AutoStopParams;
+import org.codehaus.jackson.JsonProcessingException;
+import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.security.core.GrantedAuthority;
 
 import com.ykh.common.cache.CacheDomain;
@@ -22,7 +19,7 @@ import com.ykh.dao.Request;
  * @date 2013-2-3 上午1:07:59
  */
 @Entity
-public class Conference implements GrantedAuthority,CacheDomain,Request<Conference>{
+public class Conference implements CacheDomain,Request<Conference>{
 	/**
 	 * serialVersionUID:
 	 * @since JDK 1.7
@@ -66,34 +63,32 @@ public class Conference implements GrantedAuthority,CacheDomain,Request<Conferen
 	private static final long serialVersionUID = 15679L;
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private Integer conferenceid;
-	private Integer productid;
+	private Integer conferenceId;
 	private String  conferencename;
 	private Integer billingcode;
-	private Integer confscale;
-	private Integer pcode1;
-	private Integer pcode2;
-	private String  configstr;
-
-
+	@Convert(converter = JpaConverterJson.class)
+	private AutoStopParams autoStopParams;
+	@Transient
+	private Integer applicationId;
+	private  String password;
+	private  Integer confScale;
+	@Transient
 	public Object getId() {
-		// TODO Auto-generated method stub
-		return conferenceid;
+		return conferenceId;
 	}
 
-	@Override
-	public String getAuthority() {
-		// TODO Auto-generated method stub
-		return null;
+	public static long getSerialVersionUID() {
+		return serialVersionUID;
 	}
 
-	public Integer getProductid() {
-		return productid;
+	public Integer getConferenceId() {
+		return conferenceId;
 	}
 
-	public void setProductid(Integer productid) {
-		this.productid = productid;
+	public void setConferenceId(Integer conferenceId) {
+		this.conferenceId = conferenceId;
 	}
+
 
 	public String getConferencename() {
 		return conferencename;
@@ -111,36 +106,59 @@ public class Conference implements GrantedAuthority,CacheDomain,Request<Conferen
 		this.billingcode = billingcode;
 	}
 
-	public Integer getConfscale() {
-		return confscale;
+	public AutoStopParams getAutoStopParams() {
+		return autoStopParams;
 	}
 
-	public void setConfscale(Integer confscale) {
-		this.confscale = confscale;
+	public void setAutoStopParams(AutoStopParams autoStopParams) {
+		this.autoStopParams = autoStopParams;
 	}
 
-	public Integer getPcode1() {
-		return pcode1;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setPcode1(Integer pcode1) {
-		this.pcode1 = pcode1;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
-	public Integer getPcode2() {
-		return pcode2;
+	public Integer getConfScale() {
+		return confScale;
 	}
 
-	public void setPcode2(Integer pcode2) {
-		this.pcode2 = pcode2;
+	public void setConfScale(Integer confScale) {
+		this.confScale = confScale;
 	}
 
-	public String getConfigstr() {
-		return configstr;
+	public Integer getApplicationId() {
+		return applicationId;
 	}
 
-	public void setConfigstr(String configstr) {
-		this.configstr = configstr;
+	public void setApplicationId(Integer applicationId) {
+		this.applicationId = applicationId;
 	}
 
+	public static class JpaConverterJson implements AttributeConverter<Object, String> {
+
+
+		@Override
+		public String convertToDatabaseColumn(Object meta) {
+			try {
+				return ParseJSON.toJson(meta);
+			} catch (Exception ex) {
+				return null;
+
+			}
+		}
+
+		@Override
+		public AutoStopParams convertToEntityAttribute(String dbData) {
+			try {
+				return ParseJSON.fromJson(dbData, AutoStopParams.class);
+			} catch (Exception ex) {
+				return null;
+			}
+		}
+
+	}
 }
