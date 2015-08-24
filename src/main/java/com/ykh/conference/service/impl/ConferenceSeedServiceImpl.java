@@ -14,17 +14,14 @@ public class ConferenceSeedServiceImpl implements ConferenceSeedService {
     @Autowired
     ConferenceSeedDao conferenceSeedDao;
     @Override
-    public synchronized Integer getConfTempId(Integer confId,Integer appid, String name) {
-        ConferenceSeed conferenceSeed=new ConferenceSeed(confId,appid,name);
+    public synchronized Integer getConfTempId(Integer confId, String name) {
+        ConferenceSeed conferenceSeed=new ConferenceSeed(confId,name);
+       Integer max =conferenceSeedDao.findMaxId();
+        if (max >=Integer.MAX_VALUE-1){
+            conferenceSeedDao.excuteNative("truncate Table conference_seed");
+        }
         conferenceSeedDao.save(conferenceSeed);
         Integer seed =conferenceSeed.getConfId();
-        if (conferenceSeed.getConfId() >=Integer.MAX_VALUE-1){
-            conferenceSeedDao.deleteAll();
-            conferenceSeed.setConfId(1);
-            conferenceSeedDao.save(conferenceSeed);
-            return  1;
-        }
-
         return seed;
     }
 }

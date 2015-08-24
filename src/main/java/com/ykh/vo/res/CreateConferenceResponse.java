@@ -1,5 +1,8 @@
 package com.ykh.vo.res;
 
+import com.ykh.dao.conference.domain.ConfJoinTempConf;
+import com.ykh.dao.conference.domain.Conference;
+import com.ykh.tang.agent.vo.ConferenceInfoBMS;
 import com.ykh.vo.body.ConferenceSeedBody;
 
 /**
@@ -8,7 +11,7 @@ import com.ykh.vo.body.ConferenceSeedBody;
 public class CreateConferenceResponse {
     Header head=new Header();
 
-    private ConferenceSeedBody body;
+    private ConferenceInfoBMS body;
 
     public Header getHead() {
         return head;
@@ -18,13 +21,11 @@ public class CreateConferenceResponse {
         this.head = head;
     }
 
-
-
-    public ConferenceSeedBody getBody() {
+    public ConferenceInfoBMS getBody() {
         return body;
     }
 
-    public void setBody(ConferenceSeedBody body) {
+    public void setBody(ConferenceInfoBMS body) {
         this.body = body;
     }
 }

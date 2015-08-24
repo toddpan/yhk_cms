@@ -13,19 +13,13 @@ public class ConferenceSeed {
     private Integer seed;
     private Integer confId;
     private String conferenceName;
-    private Integer applicationId;
 
-    public Integer getApplicationId() {
-        return applicationId;
-    }
 
-    public void setApplicationId(Integer applicationId) {
-        this.applicationId = applicationId;
-    }
 
-    public ConferenceSeed(Integer confId, Integer applicationId,String conferenceName) {
+
+    public ConferenceSeed(Integer confId,String conferenceName) {
         this.confId = confId;
-        this.applicationId=applicationId;
+
         this.conferenceName = conferenceName;
     }
 

@@ -4,11 +4,13 @@ import com.maxc.rest.common.RestBeanUtils;
 import com.maxc.rest.common.exception.ResourceNoFoundException;
 import com.maxc.rest.common.exception.RestAssert;
 import com.ykh.conference.service.ConferenceSeedService;
+import com.ykh.conference.service.ConferenceService;
 import com.ykh.dao.conference.ConferenceDao;
 import com.ykh.dao.conference.ConferenceSeedDao;
 import com.ykh.dao.conference.domain.Conference;
 import com.ykh.dao.conference.domain.ConferenceSeed;
 import com.ykh.facade.ConferenceFacade;
+import com.ykh.tang.agent.ICMSAgent;
 import com.ykh.vo.body.ConferenceSeedBody;
 import com.ykh.vo.req.UserConferenceRequest;
 import com.ykh.vo.res.*;
@@ -25,7 +27,12 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
     @Autowired
     ConferenceSeedService conferenceSeedService;
     @Autowired
+    ConferenceService conferenceService;
+    @Autowired
     ConferenceSeedDao conferenceSeedDao;
+
+    @Autowired
+    ICMSAgent icmsAgent;
     public ConferenceResponse openConference(Conference conference) {
             RestAssert.notNull(Conference.class,conference);
             RestAssert.notNull(conference.getBillingcode(),"billingcode");
@@ -54,11 +61,8 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
         RestAssert.notNull(Conference.class,conference);
         RestAssert.notNull(conference.getConferenceId(), "conferenceId");
         RestAssert.notNull(conference.getConferencename(), "conferencename");
-        Integer seed =conferenceSeedService.getConfTempId(conference.getConferenceId(),conference.getApplicationId(), conference.getConferencename());
         CreateConferenceResponse response =new CreateConferenceResponse();
-        ConferenceSeedBody s =new ConferenceSeedBody();
-        s.setTempConferenceId(seed);
-        response.setBody(s);
+        response.setBody(conferenceService.createConference(conference));
         return response;
     }
 

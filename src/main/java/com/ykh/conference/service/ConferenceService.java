@@ -1,9 +1,12 @@
 package com.ykh.conference.service;
 
+import com.ykh.dao.conference.domain.ConfJoinTempConf;
 import com.ykh.dao.conference.domain.Conference;
 import com.ykh.dao.user.domain.User;
+import com.ykh.tang.agent.vo.ConferenceInfoBMS;
 import com.ykh.tang.agent.vo.UserChannel;
 import com.ykh.tang.agent.vo.UserConferenceStatus;
+import com.ykh.vo.req.ConferenceRequest;
 
 public interface ConferenceService {
 	/**
@@ -34,8 +37,8 @@ public interface ConferenceService {
 	 * @par 需求:REQ1.10[Tang]: svn://vobserver/tang/doc/SRS.doc
 	 * @see
 	 */
-	public Boolean createConference(Integer applicationID, Integer tempConferenceID, Conference conference)
-			throws Exception;
+	public ConferenceInfoBMS createConference(  Conference conference)
+			throws RuntimeException;
 	/**
 	 * 停止会议，没有释放会议资源
 	 *

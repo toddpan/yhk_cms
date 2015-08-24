@@ -69,14 +69,16 @@ import com.ykh.tang.agent.vo.SubConferenceInfo;
 import com.ykh.tang.agent.vo.UserChannel;
 import com.ykh.tang.agent.vo.UserConferenceStatus;
 import com.ykh.tang.agent.vo.UserServiceAddr;
+import org.springframework.stereotype.Component;
 
 /**
  * @author xianchao.ji
  * 
  *  JNI 本地调用方式
  */
+@Component
 public class ICMSAgent
-{
+{	
 	private IMessageHandler handler;
 	
 	private IMessageHandler serviceHandler;
@@ -479,4 +481,9 @@ public class ICMSAgent
 		ICMSAgent agent = new ICMSAgent();
 		agent.test();
 	}
+	public ICMSAgent(IMessageHandler handler,IMessageHandler serviceHandler){
+		this.handler=handler;
+		this.serviceHandler=serviceHandler;
+	}
+
 }

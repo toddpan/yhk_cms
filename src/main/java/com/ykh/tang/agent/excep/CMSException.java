@@ -1,6 +1,6 @@
 package com.ykh.tang.agent.excep;
 
-public class CMSException extends Exception
+public class CMSException extends RuntimeException
 {
 
 	/**

@@ -28,21 +28,21 @@ public class ConferenceController {
         return new Conference();
     }
 
-    @RequestMapping(value = "/conference/createconference/{applicationID}/{tempConferenceID}",
-    		method = RequestMethod.POST)
-    public @ResponseBody
-    Conference createConference(@PathVariable int applicationID,
-    		@PathVariable int tempConferenceID,
-    		@RequestBody Conference confenceInfo) {
-    	try {
-			userServcie.createConference(applicationID, tempConferenceID,confenceInfo);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-    	//Boolean ret =createConference(applicationID,tempConferenceID,confenceInfo);
-        return confenceInfo;
-    }
+//    @RequestMapping(value = "/conference/createconference/{applicationID}/{tempConferenceID}",
+//    		method = RequestMethod.POST)
+//    public @ResponseBody
+//    Conference createConference(@PathVariable int applicationID,
+//    		@PathVariable int tempConferenceID,
+//    		@RequestBody Conference confenceInfo) {
+//    	try {
+//			userServcie.createConference(applicationID, tempConferenceID,confenceInfo);
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//    	//Boolean ret =createConference(applicationID,tempConferenceID,confenceInfo);
+//        return confenceInfo;
+//    }
 
 
 //	public Boolean stopConference(String applicationID, Integer tempConferenceID)
@@ -59,13 +59,6 @@ public class ConferenceController {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-
-
-
-
-
-
 
 	@RequestMapping(value = "/openConference", method = RequestMethod.POST, consumes = { ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML }, produces = {ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML })
 	public @ResponseBody ConferenceResponse OpenConference(@RequestBody Conference conference){

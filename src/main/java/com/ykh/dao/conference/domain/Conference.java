@@ -64,12 +64,13 @@ public class Conference implements CacheDomain,Request<Conference>{
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer conferenceId;
+	@Transient
+	private Integer tempConferenceId;
+
 	private String  conferencename;
 	private Integer billingcode;
 	@Convert(converter = JpaConverterJson.class)
 	private AutoStopParams autoStopParams;
-	@Transient
-	private Integer applicationId;
 	private  String password;
 	private  Integer confScale;
 	@Transient
@@ -130,13 +131,7 @@ public class Conference implements CacheDomain,Request<Conference>{
 		this.confScale = confScale;
 	}
 
-	public Integer getApplicationId() {
-		return applicationId;
-	}
 
-	public void setApplicationId(Integer applicationId) {
-		this.applicationId = applicationId;
-	}
 
 	public static class JpaConverterJson implements AttributeConverter<Object, String> {
 
@@ -160,5 +155,13 @@ public class Conference implements CacheDomain,Request<Conference>{
 			}
 		}
 
+	}
+
+	public Integer getTempConferenceId() {
+		return tempConferenceId;
+	}
+
+	public void setTempConferenceId(Integer tempConferenceId) {
+		this.tempConferenceId = tempConferenceId;
 	}
 }

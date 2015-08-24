@@ -5,5 +5,5 @@ package com.ykh.conference.service;
  */
 
 public interface ConferenceSeedService {
-    Integer getConfTempId(Integer confId, Integer appId,String name);
+    Integer getConfTempId(Integer confId,String name);
 }
