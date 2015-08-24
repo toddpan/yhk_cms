@@ -76,7 +76,7 @@ public class LogManager {
 			String classname = joinPoint.getSignature().getDeclaringTypeName();
 			String method = joinPoint.getSignature().getName();
 			StringBuilder sb = new StringBuilder();
-			sb.append("[" + classname + "] ")
+			sb.append("[" + classname + 	"] ")
 					.append("[" + method + "]")
 					.append(ParseJSON.toJson(joinPoint.getArgs()))
 					.append("[result]")
