@@ -1,20 +1,25 @@
-package com.ykh.conference.service;
+package com.ykh.dao.conference.domain;
 
 
+import javax.persistence.*;
+
+@Entity
+@Table
 public class ConfJoinTempConf implements java.io.Serializable {
 	private static final long serialVersionUID = 1L;
-	
-	private Integer id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
 	private Integer confID;
 	private Integer tempConfID;
 	private Integer status;			//旧意义：1新建  2 结束；新意义：不使用
 	private Integer bmsStatus;		//旧意义：0新建  1 会议已创建	3会议已开始；新意义：0新建,  1 会议已创建, 2会议已开始, 3已结束，4 未找到
 	private boolean needCreate = false;		//用于用户加入时，判断是否需要create conf，只在内存中使用，不需要保存到数据库
 	
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public Integer getConfID() {
