@@ -35,4 +35,61 @@ public class ConferenceFacadeImplTest {
         conference.setConfScale(1);
         conferenceFacade.openConference(conference);
     }
+
+    @Test
+    public void testOpenConference() throws Exception {
+
+    }
+
+    @Test
+    public void testModifyConference() throws Exception {
+
+    }
+
+    @Test
+    public void testCreateConference() throws Exception {
+        Conference conference = new Conference();
+        conference.setBillingcode(1);
+        conference.setTempConferenceId(123);
+        conference.setConferenceId(1);
+        conference.setConferencename("测试会议");
+
+        conferenceFacade.createConference(conference);
+
+    }
+
+    @Test
+    public void testStopConference() throws Exception {
+
+    }
+
+    @Test
+    public void testDeleteConference() throws Exception {
+
+    }
+
+    @Test
+    public void testQueryUserNum() throws Exception {
+
+    }
+
+    @Test
+    public void testGetUserConferenceStatus() throws Exception {
+
+    }
+
+    @Test
+    public void testStartConference() throws Exception {
+
+    }
+
+    @Test
+    public void testJoinConference() throws Exception {
+
+    }
+
+    @Test
+    public void testGetBMSConferenceInfo() throws Exception {
+
+    }
 }

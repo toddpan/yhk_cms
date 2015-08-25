@@ -53,7 +53,7 @@ public  class ConferenceServiceImpl implements ConferenceService {
 	@Override
 	public Boolean stopConference(String applicationID, Integer tempConferenceID)
 			throws Exception {
-		// TODO Auto-generated method stub
+//		icmsAgent.stopConferenceWithoutUser(tempConferenceID);
 		return null;
 	}
 

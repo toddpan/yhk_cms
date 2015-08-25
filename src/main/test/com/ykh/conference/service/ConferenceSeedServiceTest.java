@@ -20,6 +20,6 @@ public class ConferenceSeedServiceTest {
     @Test
     public void testGetConfTempId() throws Exception {
 //        System.out.println(Integer.MAX_VALUE);
-        System.out.println(conferenceSeedService.getConfTempId(1, 1, "xx"));
+//        System.out.println(conferenceSeedService.getConfTempId(1, 1, "xx"));
     }
 }
