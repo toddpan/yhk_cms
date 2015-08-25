@@ -96,7 +96,7 @@ public class ICMSAgent
 	}
 	
 	public ICMSAgent() {
-		this.agentInit();
+//		this.agentInit();
 	}
 
 	// 初始化

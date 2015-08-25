@@ -27,7 +27,9 @@ public  class ConferenceServiceImpl implements ConferenceService {
 	@Autowired
 	ConfJoinTempConfDao confJoinTempConfDao;
 	@Autowired
-	ICMSAgent icmsAgent;
+	private ICMSAgent icmsAgent;
+
+
 	@Override
 	public ConferenceInfoBMS createConference( Conference conference) throws RuntimeException {
 		Integer seed=conference.getTempConferenceId();
