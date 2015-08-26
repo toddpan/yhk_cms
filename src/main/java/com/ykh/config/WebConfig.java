@@ -53,7 +53,20 @@ public class WebConfig extends WebMvcConfigurationSupport {
 
         return messageSource;
     }
-
+    /**
+     * 描述 : <注册试图处理器>. <br>
+     *<p>
+     <使用方法说明>
+     </p>
+     * @return
+     */
+    @Bean
+    public ViewResolver viewResolver() {
+        InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
+        viewResolver.setPrefix("/WEB-INF/views/");
+        viewResolver.setSuffix(".jsp");
+        return viewResolver;
+    }
     /**
      * 描述 : <注册servlet适配器>. <br>
      *<p>

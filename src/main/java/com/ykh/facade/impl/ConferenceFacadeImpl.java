@@ -4,17 +4,18 @@ import com.maxc.rest.common.RestBeanUtils;
 import com.maxc.rest.common.exception.ResourceNoFoundException;
 import com.maxc.rest.common.exception.RestAssert;
 import com.ykh.conference.service.ConferenceSeedService;
-import com.ykh.conference.service.ConferenceService;
+//import com.ykh.conference.service.ConferenceService;
 import com.ykh.dao.conference.ConferenceDao;
 import com.ykh.dao.conference.ConferenceSeedDao;
 import com.ykh.dao.conference.domain.Conference;
 import com.ykh.dao.conference.domain.ConferenceSeed;
 import com.ykh.facade.ConferenceFacade;
-import com.ykh.tang.agent.ICMSAgent;
+//import com.ykh.tang.agent.ICMSAgent;
 import com.ykh.vo.body.ConferenceSeedBody;
 import com.ykh.vo.req.UserConferenceRequest;
 import com.ykh.vo.res.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 /**
@@ -22,17 +23,16 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class ConferenceFacadeImpl implements ConferenceFacade {
-    @Autowired
-    ConferenceDao conferenceDao;
-    @Autowired
-    ConferenceSeedService conferenceSeedService;
-    @Autowired
-    ConferenceService conferenceService;
+//    @Autowired
+//    ConferenceSeedService conferenceSeedService;
+//    @Autowired
+//    ConferenceService conferenceService;
     @Autowired
     ConferenceSeedDao conferenceSeedDao;
-
     @Autowired
-    ICMSAgent icmsAgent;
+    ConferenceDao conferenceDao;
+
+
     public ConferenceResponse openConference(Conference conference) {
             RestAssert.notNull(Conference.class,conference);
             RestAssert.notNull(conference.getBillingcode(),"billingcode");
@@ -62,7 +62,7 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
         RestAssert.notNull(conference.getConferenceId(), "conferenceId");
         RestAssert.notNull(conference.getConferencename(), "conferencename");
         CreateConferenceResponse response =new CreateConferenceResponse();
-        response.setBody(conferenceService.createConference(conference));
+//        response.setBody(conferenceService.createConference(conference));
         return response;
     }
 

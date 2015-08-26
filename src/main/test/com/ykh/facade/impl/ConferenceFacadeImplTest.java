@@ -3,6 +3,7 @@ package com.ykh.facade.impl;
 import com.config.TestConfig;
 import com.google.common.collect.Lists;
 import com.ykh.dao.conference.domain.Conference;
+import com.ykh.facade.ConferenceFacade;
 import com.ykh.tang.agent.vo.AutoStopParams;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,7 +20,7 @@ import java.util.List;
 @ContextConfiguration(classes = { TestConfig.class })
 public class ConferenceFacadeImplTest {
     @Autowired
-    ConferenceFacadeImpl conferenceFacade;
+    ConferenceFacade conferenceFacade;
     @Test
     public void test(){
         Conference conference =new Conference();

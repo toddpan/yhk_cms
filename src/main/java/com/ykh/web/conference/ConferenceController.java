@@ -1,6 +1,6 @@
 package com.ykh.web.conference;
 
-import com.ykh.conference.service.impl.ConferenceServiceImpl;
+//import com.ykh.conference.service.impl.ConferenceServiceImpl;
 import com.ykh.dao.conference.domain.Conference;
 import com.ykh.dao.user.domain.User;
 import com.ykh.facade.ConferenceFacade;
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/conference")
 //@Controller
 public class ConferenceController {
-	@Autowired ConferenceServiceImpl userServcie;
+//	@Autowired ConferenceServiceImpl userServcie;
 	@Autowired
     ConferenceFacade conferenceFacade;
     @RequestMapping(value = "/conference/{id}/{status}", method = RequestMethod.GET)

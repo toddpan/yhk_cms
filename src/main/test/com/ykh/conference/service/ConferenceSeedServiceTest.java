@@ -1,6 +1,7 @@
 package com.ykh.conference.service;
 
 import com.config.TestConfig;
+import com.ykh.dao.conference.domain.Conference;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,9 +18,13 @@ import static org.junit.Assert.*;
 public class ConferenceSeedServiceTest {
 
     @Autowired ConferenceSeedService conferenceSeedService;
+//    @Autowired ConferenceService conferenceService;
     @Test
     public void testGetConfTempId() throws Exception {
 //        System.out.println(Integer.MAX_VALUE);
 //        System.out.println(conferenceSeedService.getConfTempId(1, 1, "xx"));
+        Conference c =new Conference();
+//        conferenceService.createConference(c);
+
     }
 }
