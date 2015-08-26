@@ -11,11 +11,8 @@ import javax.annotation.PreDestroy;
  */
 @Component
 public class InitAgent {
-    @Autowired ICMSAgent icmsAgent;
-    @PostConstruct
-    public void init(){
-        icmsAgent.agentInit();
-    }
+    ICMSAgent icmsAgent=ICMSAgent.getInstance();
+
     @PreDestroy
     public void destroy(){
         icmsAgent.agentDestroy();

@@ -26,8 +26,7 @@ public  class ConferenceServiceImpl implements ConferenceService {
 	ConferenceSeedService conferenceSeedService;
 	@Autowired
 	ConfJoinTempConfDao confJoinTempConfDao;
-	@Autowired
-	private ICMSAgent icmsAgent;
+	private ICMSAgent icmsAgent=ICMSAgent.getInstance();
 
 
 	@Override
@@ -111,7 +110,6 @@ public  class ConferenceServiceImpl implements ConferenceService {
 	@Override
 	public Integer initConference(String applicationID, Integer conferenceID)
 			throws Exception {
-		// TODO Auto-generated method stub
 		return null;
 	}
 

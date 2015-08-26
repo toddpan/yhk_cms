@@ -16,7 +16,7 @@ import com.ykh.tang.agent.vo.UserChannel;
 import com.ykh.tang.agent.vo.UserConferenceStatus;
 
 public class ICMSAgentImpl implements ICMSAgentInterface {
-	private ICMSAgent icmsAgent = new ICMSAgent();
+	private ICMSAgent icmsAgent =ICMSAgent.getInstance();
 
 	// 3
 	@Override
