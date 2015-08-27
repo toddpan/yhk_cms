@@ -1,7 +1,10 @@
 package com.ykh.tang.agent.excep;
 
+import com.maxc.rest.common.exception.RestException;
+
 public class CMSException extends RuntimeException
 {
+
 
 	/**
 	 * 

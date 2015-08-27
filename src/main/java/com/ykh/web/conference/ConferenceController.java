@@ -91,7 +91,6 @@ public class ConferenceController {
     }
     @RequestMapping(value = "/startConference", method = RequestMethod.POST, consumes = { ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML }, produces = {ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML })
     public Response startConference(@RequestBody ConferenceSeedBody conference) throws Exception {
-        // TODO Auto-generated method stub
         return conferenceFacade.startConference(conference);
     }
 

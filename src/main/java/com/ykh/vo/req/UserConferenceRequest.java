@@ -7,8 +7,8 @@ import com.ykh.dao.user.domain.User;
  */
 public class UserConferenceRequest {
     String applicationID;
-    Integer tempConferenceID;
-    User user;
+    Integer tempConferenceId;
+    Integer userId;
 
     public String getApplicationID() {
         return applicationID;
@@ -18,19 +18,19 @@ public class UserConferenceRequest {
         this.applicationID = applicationID;
     }
 
-    public Integer getTempConferenceID() {
-        return tempConferenceID;
+    public Integer getTempConferenceId() {
+        return tempConferenceId;
     }
 
-    public void setTempConferenceID(Integer tempConferenceID) {
-        this.tempConferenceID = tempConferenceID;
+    public void setTempConferenceId(Integer tempConferenceId) {
+        this.tempConferenceId = tempConferenceId;
     }
 
-    public User getUser() {
-        return user;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 }
