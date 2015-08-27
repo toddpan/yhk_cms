@@ -73,6 +73,7 @@ public class Conference implements CacheDomain,Request<Conference>{
 	private AutoStopParams autoStopParams;
 	private  String password;
 	private  Integer confScale;
+
 	@Transient
 	public Object getId() {
 		return conferenceId;

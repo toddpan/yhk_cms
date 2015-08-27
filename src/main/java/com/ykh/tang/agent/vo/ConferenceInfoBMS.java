@@ -147,7 +147,7 @@ public class ConferenceInfoBMS
 		this.stopParams = stopParams;
 	}
 	
-	public Object getStopParams(){
+	public AutoStopParams getStopParams(){
 		return this.stopParams;
 	}
 	

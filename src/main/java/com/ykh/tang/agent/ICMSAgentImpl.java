@@ -828,9 +828,10 @@ public class ICMSAgentImpl implements ICMSAgentInterface {
 	public UserChannel startConferenceBillInfoWithUser(int site, int confID,
 			BMSUserBillInfo userInfo) throws CMSException {
 		UserChannel userchannel = new UserChannel();
-
 		icmsAgent.startConferenceBillInfoWithUser(site, confID, userInfo, userchannel);
 		return userchannel;
 
 	}
+
+
 }
