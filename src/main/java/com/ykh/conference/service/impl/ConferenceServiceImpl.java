@@ -103,6 +103,7 @@ public  class ConferenceServiceImpl implements ConferenceService {
 	public Integer getBMSConferenceInfo(String applicationID, Integer tempConfID)
 			throws Exception {
 		// TODO Auto-generated method stub
+//		icmsAgent.get
 		return null;
 	}
 

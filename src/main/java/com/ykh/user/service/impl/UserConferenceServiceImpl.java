@@ -29,7 +29,7 @@ public class UserConferenceServiceImpl implements UserConferenceService {
     @Autowired
     ConfJoinTempConfDao confJoinTempConfDao;
     @Override
-    public UserChannel joinUserInConf(Integer userId, Integer tempConferenceId) {
+    public UserChannel userJoinConference(Integer userId, Integer tempConferenceId) {
         TempUser tempUser= tempUserDao.findByUserId(userId);
         BMSUserInfo userInfo =new BMSUserInfo();
 
