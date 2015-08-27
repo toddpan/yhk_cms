@@ -79,7 +79,6 @@ import org.springframework.stereotype.Component;
 public class ICMSAgent
 
 {
-	private static  final  ICMSAgent ICMS_AGENT=new ICMSAgent();
 	private IMessageHandler handler;
 
 	private IMessageHandler serviceHandler;
@@ -95,6 +94,8 @@ public class ICMSAgent
 			System.out.println("load cmsagnet lib failure!!!!!!");
 		}
 	}
+
+	private static  final  ICMSAgent ICMS_AGENT=new ICMSAgent();
 
 	private ICMSAgent() {
 		this.agentInit();
