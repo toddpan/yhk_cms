@@ -73,7 +73,7 @@ public  class ConferenceServiceImpl implements ConferenceService {
 	}
 
 	@Override
-	public Boolean startConference(Integer tempConferenceID) throws Exception {
+	public Boolean startConference(Integer tempConferenceID)  {
 		// TODO Auto-generated method stub
 		ConfJoinTempConf confJoinTempConf= confJoinTempConfDao.findByTempConfId(tempConferenceID);
 		if(confJoinTempConf.getBmsStatus()>2){

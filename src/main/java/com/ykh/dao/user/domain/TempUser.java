@@ -16,6 +16,7 @@ public class TempUser {
     private  String username;
     private Integer clientType;
     private  Integer pinCode;
+    private Integer tempConferenceId;
 //    private domain" type="i"/>
 //    <element name="status" type="u"/>
 //    <element name="ip" type="au" size="4"/>
@@ -57,6 +58,14 @@ public class TempUser {
 
     public Integer getPinCode() {
         return pinCode;
+    }
+
+    public Integer getTempConferenceId() {
+        return tempConferenceId;
+    }
+
+    public void setTempConferenceId(Integer tempConferenceId) {
+        this.tempConferenceId = tempConferenceId;
     }
 
     public void setPinCode(Integer pinCode) {

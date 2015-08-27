@@ -1,6 +1,8 @@
 package com.ykh.common;
 
 
+import com.maxc.rest.common.ConfigUtil;
+
 /*
  * mxc
  * 
@@ -16,4 +18,5 @@ public class Constants {
 	public static final String  SERVICE_WHITEBOARD ="0x307";
 	public static final String  SERVICE_DOCSHARE ="0x308";
 	public static final String  SERVICE_DESKTOP ="0x309";
+	public static final Integer site = Integer.parseInt(ConfigUtil.getByKey("site"));
 }
