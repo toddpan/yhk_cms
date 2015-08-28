@@ -33,12 +33,17 @@ public class PushServiceTest {
 		Conference conference =new Conference();
 		ConferenceInfoBMS bms =getTestConferenceInfo();
 		conference.setPassword(bms.getPassword());
-
 		conference.setConferencename(bms.getName());
 		conference.setAutoStopParams((AutoStopParams) bms.getStopParams());
 		conference.setBillingcode(753053);
 		conference.setConfScale(bms.getConfScale());
 		conference.setPassword(bms.getPassword());
+		Conference.ServiceConfig serviceConfig  = new Conference.ServiceConfig();
+		serviceConfig.setServiceConfigs(bms.getServiceConfigs());
+		conference.setServiceConfigs(serviceConfig);
+		Conference.RuleInfoBody ruleInfoBody =new Conference.RuleInfoBody();
+		ruleInfoBody.setRoleInfo(bms.getRoleInfo());
+		conference.setRuleInfos(ruleInfoBody);
 		System.out.print(pushService.push("http://devyt.xiezuoyun.cn:8080/ykh_cms_v01/","conference/openConference",conference));
 	}
 	@Test
