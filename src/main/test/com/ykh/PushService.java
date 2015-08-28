@@ -2,6 +2,7 @@ package com.ykh;
 import java.io.IOException;
 import java.nio.charset.Charset;
 
+import com.alibaba.fastjson.JSON;
 import com.maxc.rest.common.ParseJSON;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
@@ -21,7 +22,8 @@ public class PushService {
 				url+servicename);
 //		httppost.setHeader("Content-Type", "application/xml; charset=UTF-8");
 		httppost.setHeader("Content-Type", "application/json; charset=UTF-8");
-		String json= ParseJSON.toJson(request);
+		String json= JSON.toJSONString(request);
+
 
 		System.out.println(json);
 		httppost.setEntity(new StringEntity(json,Charset.forName("UTF-8")));

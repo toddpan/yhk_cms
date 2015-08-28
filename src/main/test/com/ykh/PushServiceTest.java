@@ -44,6 +44,7 @@ public class PushServiceTest {
 		Conference.RuleInfoBody ruleInfoBody =new Conference.RuleInfoBody();
 		ruleInfoBody.setRoleInfo(bms.getRoleInfo());
 		conference.setRuleInfos(ruleInfoBody);
+//		System.out.print(JSON.toJSONString(conference));
 		System.out.print(pushService.push("http://devyt.xiezuoyun.cn:8080/ykh_cms_v01/","conference/openConference",conference));
 	}
 	@Test
