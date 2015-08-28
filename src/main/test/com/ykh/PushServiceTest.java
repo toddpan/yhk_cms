@@ -49,12 +49,6 @@ public class PushServiceTest {
 		System.out.print(pushService.push("http://devyt.xiezuoyun.cn:8080/ykh_cms_v01/","conference/modifyConference",conference));
 	}
 	public static ConferenceInfoBMS getTestConferenceInfo() {
-
-
-
-
-
-
 		// create conference without user
 		List<String> servicetypelist = new ArrayList<String>();
 		servicetypelist.add("775");
