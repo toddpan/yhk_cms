@@ -21,6 +21,7 @@ public final class RoleInfo extends Struct5
 {
 	public int roleType = 0;
 	public int maxUser = 0;
+
 	public List<String> servPrivArr = null;
 
 	public int getRoleType()

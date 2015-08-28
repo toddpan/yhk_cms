@@ -159,4 +159,8 @@ public class ConferenceInfoBMS
 		
 		this.status = status;
 	}
+
+	public void setSubConference(SubConferenceInfo subConference) {
+		this.subConference = subConference;
+	}
 }

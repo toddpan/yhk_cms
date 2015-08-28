@@ -7,6 +7,7 @@ import com.ykh.common.YkhUtils;
 import com.ykh.conference.service.ConferenceSeedService;
 import com.ykh.conference.service.exception.CMSErrorCode;
 import com.ykh.dao.conference.ConfJoinTempConfDao;
+import com.ykh.dao.conference.ConferenceDao;
 import com.ykh.dao.conference.domain.ConfJoinTempConf;
 import com.ykh.tang.agent.ICMSAgent;
 import com.ykh.tang.agent.ICMSAgentInterface;
@@ -31,6 +32,8 @@ public  class ConferenceServiceImpl implements ConferenceService {
 	ConfJoinTempConfDao confJoinTempConfDao;
 	@Autowired
 	private ICMSAgentInterface icmsAgent;
+	@Autowired
+	private ConferenceDao conferenceDao;
 
 
 	@Override
@@ -46,7 +49,17 @@ public  class ConferenceServiceImpl implements ConferenceService {
 		seed =conferenceSeedService.getConfTempId(conference.getConferenceId(), conference.getConferencename());
 		ConfJoinTempConf confJoinTempConf=new ConfJoinTempConf.Bulider().bmsStatus(1).tempConfId(seed).confId(conference.getConferenceId()).create();
 		ConferenceInfoBMS confInfo =new ConferenceInfoBMS();
-		icmsAgent.createConferenceWithoutUser(Integer.parseInt(ConfigUtil.getByKey("site")),confInfo, YkhUtils.getAllServicetypelist());
+		Conference dao = conferenceDao.find(conference.getConferenceId());
+		confInfo.setConfID(dao.getConferenceId());
+		confInfo.setName(conference.getConferencename());
+//		confInfo.setPassword(conference.getPassword());
+		confInfo.setStopParams(dao.getAutoStopParams());
+//		confInfo.setRoleInfo(dao.get);
+		confInfo.setRoleInfo(dao.getRuleInfos().getRoleInfo());
+		confInfo.setServiceConfigs(dao.getServiceConfigs().getServiceConfigs());
+		confInfo.setConfScale(dao.getConfScale());
+		confInfo.setBillingCode(dao.getBillingcode() + "");
+		icmsAgent.createConferenceWithoutUser(Integer.parseInt(ConfigUtil.getByKey("site")), confInfo, YkhUtils.getAllServicetypelist());
 		confJoinTempConfDao.save(confJoinTempConf);
 		//开会
 		return  confInfo;

@@ -1,11 +1,14 @@
 package com.ykh.dao.conference.domain;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.*;
 
+import com.alibaba.fastjson.JSON;
 import com.ykh.common.ParseJSON;
 import com.ykh.tang.agent.vo.AutoStopParams;
+import com.ykh.tang.agent.vo.RoleInfo;
 import org.codehaus.jackson.JsonProcessingException;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.security.core.GrantedAuthority;
@@ -73,7 +76,10 @@ public class Conference implements CacheDomain,Request<Conference>{
 	private AutoStopParams autoStopParams;
 	private  String password;
 	private  Integer confScale;
-
+	@Convert(converter = ListServiceConfigConverJson.class)
+	private ServiceConfig serviceConfigs;
+	@Convert(converter = ListRuleInfoConverJson.class)
+	private RuleInfoBody ruleInfos;
 	@Transient
 	public Object getId() {
 		return conferenceId;
@@ -157,9 +163,70 @@ public class Conference implements CacheDomain,Request<Conference>{
 		}
 
 	}
+	public  static  class  ListServiceConfigConverJson implements AttributeConverter<ServiceConfig,String>{
+
+		@Override
+		public String convertToDatabaseColumn(ServiceConfig attribute) {
+			return JSON.toJSONString(attribute);
+		}
+
+		@Override
+		public ServiceConfig convertToEntityAttribute(String dbData) {
+			return JSON.parseObject(dbData,ServiceConfig.class);
+		}
+	}	public  static  class  ListRuleInfoConverJson implements AttributeConverter<RuleInfoBody,String>{
+
+		@Override
+		public String convertToDatabaseColumn(RuleInfoBody attribute) {
+			return JSON.toJSONString(attribute);
+		}
+
+		@Override
+		public RuleInfoBody convertToEntityAttribute(String dbData) {
+			return JSON.parseObject(dbData,RuleInfoBody.class);
+		}
+	}
 
 	public Integer getTempConferenceId() {
 		return tempConferenceId;
+	}
+	public static class ServiceConfig{
+		private List<String> serviceConfigs = null;
+
+		public List<String> getServiceConfigs() {
+			return serviceConfigs;
+		}
+
+		public void setServiceConfigs(List<String> serviceConfigs) {
+			this.serviceConfigs = serviceConfigs;
+		}
+	}
+	public  static class   RuleInfoBody{
+		private List<RoleInfo> roleInfo = null;
+
+		public List<RoleInfo> getRoleInfo() {
+			return roleInfo;
+		}
+
+		public void setRoleInfo(List<RoleInfo> roleInfo) {
+			this.roleInfo = roleInfo;
+		}
+	}
+
+	public ServiceConfig getServiceConfigs() {
+		return serviceConfigs;
+	}
+
+	public void setServiceConfigs(ServiceConfig serviceConfigs) {
+		this.serviceConfigs = serviceConfigs;
+	}
+
+	public RuleInfoBody getRuleInfos() {
+		return ruleInfos;
+	}
+
+	public void setRuleInfos(RuleInfoBody ruleInfos) {
+		this.ruleInfos = ruleInfos;
 	}
 
 	public void setTempConferenceId(Integer tempConferenceId) {
