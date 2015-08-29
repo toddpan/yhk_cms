@@ -14,6 +14,7 @@ import com.ykh.tang.agent.ICMSAgentInterface;
 import com.ykh.tang.agent.vo.BMSUserInfo;
 import com.ykh.tang.agent.vo.UserChannel;
 import com.ykh.user.service.UserConferenceService;
+import com.ykh.vo.req.UserConferenceRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,13 +30,12 @@ public class UserConferenceServiceImpl implements UserConferenceService {
     @Autowired
     ConfJoinTempConfDao confJoinTempConfDao;
     @Override
-    public UserChannel userJoinConference(Integer userId, Integer tempConferenceId) {
-        TempUser tempUser= tempUserDao.findByUserId(userId);
+    public UserChannel userJoinConference(UserConferenceRequest request) {
+        TempUser tempUser= tempUserDao.findByUserId(request.userID);
         BMSUserInfo userInfo =new BMSUserInfo();
-
         if(tempUser!=null){
             Integer conft= tempUser.getTempConferenceId();
-          ConfJoinTempConf confJoinTempConf= confJoinTempConfDao.findByTempConfId(tempConferenceId);
+          ConfJoinTempConf confJoinTempConf= confJoinTempConfDao.findByTempConfId(request.getTempConferenceId());
             if(confJoinTempConf!=null&&confJoinTempConf.getBmsStatus()!=2){
                 RestException restException =new RestException();
                 restException.setMessage(CMSErrorCode.CONFERENCE_NOT_FOUND.getDescription());
@@ -43,21 +43,30 @@ public class UserConferenceServiceImpl implements UserConferenceService {
                 throw  restException;
             }
             //
-            if(conft!=tempConferenceId){
+            if(conft!=request.getTempConferenceId()){
                 icmsAgent.expelUser(Constants.site,conft, YkhUtils.getAllServicetypelist());
             }
         }else{
             tempUser = new TempUser();
         }
+        tempUserDao.save(tempUser);
+        userInfo.setDomain(request.getDomain());
+        userInfo.setClientType(request.getClientType());
+        userInfo.setUserID(tempUser.getIdTempUser());
+        userInfo.setIPArr(request.getIpArr());
+        userInfo.setPinCode(request.getPinCode());
+        userInfo.setRoleTypeArr(request.getRoletypeArr());
+        userInfo.setStatus(request.getStatus());
 
-        UserChannel userChannel=  icmsAgent.userJoinConference(Constants.site,tempConferenceId,userInfo);
+        UserChannel userChannel=  icmsAgent.userJoinConference(Constants.site,request.getTempConferenceId(),userInfo);
         tempUser.setPinCode(userInfo.pinCode);
         tempUser.setClientType(userInfo.getClientType());
-        tempUser.setUserId(userId);
-        tempUser.setTempConferenceId(tempConferenceId);
+        tempUser.setUserId(request.getUserID());
+        tempUser.setTempConferenceId(request.getTempConferenceId());
+        //修改
         tempUserDao.save(tempUser);
-        userChannel.setTempConferenceID(tempConferenceId);
-        userChannel.setUserID(userId);
+        userChannel.setTempConferenceID(request.getTempConferenceId());
+        userChannel.setUserID(tempUser.getUserId());
         return userChannel;
     }
 }

@@ -132,8 +132,8 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
     public UserChannelResponse joinConference(UserConferenceRequest request) {
         RestAssert.notNull(UserConferenceRequest.class, request);
         RestAssert.notNull(request.getTempConferenceId(), "tempConferenceId");
-        RestAssert.notNull(request.getUserId(),"userId");
-        UserChannel userChannel =userConferenceService.userJoinConference(request.getUserId(), request.getTempConferenceId());
+//        RestAssert.notNull(request.getUserId(),"userId");
+        UserChannel userChannel =userConferenceService.userJoinConference(request);
         UserChannelResponse response= new UserChannelResponse();
         response.setBody(userChannel);
         return response;

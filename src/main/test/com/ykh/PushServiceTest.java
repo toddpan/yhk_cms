@@ -24,7 +24,7 @@ public class PushServiceTest {
 	@Test
 	public void createConference(){
 		Conference conference =new Conference();
-		conference.setConferenceId(13);
+		conference.setConferenceId(15);
 		conference.setConferencename("潘足迹");
 		conference.setPassword("xxx");
 		System.out.print(pushService.push("http://devyt.xiezuoyun.cn:8080/ykh_cms_v01/","conference/createConference",conference));
