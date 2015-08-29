@@ -19,11 +19,12 @@ public class ConferenceSeedServiceImpl implements ConferenceSeedService {
 
         Integer max =conferenceSeedDao.findMaxId();
 
-        if (max!=null&&((max<<2) >=Integer.MAX_VALUE-1)&&(max<<2)<0){
+        if (max!=null&&((max<<2) >=Integer.MAX_VALUE-1)||(max<<2)<0){
             conferenceSeedDao.excuteNative("truncate Table conference_seed");
         }
         conferenceSeedDao.save(conferenceSeed);
         int seed =conferenceSeed.getSeed();
         return seed<<2;
     }
+
 }

@@ -1,13 +1,14 @@
 package com.ykh.tang.agent.excep;
 
 import com.maxc.rest.common.exception.RestException;
+import sun.applet.Main;
 
-public class CMSException extends Exception
+public class CMSException extends RuntimeException
 {
 
 
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 1L;
 
@@ -54,4 +55,5 @@ public class CMSException extends Exception
 	public void setMessage(String message) {
 		this.message = message;
 	}
+
 }
