@@ -50,7 +50,7 @@ public  class ConferenceServiceImpl implements ConferenceService {
 		ConfJoinTempConf confJoinTempConf=new ConfJoinTempConf.Bulider().bmsStatus(1).tempConfId(seed).confId(conference.getConferenceId()).create();
 		ConferenceInfoBMS confInfo =new ConferenceInfoBMS();
 		Conference dao = conferenceDao.find(conference.getConferenceId());
-		confInfo.setConfID(dao.getConferenceId());
+		confInfo.setConfID(seed);
 		confInfo.setName(conference.getConferencename());
 //		confInfo.setPassword(conference.getPassword());
 		confInfo.setStopParams(dao.getAutoStopParams());

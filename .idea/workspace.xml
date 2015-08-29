@@ -2,30 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d4b3055-56c4-442d-b7fc-7e076d0a937e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/config/AppConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/config/AppConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/excep/CMSException.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/excep/CMSException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/ConfJoinTempConf.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/ConfJoinTempConf.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConfJoinTempConfDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConfJoinTempConfDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/Conference.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/Conference.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/web/conference/ConferenceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/web/conference/ConferenceController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/facade/impl/ConferenceFacadeImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/facade/impl/ConferenceFacadeImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/vo/req/ConferenceRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/vo/req/ConferenceRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/ConferenceSeed.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/ConferenceSeed.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConferenceSeedDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConferenceSeedDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/ConferenceSeedService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/ConferenceSeedService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/ConferenceSeedServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/ConferenceSeedServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/ykh/conference/service/ConferenceSeedServiceTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/ykh/conference/service/ConferenceSeedServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/ConferenceService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/ConferenceService.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/Utils.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/excep/CMSException.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/excep/CMSException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/domain/ConfJoinTempConf.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/domain/ConfJoinTempConf.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/domain/Conference$JpaConverterJson.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/domain/Conference$JpaConverterJson.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/domain/Conference.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/domain/Conference.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/web/conference/ConferenceController.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/web/conference/ConferenceController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/facade/impl/ConferenceFacadeImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/facade/impl/ConferenceFacadeImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/ykh/facade/impl/ConferenceFacadeImplTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/ykh/facade/impl/ConferenceFacadeImplTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/ConferenceInfoBMS.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/ConferenceInfoBMS.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/domain/ConferenceSeed.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/domain/ConferenceSeed.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/ConferenceSeedService.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/ConferenceSeedService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/impl/ConferenceSeedServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/impl/ConferenceSeedServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/ykh/conference/service/ConferenceSeedServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/ykh/conference/service/ConferenceSeedServiceTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/ConferenceService.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/ConferenceService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/impl/ConferenceServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/impl/ConferenceServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/Constants.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/common/Constants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/CreateConferenceResponse.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/CreateConferenceResponse.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/ICMSAgent.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/ICMSAgent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/ICMSAgentImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/ICMSAgentImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/RoleInfo.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/RoleInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/req/UserConferenceRequest.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/vo/req/UserConferenceRequest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/ConferenceServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/ConferenceServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resource/Config.properties" afterPath="$PROJECT_DIR$/src/main/resource/Config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/common/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/common/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/vo/res/CreateConferenceResponse.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/vo/res/CreateConferenceResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/ICMSAgent.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/ICMSAgent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/config/SpringWebAppInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/config/SpringWebAppInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/TempUser.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/TempUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/config/WebConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/config/WebConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resource/dev.properties" afterPath="$PROJECT_DIR$/src/main/resource/dev.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/dev.properties" afterPath="$PROJECT_DIR$/src/main/test/dev.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/auto.sh" afterPath="$PROJECT_DIR$/auto.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/dev.properties" afterPath="$PROJECT_DIR$/target/classes/dev.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ykh_cms_v01.iml" afterPath="$PROJECT_DIR$/ykh_cms_v01.iml" />
     </list>
     <ignored path="ykh_cms_v01.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,11 +53,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Conference.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/Conference.java">
+      <file leaf-file-name="PushServiceTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/test/com/ykh/PushServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMSException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/excep/CMSException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#749#750#0" expanded="true" />
+                <element signature="e#770#771#0" expanded="true" />
+                <element signature="e#813#814#0" expanded="true" />
+                <element signature="e#842#843#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConferenceSeedService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/conference/service/ConferenceSeedService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="38" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConferenceSeedServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/ConferenceSeedServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -62,31 +105,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/web/conference/ConferenceController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogManager.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/log/LogManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.54545456">
-              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RestException.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/rest_common/rest_common/1.0/rest_common-1.0.jar!/com/maxc/rest/common/exception/RestException.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <caret line="72" column="40" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -96,21 +115,30 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/facade/impl/ConferenceFacadeImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="64" column="49" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="49" />
+              <caret line="69" column="50" selection-start-line="69" selection-start-column="50" selection-end-line="69" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateConferenceResponse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/vo/res/CreateConferenceResponse.java">
+      <file leaf-file-name="ConferenceServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/ConferenceServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.22985074">
+              <caret line="49" column="41" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConferenceFacade.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/facade/ConferenceFacade.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-              <folding>
-                <element signature="e#625#626#0" expanded="true" />
-                <element signature="e#657#658#0" expanded="true" />
-              </folding>
+              <caret line="15" column="45" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -119,39 +147,20 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/conference/service/ConferenceService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="58" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="58" />
+              <caret line="39" column="45" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConferenceServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/ConferenceServiceImpl.java">
+      <file leaf-file-name="ConferenceSeed.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/ConferenceSeed.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Service.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.0.6.RELEASE/spring-context-4.0.6.RELEASE-sources.jar!/org/springframework/stereotype/Service.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YkhUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/common/YkhUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#724#725#0" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,9 +171,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -179,57 +188,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/common/ConfigUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/config/PersistenceContext.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConferenceDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/vo/res/ConferenceResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/resource/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/test/com/ykh/facade/impl/ConferenceFacadeImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/ConferenceSeed.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConferenceSeed.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/vo/req/OptionConferenceStatusRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/vo/body.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/vo/body/body.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/vo/res/OptionConferenceStatusResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/vo/body/SeedBody.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/vo/body/ConferenceSeedBody.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/vo/res/UserNumResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/vo/res/UserConferenceStatusResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/vo/res/UserChannelResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/vo/req/UserConferenceRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/vo/res/BmsResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/facade/ConferenceFacade.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/ConfJoinTempConf.java" />
-        <option value="$PROJECT_DIR$/src/main/resource/dev.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/config/AppConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/config/SpringWebAppInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/config/WebConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/dao/suport/DaoSupport.java" />
-        <option value="$PROJECT_DIR$/src/main/test/dev.properties" />
-        <option value="$PROJECT_DIR$/src/main/test/com/ykh/conference/service/ConferenceSeedServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConferenceSeedDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/Conference.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/ConferenceSeedServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/ConferenceSeed.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/ConferenceSeedService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConfJoinTempConfDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/ConfJoinTempConf.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/web/conference/ConferenceController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/ICMSAgent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/facade/impl/ConferenceFacadeImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/TempUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/TempUser.java" />
         <option value="$PROJECT_DIR$/src/main/resource/Config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/ykh/vo/req/ConferenceRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/excep/CMSException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ykh/common/Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/common/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ykh/common/YmsUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/ConferenceServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/ConferenceService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ykh/vo/res/CreateConferenceResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ykh/log/ExceptionAndLogManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ykh/log/LogManager.java" />
+        <option value="$PROJECT_DIR$/src/main/test/dev.properties" />
+        <option value="$PROJECT_DIR$/src/main/test/com/ykh/conference/service/ConferenceSeedServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConferenceDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/config/AppConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/test/com/ykh/facade/impl/ConferenceFacadeImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hm/engine/service/impl/UserExamsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/auto.sh" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/ConferenceBusinessImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/web/conference/ConferenceController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConfJoinTempConfDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/common/BmsStatusException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/common/exception/BmsStatusException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/exception/BmsStatusException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/exception/CMSErrorCode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/ConferenceService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/vo/req/UserConferenceRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/TempUserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/common/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/TempUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/user/service/impl/UserConferenceServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/user/service/UserConferenceService.java" />
+        <option value="$PROJECT_DIR$/src/main/test/com/ykh/dao/conference/ConferenceSeedDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/ICMSAgent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/InitAgent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/ICMSAgentImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/vo/RoleInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/test/com/ykh/PushService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/config/SpringWebAppInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/config/WebConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dev.properties" />
+        <option value="$PROJECT_DIR$/src/main/test/com/ykh/PushServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/facade/impl/ConferenceFacadeImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/Conference.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/vo/ConferenceInfoBMS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/excep/CMSException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/ConferenceSeedServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/ConferenceServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -253,9 +262,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="38" />
+    <option name="x" value="43" />
     <option name="y" value="23" />
-    <option name="width" value="1402" />
+    <option name="width" value="1397" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -281,7 +290,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -310,6 +319,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ykh_cms_v01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ykh_cms_v01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -336,7 +359,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -358,11 +381,85 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ykh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ykh_cms_v01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ykh_cms_v01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ykh_cms_v01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ykh_cms_v01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ykh_cms_v01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ykh_cms_v01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -422,14 +519,44 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="log" />
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="conference" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ykh_cms_v01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ykh_cms_v01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ykh" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -442,59 +569,63 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/ykh/common" />
     <property name="FullScreen" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/ant_shake_tree/Downloads/source/ykh_cms_v01/src/main/java/com/ykh/tang/agent/vo/ConferenceInfoBMS.java" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.ykh.conference.service" />
-      <recent name="com.ykh.facade.impl" />
-      <recent name="com.ykh.dao.user" />
-      <recent name="com.ykh.user.service.impl" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.ykh.dao.conference" />
+      <recent name="com.ykh.facade.impl" />
+      <recent name="com.ykh.conference.service" />
+      <recent name="com.ykh.dao.user" />
+      <recent name="com.ykh.user.service.impl" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ykh.web.conference" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$/src/main/test/com/ykh" />
       <recent name="$PROJECT_DIR$/src/main/resource" />
       <recent name="$PROJECT_DIR$/src/main/test" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/ykh/web/conference" />
-      <recent name="$PROJECT_DIR$/src/main/test/com/config" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ykh.user.service" />
       <recent name="com.ykh.vo.req" />
       <recent name="com.ykh.vo.res" />
       <recent name="com.ykh.facade" />
       <recent name="com.ykh.conference.service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main" />
       <recent name="$PROJECT_DIR$/src/test/java/org/ykh" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ConferenceSeedServiceTest">
-    <configuration default="false" name="UserDaoTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PushServiceTest.createConference">
+    <configuration default="false" name="PushServiceTest.opeanConference" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.ykh.dao.user.*" />
+          <option name="PATTERN" value="com.ykh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="ykh_cms_v01" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ykh.dao.user" />
-      <option name="MAIN_CLASS_NAME" value="com.ykh.dao.user.UserDaoTest" />
-      <option name="METHOD_NAME" value="save" />
+      <option name="PACKAGE_NAME" value="com.ykh" />
+      <option name="MAIN_CLASS_NAME" value="com.ykh.PushServiceTest" />
+      <option name="METHOD_NAME" value="opeanConference" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -508,19 +639,19 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="SessionDaoTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="PushServiceTest.createConference" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.ykh.dao.user.*" />
+          <option name="PATTERN" value="com.ykh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="ykh_cms_v01" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ykh.dao.user" />
-      <option name="MAIN_CLASS_NAME" value="com.ykh.dao.user.SessionDaoTest" />
-      <option name="METHOD_NAME" value="save" />
+      <option name="PACKAGE_NAME" value="com.ykh" />
+      <option name="MAIN_CLASS_NAME" value="com.ykh.PushServiceTest" />
+      <option name="METHOD_NAME" value="createConference" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -534,56 +665,64 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="ConferenceSeedServiceTest.testGetConfTempId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ConferenceServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.ykh.conference.service.*" />
+          <option name="PATTERN" value="com.ykh.conference.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="ykh_cms_v01" />
+      <option name="MAIN_CLASS_NAME" value="com.ykh.conference.service.impl.ConferenceServiceImpl" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ykh.conference.service" />
-      <option name="MAIN_CLASS_NAME" value="com.ykh.conference.service.ConferenceSeedServiceTest" />
-      <option name="METHOD_NAME" value="testGetConfTempId" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
+      <module name="ykh_cms_v01" />
       <envs />
-      <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="ConferenceSeedServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="CMSException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.ykh.conference.service.*" />
+          <option name="PATTERN" value="com.ykh.tang.agent.excep.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="ykh_cms_v01" />
+      <option name="MAIN_CLASS_NAME" value="com.ykh.tang.agent.excep.CMSException" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ykh.conference.service" />
-      <option name="MAIN_CLASS_NAME" value="com.ykh.conference.service.ConferenceSeedServiceTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
+      <module name="ykh_cms_v01" />
       <envs />
-      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ConferenceSeedServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ykh.conference.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.ykh.conference.service.impl.ConferenceSeedServiceImpl" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ykh_cms_v01" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -940,22 +1079,24 @@
       <patterns />
       <method />
     </configuration>
-    <list size="8">
+    <list size="9">
       <item index="0" class="java.lang.String" itemvalue="JUnit.ConferenceFacadeImplTest.test" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.SessionDaoTest" />
       <item index="2" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.UserServiceImplTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.UserDaoTest.save" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.SessionDaoTest.save" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.ConferenceSeedServiceTest.testGetConfTempId" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.ConferenceSeedServiceTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PushServiceTest.opeanConference" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.PushServiceTest.createConference" />
+      <item index="6" class="java.lang.String" itemvalue="Application.ConferenceServiceImpl" />
+      <item index="7" class="java.lang.String" itemvalue="Application.CMSException" />
+      <item index="8" class="java.lang.String" itemvalue="Application.ConferenceSeedServiceImpl" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ConferenceSeedServiceTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ConferenceSeedServiceTest.testGetConfTempId" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.SessionDaoTest.save" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.UserDaoTest.save" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.PushServiceTest.createConference" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ConferenceSeedServiceImpl" />
+        <item index="2" class="java.lang.String" itemvalue="Application.CMSException" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ConferenceServiceImpl" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.PushServiceTest.opeanConference" />
       </list>
     </recent_temporary>
   </component>
@@ -984,42 +1125,178 @@
       <workItem from="1440403513442" duration="260000" />
       <workItem from="1440404123918" duration="26000" />
       <workItem from="1440404210407" duration="201000" />
-      <workItem from="1440404462574" duration="535000" />
+      <workItem from="1440404462574" duration="1577000" />
+      <workItem from="1440407522926" duration="1383000" />
+      <workItem from="1440409676332" duration="2637000" />
+      <workItem from="1440470093606" duration="1725000" />
+      <workItem from="1440475303278" duration="241000" />
+      <workItem from="1440478636138" duration="5000" />
+      <workItem from="1440478669356" duration="440000" />
+      <workItem from="1440484550383" duration="667000" />
+      <workItem from="1440512881914" duration="703000" />
+      <workItem from="1440548284343" duration="962000" />
+      <workItem from="1440581390122" duration="48000" />
+      <workItem from="1440583775827" duration="1167000" />
+      <workItem from="1440585057056" duration="14000" />
+      <workItem from="1440585124672" duration="147000" />
+      <workItem from="1440585299403" duration="15000" />
+      <workItem from="1440585455155" duration="2250000" />
+      <workItem from="1440638229779" duration="1261000" />
+      <workItem from="1440639805169" duration="1915000" />
+      <workItem from="1440642737268" duration="158000" />
+      <workItem from="1440643038787" duration="70000" />
+      <workItem from="1440643597840" duration="1051000" />
+      <workItem from="1440645404038" duration="2079000" />
+      <workItem from="1440656794585" duration="21000" />
+      <workItem from="1440658312728" duration="158000" />
+      <workItem from="1440675061015" duration="2174000" />
+      <workItem from="1440678448159" duration="1231000" />
+      <workItem from="1440723979029" duration="128000" />
+      <workItem from="1440724718559" duration="1945000" />
+      <workItem from="1440728631968" duration="84000" />
+      <workItem from="1440743691527" duration="361000" />
+      <workItem from="1440744302279" duration="164000" />
+      <workItem from="1440744542448" duration="173000" />
+      <workItem from="1440769950625" duration="4971000" />
+      <workItem from="1440806892479" duration="444000" />
+      <workItem from="1440810261087" duration="676000" />
+      <workItem from="1440823417083" duration="6035000" />
+      <workItem from="1440830824594" duration="181000" />
     </task>
+    <task id="LOCAL-00001" summary="userjoinconf">
+      <created>1440647108492</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1440647108492</updated>
+    </task>
+    <task id="LOCAL-00002" summary="agent 加载位置调整。">
+      <created>1440658418914</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1440658418914</updated>
+    </task>
+    <task id="LOCAL-00003" summary="测试 openConf">
+      <created>1440679047268</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1440679047268</updated>
+    </task>
+    <task id="LOCAL-00004" summary="测试 openConf">
+      <created>1440724741873</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1440724741873</updated>
+    </task>
+    <task id="LOCAL-00005" summary="获取临时会议Id出现错误，验证非空。">
+      <created>1440725834196</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1440725834196</updated>
+    </task>
+    <task id="LOCAL-00006" summary="修改创建会议逻辑，添加模版">
+      <created>1440772152272</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1440772152272</updated>
+    </task>
+    <task id="LOCAL-00007" summary="修改创建会议逻辑，添加模版">
+      <created>1440772457363</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1440772457363</updated>
+    </task>
+    <task id="LOCAL-00008" summary="测试">
+      <created>1440772980536</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1440772980536</updated>
+    </task>
+    <task id="LOCAL-00009" summary="草">
+      <created>1440773472532</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1440773472532</updated>
+    </task>
+    <task id="LOCAL-00010" summary="草">
+      <created>1440773628054</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1440773628054</updated>
+    </task>
+    <task id="LOCAL-00011" summary="草">
+      <created>1440807195246</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1440807195246</updated>
+    </task>
+    <task id="LOCAL-00012" summary="草">
+      <created>1440827156789</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1440827156789</updated>
+    </task>
+    <task id="LOCAL-00013" summary="修改seed 的实现">
+      <created>1440829710965</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1440829710965</updated>
+    </task>
+    <task id="LOCAL-00014" summary="修改seed 的实现">
+      <created>1440830447208</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1440830447208</updated>
+    </task>
+    <task id="LOCAL-00015" summary="修改seed 的实现">
+      <created>1440830572013</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1440830572013</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34287000" />
+    <option name="totallyTimeSpent" value="73013000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="38" y="23" width="1402" height="877" extended-state="0" />
+    <frame x="43" y="23" width="1397" height="877" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866243" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32484075" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2867647" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28634685" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5375796" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44076434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32866243" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278272" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866243" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1064,192 +1341,92 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="userjoinconf" />
+    <MESSAGE value="agent 加载位置调整。" />
+    <MESSAGE value="测试 openConf" />
+    <MESSAGE value="获取临时会议Id出现错误，验证非空。" />
+    <MESSAGE value="修改创建会议逻辑，添加模版" />
+    <MESSAGE value="测试" />
+    <MESSAGE value="草" />
+    <MESSAGE value="修改seed 的实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改seed 的实现" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ykh/facade/impl/ConferenceFacadeImpl.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/Dao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/vo/UserChannel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="28" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="28" />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/config/WebConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/user/service/UserConferenceService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="218" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/config/SpringWebAppInitializer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/user/service/impl/UserConferenceServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+          <caret line="23" column="71" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/ykh/dao/user/SessionDaoTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/vo/res/UserChannelResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/internal/runners/statements/InvokeMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="816" column="25" selection-start-line="816" selection-start-column="25" selection-end-line="816" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/ykh/conference/service/ConferenceSeedServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConferenceSeedDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/conference/service/util/BeanTranslatorUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/conference/service/util/IPTranslatorUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/conference/service/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/3.2.3.RELEASE/spring-test-3.2.3.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35766423">
-          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/config/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5450122">
-          <caret line="30" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/config/PersistenceContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/conference/service/exception/JNIException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/Transient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/ConferenceSeed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/ConferenceSeedServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/vo/body/ConferenceSeedBody.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConfJoinTempConfDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/ConfJoinTempConf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.68">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/message/QueryConfChannelMsgResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/message/QueryConfChannelMsgFault.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/message/Ip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/message/BackIp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/message/BaseConfMsgFault.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1263,14 +1440,290 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/GetmessageHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="30" />
+          <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/GetmessageHandlerByGroup.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/message/IMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="37" />
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/message/IMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConferenceSeedDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/ykh/dao/user/SessionDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/ykh/dao/conference/ConferenceSeedDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/InitAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/Consts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/rest_common/rest_common/1.0/rest_common-1.0.jar!/com/maxc/rest/common/ConfigUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/ICMSAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="183" column="22" selection-start-line="183" selection-start-column="22" selection-end-line="183" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/vo/AutoStopParams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/user/RoleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/vo/Struct5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/message/SubConfInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/message/ConferenceInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/vo/RoleInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.36">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/ykh/PushService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/config/SpringWebAppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/common/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/Conference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+          <folding>
+            <element signature="e#5052#5053#0" expanded="true" />
+            <element signature="e#5078#5079#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/vo/SubConferenceInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/vo/ConferenceInfoBMS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.851852">
+          <caret line="150" column="17" selection-start-line="150" selection-start-column="17" selection-end-line="150" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/ICMSAgentImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="210" column="0" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/ConfJoinTempConf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/rest_common/rest_common/1.0/rest_common-1.0.jar!/com/maxc/rest/common/exception/RestException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/ICMSAgentInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="88" column="111" selection-start-line="88" selection-start-column="111" selection-end-line="88" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/excep/CMSException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/conference/service/ConferenceSeedService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/ConferenceSeed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <folding>
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/ConferenceSeedServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/ykh/PushServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/web/conference/ConferenceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="40" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1282,128 +1735,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/TempUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resource/Config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/rest_common/rest_common/1.0/rest_common-1.0.jar!/com/maxc/rest/common/ConfigUtil.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/vo/ConferenceInfoBMS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/vo/req/ConferenceRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/excep/CMSException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/ICMSAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="181" column="116" selection-start-line="181" selection-start-column="101" selection-end-line="181" selection-end-column="116" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/conference/service/ConferenceSeedService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/common/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/ConferenceBusinessImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.0.6.RELEASE/spring-context-4.0.6.RELEASE-sources.jar!/org/springframework/stereotype/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/ConferenceServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/common/YkhUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/vo/res/CreateConferenceResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-          <folding>
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/facade/impl/ConferenceFacadeImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="49" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="49" />
+          <caret line="69" column="50" selection-start-line="69" selection-start-column="50" selection-end-line="69" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -1411,41 +1746,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/conference/service/ConferenceService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="58" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="58" />
+          <caret line="39" column="45" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/Conference.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/ConferenceServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/web/conference/ConferenceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/rest_common/rest_common/1.0/rest_common-1.0.jar!/com/maxc/rest/common/exception/RestException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/log/LogManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.54545456">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.22985074">
+          <caret line="49" column="41" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
