@@ -14,6 +14,7 @@ import com.ykh.tang.agent.ICMSAgent;
 import com.ykh.tang.agent.ICMSAgentInterface;
 import com.ykh.tang.agent.excep.CMSException;
 import com.ykh.tang.agent.vo.*;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -26,6 +27,7 @@ import java.util.List;
 
 @Service
 public  class ConferenceServiceImpl implements ConferenceService {
+	Logger logger=Logger.getLogger(ConferenceService.class);
 	@Autowired
 	ConferenceSeedService conferenceSeedService;
 	@Autowired
@@ -38,6 +40,7 @@ public  class ConferenceServiceImpl implements ConferenceService {
 
 	@Override
 	public ConferenceInfoBMS createConference( Conference conference) throws RuntimeException {
+		logger.info("createConference===> enter");
 		Integer seed=conference.getTempConferenceId();
 		if(seed!=null){
 			ConfJoinTempConf confJoinTempConf= confJoinTempConfDao.findByBmsStatusLessThanAndTempConfIdAndConfId(3, seed, conference.getConferenceId());
@@ -70,6 +73,7 @@ public  class ConferenceServiceImpl implements ConferenceService {
 		icmsAgent.createConferenceWithoutUser(Constants.site, confInfo, YkhUtils.getAllServicetypelist());
 		confJoinTempConfDao.save(confJoinTempConf);
 		//开会
+		logger.info("createConference===> end");
 		return  confInfo;
 	}
 	@Override
