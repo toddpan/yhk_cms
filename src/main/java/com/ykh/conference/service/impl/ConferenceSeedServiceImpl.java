@@ -16,12 +16,14 @@ public class ConferenceSeedServiceImpl implements ConferenceSeedService {
     @Override
     public synchronized Integer getConfTempId(Integer confId, String name) {
        ConferenceSeed conferenceSeed=new ConferenceSeed(confId,name);
-       Integer max =conferenceSeedDao.findMaxId();
-        if (max!=null&&max >=Integer.MAX_VALUE-1){
+
+        Integer max =conferenceSeedDao.findMaxId();
+
+        if (max!=null&&((max<<2) >=Integer.MAX_VALUE-1)&&(max<<2)<0){
             conferenceSeedDao.excuteNative("truncate Table conference_seed");
         }
         conferenceSeedDao.save(conferenceSeed);
-        Integer seed =conferenceSeed.getConfId();
-        return seed;
+        int seed =conferenceSeed.getSeed();
+        return seed<<2;
     }
 }
