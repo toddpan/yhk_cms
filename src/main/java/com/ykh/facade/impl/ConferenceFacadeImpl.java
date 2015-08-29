@@ -43,7 +43,8 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
             RestAssert.notNull(conference.getConferencename(),"conferencename");
             RestAssert.notNull(conference.getAutoStopParams(),"autoStopParams");
             RestAssert.notNull(conference.getConfScale(),"confScale");
-            RestAssert.notNull(conference.getPassword(), "password");
+//            RestAssert.notNull(conference.getPassword(), "password");
+
             conferenceDao.save(conference);
             ConferenceResponse response =new ConferenceResponse();
             response.setBody(conference);

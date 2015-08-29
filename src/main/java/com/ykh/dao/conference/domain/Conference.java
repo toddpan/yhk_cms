@@ -1,4 +1,5 @@
 package com.ykh.dao.conference.domain;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -9,6 +10,7 @@ import com.alibaba.fastjson.JSON;
 import com.ykh.common.ParseJSON;
 import com.ykh.tang.agent.vo.AutoStopParams;
 import com.ykh.tang.agent.vo.RoleInfo;
+import com.ykh.tang.agent.vo.SubConferenceInfo;
 import org.codehaus.jackson.JsonProcessingException;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.security.core.GrantedAuthority;
@@ -84,6 +86,8 @@ public class Conference implements CacheDomain,Request<Conference>{
 	public Object getId() {
 		return conferenceId;
 	}
+
+//	SubConferenceInfo subConfInfo = new SubConferenceInfo();
 
 	public static long getSerialVersionUID() {
 		return serialVersionUID;
