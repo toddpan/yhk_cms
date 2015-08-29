@@ -7,6 +7,8 @@ import com.ykh.dao.conference.domain.Conference;
 import com.ykh.tang.agent.excep.CMSException;
 import com.ykh.tang.agent.message.ConfStartMsgResult;
 import com.ykh.tang.agent.vo.*;
+import com.ykh.vo.body.ConferenceSeedBody;
+import com.ykh.vo.req.UserConferenceRequest;
 import org.junit.Test;
 import org.w3c.dom.ls.LSException;
 
@@ -55,6 +57,26 @@ public class PushServiceTest {
 		conference.setPassword("xxx");
 		System.out.print(pushService.push("http://devyt.xiezuoyun.cn:8080/ykh_cms_v01/","conference/modifyConference",conference));
 	}
+	@Test
+	public   void startConf(){
+		ConferenceSeedBody conferenceSeedBody =new ConferenceSeedBody();
+		conferenceSeedBody.setTempConferenceId(3932160);
+		System.out.print(pushService.push("http://devyt.xiezuoyun.cn:8080/ykh_cms_v01/","conference/startConference",conferenceSeedBody));
+	}
+	@Test
+	public  void stopConference(){
+		ConferenceSeedBody conferenceSeedBody =new ConferenceSeedBody();
+		conferenceSeedBody.setTempConferenceId(3932160);
+		System.out.print(pushService.push("http://devyt.xiezuoyun.cn:8080/ykh_cms_v01/","conference/stopConference",conferenceSeedBody));
+	}
+	@Test
+	public  void joinConference(){
+		UserConferenceRequest joinConference=new UserConferenceRequest();
+		joinConference.setTempConferenceId(3932160);
+		joinConference.setUserId(1);
+		System.out.print(pushService.push("http://devyt.xiezuoyun.cn:8080/ykh_cms_v01/","conference/joinConference",joinConference));
+	}
+
 	public static ConferenceInfoBMS getTestConferenceInfo() {
 		// create conference without user
 		List<String> servicetypelist = new ArrayList<String>();

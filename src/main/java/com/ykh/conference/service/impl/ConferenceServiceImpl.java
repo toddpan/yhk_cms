@@ -3,6 +3,7 @@ package com.ykh.conference.service.impl;
 import com.google.common.collect.Lists;
 import com.maxc.rest.common.ConfigUtil;
 import com.maxc.rest.common.exception.RestException;
+import com.sun.tools.internal.jxc.apt.Const;
 import com.ykh.common.Constants;
 import com.ykh.common.YkhUtils;
 import com.ykh.conference.service.ConferenceSeedService;
@@ -87,7 +88,7 @@ public  class ConferenceServiceImpl implements ConferenceService {
 		if(confJoinTempConf.getBmsStatus()==3){
 			return true;
 		}else{
-			icmsAgent.startConferenceWithoutUser(Integer.parseInt("site"),tempConferenceID);
+			icmsAgent.startConferenceWithoutUser(Constants.site,tempConferenceID);
 			confJoinTempConf.setBmsStatus(3);
 			confJoinTempConfDao.save(confJoinTempConf);
 		}
@@ -122,7 +123,7 @@ public  class ConferenceServiceImpl implements ConferenceService {
 		if(confJoinTempConf.getBmsStatus()==2){
 			return true;
 		}else{
-			icmsAgent.startConferenceWithoutUser(Integer.parseInt("site"),tempConferenceID);
+			icmsAgent.startConferenceWithoutUser(Constants.site,tempConferenceID);
 			confJoinTempConf.setBmsStatus(2);
 			confJoinTempConfDao.save(confJoinTempConf);
 		}
