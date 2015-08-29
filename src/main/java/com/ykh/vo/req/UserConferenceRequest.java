@@ -11,7 +11,7 @@ import java.util.List;
 public class UserConferenceRequest {
     String applicationID;
     Integer tempConferenceId;
-    public int userID; // 用户ID
+    public int userId; // 用户ID
     public String userName; // 用户名
     public int clientType; // 客户端类型，由应用设值
     public int pinCode; // PIN码
@@ -35,12 +35,12 @@ public class UserConferenceRequest {
         this.tempConferenceId = tempConferenceId;
     }
 
-    public int getUserID() {
-        return userID;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setUserID(int userID) {
-        this.userID = userID;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public String getUserName() {

@@ -22,7 +22,15 @@ public class TempUser {
 //    <element name="ip" type="au" size="4"/>
 //    <element name="role_type" type="au"/>
 //    <element name="time " type="t"/>
+    private Integer status;
 
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
 
     public Integer getIdTempUser() {
         return idTempUser;

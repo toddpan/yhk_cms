@@ -31,7 +31,7 @@ public class UserConferenceServiceImpl implements UserConferenceService {
     ConfJoinTempConfDao confJoinTempConfDao;
     @Override
     public UserChannel userJoinConference(UserConferenceRequest request) {
-        TempUser tempUser= tempUserDao.findByUserId(request.userID);
+        TempUser tempUser= tempUserDao.findByUserId(request.userId);
         BMSUserInfo userInfo =new BMSUserInfo();
         if(tempUser!=null){
             Integer conft= tempUser.getTempConferenceId();
@@ -61,7 +61,7 @@ public class UserConferenceServiceImpl implements UserConferenceService {
         UserChannel userChannel=  icmsAgent.userJoinConference(Constants.site,request.getTempConferenceId(),userInfo);
         tempUser.setPinCode(userInfo.pinCode);
         tempUser.setClientType(userInfo.getClientType());
-        tempUser.setUserId(request.getUserID());
+        tempUser.setUserId(request.getUserId());
         tempUser.setTempConferenceId(request.getTempConferenceId());
         //修改
         tempUserDao.save(tempUser);
