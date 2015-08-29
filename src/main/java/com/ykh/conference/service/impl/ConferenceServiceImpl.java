@@ -66,7 +66,6 @@ public  class ConferenceServiceImpl implements ConferenceService {
 		subConfInfo.setServiceConfigArr(subServConfArr);
 		List<RoleInfo> subRoleInfoArr = new ArrayList<RoleInfo>();
 		subConfInfo.setRoleInfoArr(subRoleInfoArr);
-		// SubConferenceInfo subConfInfo = null;
 		confInfo.setSubConference(subConfInfo);
 		icmsAgent.createConferenceWithoutUser(Constants.site, confInfo, YkhUtils.getAllServicetypelist());
 		confJoinTempConfDao.save(confJoinTempConf);

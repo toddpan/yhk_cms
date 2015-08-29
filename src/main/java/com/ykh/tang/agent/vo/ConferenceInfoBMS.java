@@ -1,6 +1,7 @@
 package com.ykh.tang.agent.vo;
 
 import java.util.List;
+import java.util.Objects;
 
 import com.ykh.tang.agent.vo.RoleInfo;
 import com.ykh.tang.agent.vo.SubConferenceInfo;
@@ -147,7 +148,7 @@ public class ConferenceInfoBMS
 		this.stopParams = stopParams;
 	}
 	
-	public AutoStopParams getStopParams(){
+	public Object getStopParams(){
 		return this.stopParams;
 	}
 	
