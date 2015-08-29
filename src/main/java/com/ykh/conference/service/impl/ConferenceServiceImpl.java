@@ -65,10 +65,8 @@ public  class ConferenceServiceImpl implements ConferenceService {
 //		confInfo.setSubConference();
 		//TODO 空的子会议
 		SubConferenceInfo subConfInfo = new SubConferenceInfo();
-		List<String> subServConfArr = new ArrayList<String>();
-		subConfInfo.setServiceConfigArr(subServConfArr);
-		List<RoleInfo> subRoleInfoArr = new ArrayList<RoleInfo>();
-		subConfInfo.setRoleInfoArr(subRoleInfoArr);
+		subConfInfo.setServiceConfigArr(dao.getServiceConfigs().getServiceConfigs());
+		subConfInfo.setRoleInfoArr(dao.getRuleInfos().getRoleInfo());
 		confInfo.setSubConference(subConfInfo);
 		icmsAgent.createConferenceWithoutUser(Constants.site, confInfo, YkhUtils.getAllServicetypelist());
 		confJoinTempConfDao.save(confJoinTempConf);
