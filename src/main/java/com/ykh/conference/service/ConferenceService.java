@@ -50,7 +50,7 @@ public interface ConferenceService {
 	 * @throws Exception
 	 */
 	public Boolean stopConference(String applicationID, Integer tempConferenceID)
-			throws Exception;
+			throws RuntimeException;
 	/**
 	 * 会议删除，提供给会议监控使用，释放所有会议资源
 	 *
@@ -67,7 +67,7 @@ public interface ConferenceService {
 	 */
 	// @Override
 	public Boolean deleteConference(String applicationID, Integer conferenceID)
-			throws Exception;
+			throws RuntimeException;
 	/**
 	 * 查询指定会议的在会用户数，动态
 	 *

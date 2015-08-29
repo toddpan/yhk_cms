@@ -78,28 +78,42 @@ public  class ConferenceServiceImpl implements ConferenceService {
 	}
 	@Override
 	public Boolean stopConference(String applicationID, Integer tempConferenceID)
-			throws Exception {
-//		icmsAgent.stopConferenceWithoutUser(tempConferenceID);
-		return null;
+			throws RuntimeException {
+		ConfJoinTempConf confJoinTempConf= confJoinTempConfDao.findByTempConfId(tempConferenceID);
+		if(confJoinTempConf.getBmsStatus()!=2){
+			RestException restException = new RestException();
+			restException.setErrorCode(CMSErrorCode.CONFERENCE_NOT_FOUND.value());
+			restException.setMessage(CMSErrorCode.CONFERENCE_NOT_FOUND.getDescription());
+			throw restException;
+		}
+		if(confJoinTempConf.getBmsStatus()==3){
+			return true;
+		}else{
+			icmsAgent.startConferenceWithoutUser(Integer.parseInt("site"),tempConferenceID);
+			confJoinTempConf.setBmsStatus(3);
+			confJoinTempConfDao.save(confJoinTempConf);
+		}
+		icmsAgent.stopConferenceWithoutUser(Constants.site,tempConferenceID);
+		return true;
 	}
 
 	@Override
 	public Boolean deleteConference(String applicationID, Integer conferenceID)
-			throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+			throws RuntimeException {
+		confJoinTempConfDao.delete(confJoinTempConfDao.findByTempConfId(conferenceID));
+		icmsAgent.deleteConferenceWithoutUser(Constants.site, conferenceID);
+		return true;
 	}
 
 	@Override
 	public Integer queryUserNum(String applicationID, Integer tempConfID)
 			throws Exception {
-		// TODO Auto-generated method stub
+
 		return null;
 	}
 
 	@Override
 	public Boolean startConference(Integer tempConferenceID)  {
-		// TODO Auto-generated method stub
 		ConfJoinTempConf confJoinTempConf= confJoinTempConfDao.findByTempConfId(tempConferenceID);
 		if(confJoinTempConf.getBmsStatus()>2){
 			RestException restException = new RestException();

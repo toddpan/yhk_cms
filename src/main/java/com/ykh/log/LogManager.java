@@ -35,6 +35,7 @@ public class LogManager {
 	public void serviceException() {
 	}
 
+
 	@Pointcut("execution(* com.ykh.facade..*.*(..))")
 	public void serviceLog() {
 	}
@@ -87,21 +88,6 @@ public class LogManager {
 
 	}
 
-	/**
-	 * 拦截所有业务方法重新包装异常
-	 * 
-	 * @param joinPoint
-	 * @param ex
-	 */
-	@AfterThrowing(value = "serviceException()", throwing = "ex")
-	public void afterThrowing(JoinPoint joinPoint, Exception ex) {
-		String classname = joinPoint.getThis().toString();
-		StringBuilder sb = new StringBuilder();
-		RestException er = ExceptionHandle.throwException(ex);
-		sb.append(classname).append("{\"error\":").append(er.getErrorCode()).append(",").append("\"message\":").append(er.getMessage()).append("}");
-		logger.error(sb.toString(), ex);
-		List a ;
-		throw er;
-	}
+
 
 }

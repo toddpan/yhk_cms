@@ -23,7 +23,7 @@ public class PushServiceTest {
 	public void createConference(){
 		Conference conference =new Conference();
 		conference.setConferenceId(13);
-		conference.setConferencename("潘");
+		conference.setConferencename("潘足迹");
 		conference.setPassword("xxx");
 		System.out.print(pushService.push("http://devyt.xiezuoyun.cn:8080/ykh_cms_v01/","conference/createConference",conference));
 	}
@@ -221,6 +221,7 @@ public class PushServiceTest {
 		roleinfoarr.add(role2);
 		roleinfoarr.add(role3);
 		roleinfoarr.add(role4);
+
 		confInfo.setRoleInfo(roleinfoarr);
 
 		SubConferenceInfo subConfInfo = new SubConferenceInfo();
@@ -233,10 +234,13 @@ public class PushServiceTest {
 
 		AutoStopParams stopParams = new AutoStopParams();
 		List<String> roles = new ArrayList<String>();
+		roles.add("1");roles.add("2");
+
 		stopParams.setRoles(roles);
 		stopParams.setStopwhenoneuser(false);
-		stopParams.setTime1(0);
-		stopParams.setTime2(0);
+
+		stopParams.setTime1(45);
+		stopParams.setTime2(45);
 		confInfo.setStopParams(stopParams);
 
 		BMSUserInfo userInfo = new BMSUserInfo();

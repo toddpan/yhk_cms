@@ -67,7 +67,9 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
         RestAssert.notNull(conference.getConferenceId(), "conferenceId");
         RestAssert.notNull(conference.getConferencename(), "conferencename");
         CreateConferenceResponse response =new CreateConferenceResponse();
-        response.setBody(conferenceService.createConference(conference));
+        CreateConferenceResponse.CreateConferenceBody body=new CreateConferenceResponse.CreateConferenceBody();
+        body.setTempConferenceId(conferenceService.createConference(conference).getConfID());
+        response.setBody(body);
         return response;
     }
 
@@ -79,7 +81,7 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
             throw new ResourceNoFoundException();
         }
         //TODO 停止
-
+        conferenceService.stopConference("",conference.getTempConferenceId());
         return new Response();
     }
 
@@ -91,6 +93,8 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
             throw new ResourceNoFoundException();
         }
         //TODO 删除
+        conferenceService.deleteConference("",conference.getTempConferenceId());
+
         return new Response();
     }
 
@@ -101,7 +105,6 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
         if(conferenceSeed==null){
             throw new ResourceNoFoundException();
         }
-
         //TODO queryNum;
         UserNumResponse response =new UserNumResponse();
         return response;
