@@ -30,7 +30,7 @@ public class ConferenceFacadeImplTest {
         autoStopParams.setRoles(role);
 
         conference.setAutoStopParams(autoStopParams);
-        conference.setBillingcode(1231239);
+        conference.setBillingcode("123123");
         conference.setConferencename("xxxx");
         conference.setPassword("xxxx");
         conference.setConfScale(1);
@@ -50,7 +50,7 @@ public class ConferenceFacadeImplTest {
     @Test
     public void testCreateConference() throws Exception {
         Conference conference = new Conference();
-        conference.setBillingcode(1);
+        conference.setBillingcode("xxxx");
         conference.setTempConferenceId(123);
         conference.setConferenceId(1);
         conference.setConferencename("测试会议");

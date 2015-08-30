@@ -1,7 +1,7 @@
 package com.ykh.common;
 
 import com.ykh.dao.conference.domain.Conference;
-import com.ykh.pojo.ProductRole;
+
 import com.ykh.pojo.User;
 import com.ykh.tang.agent.vo.BMSUserInfo;
 import com.ykh.tang.agent.vo.ConferenceInfoBMS;

@@ -5,7 +5,7 @@ import javax.persistence.*;
 
 import com.alibaba.fastjson.JSON;
 import com.ykh.common.ParseJSON;
-import com.ykh.pojo.Product;
+//import com.ykh.pojo.Product;
 import com.ykh.tang.agent.vo.AutoStopParams;
 import com.ykh.tang.agent.vo.RoleInfo;
 import com.ykh.tang.agent.vo.SubConferenceInfo;
@@ -86,8 +86,8 @@ public class Conference implements CacheDomain,Request<Conference>{
 	private Integer recordType; //0 – 外部录音 1 – 内部录音
 	private String  conferencename;
 	private String billingcode;
-	@Transient
-	private Product product;
+//	@Transient
+//	private Product product;
 	private String roles;
 
 	public String getRoles() {
@@ -143,13 +143,13 @@ public class Conference implements CacheDomain,Request<Conference>{
 		this.conferencename = conferencename;
 	}
 
-	public Product getProduct() {
-		return product;
-	}
-
-	public void setProduct(Product product) {
-		this.product = product;
-	}
+//	public Product getProduct() {
+//		return product;
+//	}
+//
+//	public void setProduct(Product product) {
+//		this.product = product;
+//	}
 
 	public String getConferencedesc() {
 		return conferencedesc;
