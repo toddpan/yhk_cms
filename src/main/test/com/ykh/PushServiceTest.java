@@ -70,7 +70,7 @@ public class PushServiceTest {
 	@Test
 	public  void joinConference() throws Exception {
 
-		BeanTranslatorUtil.copyUser2UserInfo(this.buildUser());
+//		BeanTranslatorUtil.copyUser2UserInfo(this.buildUser());
 
 		System.out.print(pushService.push("http://devyt.xiezuoyun.cn:8080/ykh_cms_v01/","conference/joinConference",this.buildUser()));
 	}

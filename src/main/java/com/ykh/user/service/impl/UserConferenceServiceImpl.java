@@ -1,5 +1,6 @@
 package com.ykh.user.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Lists;
 import com.maxc.rest.common.exception.RestException;
 import com.ykh.common.BeanTranslatorUtil;
@@ -19,6 +20,7 @@ import com.ykh.tang.agent.message.UserInfo;
 import com.ykh.tang.agent.vo.BMSUserInfo;
 import com.ykh.tang.agent.vo.UserChannel;
 import com.ykh.user.service.UserConferenceService;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,6 +32,7 @@ import java.util.List;
  */
 @Service
 public class UserConferenceServiceImpl implements UserConferenceService {
+    Logger logger =Logger.getLogger(UserConferenceService.class);
     @Autowired
     ICMSAgentInterface icmsAgent;
     @Autowired
@@ -38,6 +41,7 @@ public class UserConferenceServiceImpl implements UserConferenceService {
     ConfJoinTempConfDao confJoinTempConfDao;
     @Override
     public UserChannel userJoinConference(User request) {
+        logger.info("UserConferenceServiceImpl ==>"+ JSON.toJSONString(request));
         TempUser tempUser= tempUserDao.findByUsername(request.getUsername());
         BMSUserInfo userInfo =new BMSUserInfo();
         if(tempUser!=null){
@@ -59,6 +63,7 @@ public class UserConferenceServiceImpl implements UserConferenceService {
         }else{
             tempUser = new TempUser();
         }
+
         tempUser.setUserId(request.getSeqNo());
         tempUser.setUsername(request.getUsername());
         tempUser.setStatus(1);
@@ -75,6 +80,8 @@ public class UserConferenceServiceImpl implements UserConferenceService {
             throw r;
         }
 
+        logger.info("userJoinConference  ===>" + request.getTempConferenceId());
+
         UserChannel userChannel=  icmsAgent.userJoinConference(Constants.site,request.getTempConferenceId(), userInfo);
         tempUser.setPinCode(userInfo.pinCode);
         tempUser.setClientType(userInfo.getClientType());
@@ -83,6 +90,8 @@ public class UserConferenceServiceImpl implements UserConferenceService {
         tempUserDao.save(tempUser);
         userChannel.setTempConferenceID(request.getTempConferenceId());
         userChannel.setUserID(tempUser.getUserId());
+        logger.info("UserConferenceServiceImpl ==> end." + JSON.toJSONString(userChannel));
+
         return userChannel;
     }
 }
