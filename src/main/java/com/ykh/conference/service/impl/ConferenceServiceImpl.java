@@ -3,7 +3,6 @@ package com.ykh.conference.service.impl;
 import com.google.common.collect.Lists;
 import com.maxc.rest.common.ConfigUtil;
 import com.maxc.rest.common.exception.RestException;
-import com.sun.tools.internal.jxc.apt.Const;
 import com.ykh.common.Constants;
 import com.ykh.common.YkhUtils;
 import com.ykh.conference.service.ConferenceSeedService;
