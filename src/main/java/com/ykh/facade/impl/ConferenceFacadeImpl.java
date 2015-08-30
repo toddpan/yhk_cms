@@ -12,10 +12,10 @@ import com.ykh.dao.conference.domain.Conference;
 import com.ykh.dao.conference.domain.ConferenceSeed;
 import com.ykh.facade.ConferenceFacade;
 //import com.ykh.tang.agent.ICMSAgent;
+import com.ykh.pojo.User;
 import com.ykh.tang.agent.vo.UserChannel;
 import com.ykh.user.service.UserConferenceService;
 import com.ykh.vo.body.ConferenceSeedBody;
-import com.ykh.vo.req.UserConferenceRequest;
 import com.ykh.vo.res.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -129,8 +129,8 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
     }
 
     @Override
-    public UserChannelResponse joinConference(UserConferenceRequest request) {
-        RestAssert.notNull(UserConferenceRequest.class, request);
+    public UserChannelResponse joinConference(User request) {
+        RestAssert.notNull(User.class, request);
         RestAssert.notNull(request.getTempConferenceId(), "tempConferenceId");
 //        RestAssert.notNull(request.getUserId(),"userId");
         UserChannel userChannel =userConferenceService.userJoinConference(request);

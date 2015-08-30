@@ -2,13 +2,12 @@ package com.ykh.web.conference;
 
 //import com.ykh.conference.service.impl.ConferenceServiceImpl;
 import com.ykh.dao.conference.domain.Conference;
-import com.ykh.dao.user.domain.User;
 import com.ykh.facade.ConferenceFacade;
 import com.ykh.facade.impl.ConferenceFacadeImpl;
+import com.ykh.pojo.User;
 import com.ykh.tang.agent.vo.UserChannel;
 import com.ykh.tang.agent.vo.UserConferenceStatus;
 import com.ykh.vo.body.ConferenceSeedBody;
-import com.ykh.vo.req.UserConferenceRequest;
 import com.ykh.vo.res.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -95,7 +94,7 @@ public class ConferenceController {
     }
 
     @RequestMapping(value = "/joinConference", method = RequestMethod.POST, consumes = { ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML }, produces = {ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML })
-    public UserChannelResponse joinConference(@RequestBody UserConferenceRequest request) throws Exception {
+    public UserChannelResponse joinConference(@RequestBody User request) throws Exception {
         return conferenceFacade.joinConference(request);
     }
 

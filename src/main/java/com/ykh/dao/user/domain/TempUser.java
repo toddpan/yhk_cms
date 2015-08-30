@@ -1,5 +1,8 @@
 package com.ykh.dao.user.domain;
 
+import com.alibaba.fastjson.JSON;
+import com.ykh.tang.agent.vo.UserChannel;
+
 import javax.persistence.*;
 
 /**
@@ -23,6 +26,8 @@ public class TempUser {
 //    <element name="role_type" type="au"/>
 //    <element name="time " type="t"/>
     private Integer status;
+    @Convert(converter = UserChannelConverJson.class)
+    private UserChannel userChannel;
 
     public Integer getStatus() {
         return status;
@@ -78,5 +83,25 @@ public class TempUser {
 
     public void setPinCode(Integer pinCode) {
         this.pinCode = pinCode;
+    }
+    public  static  class  UserChannelConverJson implements AttributeConverter<UserChannel,String>{
+
+        @Override
+        public String convertToDatabaseColumn(UserChannel attribute) {
+            return JSON.toJSONString(attribute);
+        }
+
+        @Override
+        public UserChannel convertToEntityAttribute(String dbData) {
+            return JSON.parseObject(dbData,UserChannel.class);
+        }
+    }
+
+    public UserChannel getUserChannel() {
+        return userChannel;
+    }
+
+    public void setUserChannel(UserChannel userChannel) {
+        this.userChannel = userChannel;
     }
 }

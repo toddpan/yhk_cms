@@ -4,19 +4,16 @@ import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Lists;
 
 import com.ykh.dao.conference.domain.Conference;
+import com.ykh.pojo.User;
 import com.ykh.tang.agent.excep.CMSException;
 import com.ykh.tang.agent.message.ConfStartMsgResult;
 import com.ykh.tang.agent.vo.*;
 import com.ykh.vo.body.ConferenceSeedBody;
-import com.ykh.vo.req.UserConferenceRequest;
 import org.junit.Test;
 import org.w3c.dom.ls.LSException;
 
 import javax.net.ssl.SSLServerSocket;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.TreeMap;
+import java.util.*;
 
 public class PushServiceTest {
 	PushService pushService=new PushService();
@@ -37,7 +34,7 @@ public class PushServiceTest {
 		conference.setPassword(bms.getPassword());
 		conference.setConferencename(bms.getName());
 		conference.setAutoStopParams((AutoStopParams) bms.getStopParams());
-		conference.setBillingcode(753053);
+		conference.setBillingcode("753053");
 		conference.setConfScale(bms.getConfScale());
 		conference.setPassword(bms.getPassword());
 		Conference.ServiceConfig serviceConfig  = new Conference.ServiceConfig();
@@ -71,10 +68,10 @@ public class PushServiceTest {
 	}
 	@Test
 	public  void joinConference(){
-		UserConferenceRequest joinConference=new UserConferenceRequest();
-		joinConference.setTempConferenceId(3932160);
-		joinConference.setUserId(1);
-		System.out.print(pushService.push("http://devyt.xiezuoyun.cn:8080/ykh_cms_v01/","conference/joinConference",joinConference));
+
+
+
+		System.out.print(pushService.push("http://devyt.xiezuoyun.cn:8080/ykh_cms_v01/","conference/joinConference",this.buildUser()));
 	}
 
 	public static ConferenceInfoBMS getTestConferenceInfo() {
@@ -468,5 +465,29 @@ public class PushServiceTest {
 
 		// agent销毁
 		return confInfo;
+	}
+	private User buildUser() {
+
+		Map<Integer, List<Integer>> rolemap = new HashMap<Integer, List<Integer>>();
+		rolemap.put(4, new ArrayList<Integer>());
+		rolemap.put(5, new ArrayList<Integer>());
+		rolemap.put(10, new ArrayList<Integer>());
+		rolemap.put(11, new ArrayList<Integer>());
+		rolemap.put(12, new ArrayList<Integer>());
+		rolemap.put(13, new ArrayList<Integer>());
+		rolemap.put(14, new ArrayList<Integer>());
+
+		User user = new User();
+		user.setTempConferenceId(1231231);
+		user.setUsername("liming");
+		user.setUserStatus(0);
+		user.setClientType(2);
+		user.setPinCode(1234);
+		user.setDomain(1);
+		user.setIsowner(true);
+		user.setRolemap(rolemap);
+		user.setIpaddr("192.168.13.99");
+
+		return user;
 	}
 }

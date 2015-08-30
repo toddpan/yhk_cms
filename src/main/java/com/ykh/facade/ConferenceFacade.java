@@ -1,8 +1,8 @@
 package com.ykh.facade;
 
 import com.ykh.dao.conference.domain.Conference;
+import com.ykh.pojo.User;
 import com.ykh.vo.body.ConferenceSeedBody;
-import com.ykh.vo.req.UserConferenceRequest;
 import com.ykh.vo.res.*;
 
 /**
@@ -25,7 +25,7 @@ public interface ConferenceFacade {
 
     Response startConference(ConferenceSeedBody conference);
 
-    UserChannelResponse joinConference(UserConferenceRequest request);
+    UserChannelResponse joinConference(User request);
 
     BmsResponse getBMSConferenceInfo(ConferenceSeedBody conference);
 }

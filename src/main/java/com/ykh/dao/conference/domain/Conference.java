@@ -1,13 +1,11 @@
 package com.ykh.dao.conference.domain;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 import javax.persistence.*;
 
 import com.alibaba.fastjson.JSON;
 import com.ykh.common.ParseJSON;
+import com.ykh.pojo.Product;
 import com.ykh.tang.agent.vo.AutoStopParams;
 import com.ykh.tang.agent.vo.RoleInfo;
 import com.ykh.tang.agent.vo.SubConferenceInfo;
@@ -65,15 +63,41 @@ public class Conference implements CacheDomain,Request<Conference>{
 	| cmsbridge         | varchar(10)  | YES  |     | NULL              |                             |
 	+-------------------+--------------+------+-----+-------------------+-----------------------------+
 	 */
-	private static final long serialVersionUID = 15679L;
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer conferenceId;
 	@Transient
 	private Integer tempConferenceId;
+// Fields
 
+	private static final long serialVersionUID = 15679L;
+
+	private String conferencedesc;
+	private Integer conferenceminutes;
+	private Date reservtime;
+	private Integer noticetime;
+	private Integer valid = 0;	//初始值
+	private Integer confscale;
+	private Integer cycle;
+	private Boolean pin;
+	private Boolean callout;
+	private Boolean realreserve;
+	private Integer language;
+	private Integer recordType; //0 – 外部录音 1 – 内部录音
 	private String  conferencename;
-	private Integer billingcode;
+	private String billingcode;
+	@Transient
+	private Product product;
+	private String roles;
+
+	public String getRoles() {
+		return roles;
+	}
+
+	public void setRoles(String roles) {
+		this.roles = roles;
+	}
+
 	@Convert(converter = JpaConverterJson.class)
 	private AutoStopParams autoStopParams;
 	private  String password;
@@ -86,7 +110,16 @@ public class Conference implements CacheDomain,Request<Conference>{
 	public Object getId() {
 		return conferenceId;
 	}
+	@Transient
+	private Date starttime;
 
+	public Date getStarttime() {
+		return starttime;
+	}
+
+	public void setStarttime(Date starttime) {
+		this.starttime = starttime;
+	}
 //	SubConferenceInfo subConfInfo = new SubConferenceInfo();
 
 	public static long getSerialVersionUID() {
@@ -110,11 +143,115 @@ public class Conference implements CacheDomain,Request<Conference>{
 		this.conferencename = conferencename;
 	}
 
-	public Integer getBillingcode() {
+	public Product getProduct() {
+		return product;
+	}
+
+	public void setProduct(Product product) {
+		this.product = product;
+	}
+
+	public String getConferencedesc() {
+		return conferencedesc;
+	}
+
+	public void setConferencedesc(String conferencedesc) {
+		this.conferencedesc = conferencedesc;
+	}
+
+	public Integer getConferenceminutes() {
+		return conferenceminutes;
+	}
+
+	public void setConferenceminutes(Integer conferenceminutes) {
+		this.conferenceminutes = conferenceminutes;
+	}
+
+	public Date getReservtime() {
+		return reservtime;
+	}
+
+	public void setReservtime(Date reservtime) {
+		this.reservtime = reservtime;
+	}
+
+	public Integer getNoticetime() {
+		return noticetime;
+	}
+
+	public void setNoticetime(Integer noticetime) {
+		this.noticetime = noticetime;
+	}
+
+	public Integer getValid() {
+		return valid;
+	}
+
+	public void setValid(Integer valid) {
+		this.valid = valid;
+	}
+
+	public Integer getConfscale() {
+		return confscale;
+	}
+
+	public void setConfscale(Integer confscale) {
+		this.confscale = confscale;
+	}
+
+	public Integer getCycle() {
+		return cycle;
+	}
+
+	public void setCycle(Integer cycle) {
+		this.cycle = cycle;
+	}
+
+	public Boolean getPin() {
+		return pin;
+	}
+
+	public void setPin(Boolean pin) {
+		this.pin = pin;
+	}
+
+	public Boolean getCallout() {
+		return callout;
+	}
+
+	public void setCallout(Boolean callout) {
+		this.callout = callout;
+	}
+
+	public Boolean getRealreserve() {
+		return realreserve;
+	}
+
+	public void setRealreserve(Boolean realreserve) {
+		this.realreserve = realreserve;
+	}
+
+	public Integer getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(Integer language) {
+		this.language = language;
+	}
+
+	public Integer getRecordType() {
+		return recordType;
+	}
+
+	public void setRecordType(Integer recordType) {
+		this.recordType = recordType;
+	}
+
+	public String getBillingcode() {
 		return billingcode;
 	}
 
-	public void setBillingcode(Integer billingcode) {
+	public void setBillingcode(String billingcode) {
 		this.billingcode = billingcode;
 	}
 
