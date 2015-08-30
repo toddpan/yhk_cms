@@ -77,7 +77,6 @@ public class Conference implements CacheDomain,Request<Conference>{
 	private Date reservtime;
 	private Integer noticetime;
 	private Integer valid = 0;	//初始值
-	private Integer confscale;
 	private Integer cycle;
 	private Boolean pin;
 	private Boolean callout;
@@ -191,13 +190,7 @@ public class Conference implements CacheDomain,Request<Conference>{
 		this.valid = valid;
 	}
 
-	public Integer getConfscale() {
-		return confscale;
-	}
 
-	public void setConfscale(Integer confscale) {
-		this.confscale = confscale;
-	}
 
 	public Integer getCycle() {
 		return cycle;
