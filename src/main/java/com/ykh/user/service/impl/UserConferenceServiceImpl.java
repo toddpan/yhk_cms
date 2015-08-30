@@ -89,7 +89,6 @@ public class UserConferenceServiceImpl implements UserConferenceService {
         //修改
         tempUserDao.save(tempUser);
         userChannel.setTempConferenceID(request.getTempConferenceId());
-        userChannel.setUserID(tempUser.getUserId());
         logger.info("UserConferenceServiceImpl ==> end." + JSON.toJSONString(userChannel));
 
         return userChannel;

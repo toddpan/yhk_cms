@@ -38,8 +38,11 @@ import com.ykh.tang.agent.message.UserExitConfMsgResult;
 import com.ykh.tang.agent.message.UserJoinConfResult;
 import com.ykh.tang.agent.message.UserOfflineMsgResult;
 import com.ykh.tang.agent.message.UserOnlineMsgResult;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
-
+@Component
+@Qualifier("getmessageHandler")
 public class GetmessageHandler implements IMessageHandler {
 	
 	private final static Logger LOGGER = Logger.getLogger(GetmessageHandler.class);
@@ -65,6 +68,7 @@ public class GetmessageHandler implements IMessageHandler {
 				ConfStartMsgResult confStartMsgResult = (ConfStartMsgResult)msg;			
 				Integer tempConfID = confStartMsgResult.getConfID();
 				LOGGER.info("Tang CMS receive start conference message=" + tempConfID);
+
 //				/********************add by lilonglong 2011-09-22*********************/
 //				Cdrconferencemsg cdrconferencemsg =  new Cdrconferencemsg();
 //				cdrconferencemsg.setTempconferenceid(tempConfID);

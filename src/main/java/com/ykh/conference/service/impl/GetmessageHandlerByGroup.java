@@ -6,7 +6,11 @@ import com.ykh.tang.agent.IMessageHandler;
 import com.ykh.tang.agent.message.IMessage;
 import com.ykh.tang.agent.message.ServiceOfflineMsgResult;
 import com.ykh.tang.agent.message.ServiceOnlineMsgResult;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
+@Component
+@Qualifier("getmessageHandlerByGroup")
 public class GetmessageHandlerByGroup implements IMessageHandler {
 	private final static Logger LOGGER = Logger.getLogger(GetmessageHandlerByGroup.class);
 	

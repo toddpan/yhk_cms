@@ -98,7 +98,7 @@ public class ICMSAgent
 	private static  final  ICMSAgent ICMS_AGENT=new ICMSAgent();
 
 	private ICMSAgent() {
-		this.agentInit();
+//		this.agentInit();
 	}
 
 	// 初始化

@@ -22,7 +22,7 @@ public class PushServiceTest {
 	@Test
 	public void createConference(){
 		Conference conference =new Conference();
-		conference.setConferenceId(15);
+		conference.setConferenceId(28);
 		conference.setConferencename("潘足迹");
 		conference.setPassword("xxx");
 		System.out.print(pushService.push("http://devyt.xiezuoyun.cn:8080/ykh_cms_v01/","conference/createConference",conference));
@@ -58,7 +58,7 @@ public class PushServiceTest {
 	@Test
 	public   void startConf(){
 		ConferenceSeedBody conferenceSeedBody =new ConferenceSeedBody();
-		conferenceSeedBody.setTempConferenceId(3932160);
+		conferenceSeedBody.setTempConferenceId(5701632);
 		System.out.print(pushService.push("http://devyt.xiezuoyun.cn:8080/ykh_cms_v01/","conference/startConference",conferenceSeedBody));
 	}
 	@Test
@@ -479,7 +479,7 @@ public class PushServiceTest {
 		rolemap.put(14, new ArrayList<Integer>());
 
 		User user = new User();
-		user.setTempConferenceId(1231231);
+		user.setTempConferenceId(5701632);
 		user.setUsername("liming");
 		user.setUserStatus(0);
 		user.setClientType(2);
