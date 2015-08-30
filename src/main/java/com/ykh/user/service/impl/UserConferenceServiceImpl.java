@@ -54,12 +54,12 @@ public class UserConferenceServiceImpl implements UserConferenceService {
                 throw  restException;
             }
             //
-            if(conft!=request.getTempConferenceId()){
-                tempUserDao.delete(tempUserDao.findByUsername(request.getUsername()));
-                List<String> userArr = Lists.newLinkedList();
-                userArr.add(tempUser.getIdTempUser()+"");
-                icmsAgent.expelUser(Constants.site,conft, userArr);
-            }
+//            if(conft!=request.getTempConferenceId()){
+//                tempUserDao.delete(tempUserDao.findByUsername(request.getUsername()));
+//                List<String> userArr = Lists.newLinkedList();
+//                userArr.add(tempUser.getIdTempUser()+"");
+//                icmsAgent.expelUser(Constants.site,conft, userArr);
+//            }
         }else{
             tempUser = new TempUser();
         }
