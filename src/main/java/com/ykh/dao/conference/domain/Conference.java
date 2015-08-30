@@ -89,6 +89,9 @@ public class Conference implements CacheDomain,Request<Conference>{
 //	private Product product;
 	private String roles;
 
+	@Transient
+	private Date endTime;
+
 	public String getRoles() {
 		return roles;
 	}
@@ -365,5 +368,13 @@ public class Conference implements CacheDomain,Request<Conference>{
 
 	public void setTempConferenceId(Integer tempConferenceId) {
 		this.tempConferenceId = tempConferenceId;
+	}
+
+	public Date getEndTime() {
+		return endTime;
+	}
+
+	public void setEndTime(Date endTime) {
+		this.endTime = endTime;
 	}
 }

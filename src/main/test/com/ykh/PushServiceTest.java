@@ -88,7 +88,7 @@ public class PushServiceTest {
 		confInfo.setPlanStartTime0(0);
 		confInfo.setPlanStartTime1(0);
 		confInfo.setConfID(0xfffffe00);
-
+		confInfo.setConfScale(200);
 		List<String> servconfarr = new ArrayList<String>();
 		servconfarr.add("0x2e03001f");
 		servconfarr.add("0x1400000f");

@@ -80,7 +80,7 @@ public class UserConferenceServiceImpl implements UserConferenceService {
             throw r;
         }
 
-        logger.info("userJoinConference  ===>" + request.getTempConferenceId());
+        logger.info("userJoinConference  ===> jni start" + request.getTempConferenceId());
 
         UserChannel userChannel=  icmsAgent.userJoinConference(Constants.site,request.getTempConferenceId(), userInfo);
         tempUser.setPinCode(userInfo.pinCode);

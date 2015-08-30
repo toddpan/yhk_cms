@@ -16,6 +16,7 @@ import com.ykh.tang.agent.ICMSAgentInterface;
 import com.ykh.tang.agent.excep.CMSException;
 import com.ykh.tang.agent.vo.*;
 import org.apache.log4j.Logger;
+import org.jcp.xml.dsig.internal.dom.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -60,6 +61,29 @@ public  class ConferenceServiceImpl implements ConferenceService {
 		confInfo.setStopParams(dao.getAutoStopParams());
 //		confInfo.setRoleInfo(dao.get);
 		confInfo.setRoleInfo(dao.getRuleInfos().getRoleInfo());
+
+		long startSenconde = 0l;
+		if(conference.getStarttime()==null){
+
+			 startSenconde = System.currentTimeMillis()/1000;
+
+		}else {
+			startSenconde=conference.getStarttime().getTime()/1000;
+		}
+
+		confInfo.setPlanStartTime0((int) startSenconde & 0xFFFFFFFF);
+		confInfo.setPlanStartTime1((int)startSenconde>>32 & 0xffffffff);
+
+		long endTimeSeconds=0;
+		if(conference.getEndTime()==null){
+			endTimeSeconds = (System.currentTimeMillis() + 24*60*60*1000)/1000;
+
+		}else {
+			endTimeSeconds=(conference.getEndTime().getTime()/1000);
+		}
+
+		confInfo.setPlanStartTime0((int)endTimeSeconds& 0xFFFFFFFF);
+		confInfo.setPlanStartTime1((int)endTimeSeconds>>32 & 0xffffffff);
 		confInfo.setServiceConfigs(dao.getServiceConfigs().getServiceConfigs());
 		confInfo.setConfScale(dao.getConfScale());
 		confInfo.setBillingCode(dao.getBillingcode() + "");
