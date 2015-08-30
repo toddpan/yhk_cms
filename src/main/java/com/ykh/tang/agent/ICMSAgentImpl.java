@@ -14,11 +14,13 @@ import com.ykh.tang.agent.vo.RoleInfo;
 import com.ykh.tang.agent.vo.SubConferenceInfo;
 import com.ykh.tang.agent.vo.UserChannel;
 import com.ykh.tang.agent.vo.UserConferenceStatus;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class ICMSAgentImpl implements ICMSAgentInterface {
-	private ICMSAgent icmsAgent =ICMSAgent.getInstance();
+	@Autowired
+	private ICMSAgent icmsAgent;
 
 	// 3
 	@Override

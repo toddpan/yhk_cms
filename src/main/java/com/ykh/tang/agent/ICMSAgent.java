@@ -76,6 +76,7 @@ import org.springframework.stereotype.Component;
  *
  *  JNI 本地调用方式
  */
+@Component
 public class ICMSAgent
 
 {
@@ -97,9 +98,6 @@ public class ICMSAgent
 
 	private static  final  ICMSAgent ICMS_AGENT=new ICMSAgent();
 
-	private ICMSAgent() {
-//		this.agentInit();
-	}
 
 	// 初始化
 	public native int agentInit();
@@ -478,11 +476,9 @@ public class ICMSAgent
 	}
 
 
-	public static void main(String arg[])
-	{
-		ICMSAgent agent = new ICMSAgent();
-		agent.test();
+	public ICMSAgent() {
 	}
+
 	public ICMSAgent(IMessageHandler handler,IMessageHandler serviceHandler){
 		this.handler=handler;
 		this.serviceHandler=serviceHandler;
