@@ -42,7 +42,8 @@ public class UserConferenceServiceImpl implements UserConferenceService {
     @Override
     public UserChannel userJoinConference(User request) {
         logger.info("UserConferenceServiceImpl ==>"+ JSON.toJSONString(request));
-        TempUser tempUser= tempUserDao.findByUsername(request.getUsername());
+//        TempUser tempUser= tempUserDao.findByUsername(request.getUsername());
+        TempUser tempUser=null;
         BMSUserInfo userInfo =new BMSUserInfo();
         if(tempUser!=null){
             Integer conft= tempUser.getTempConferenceId();
