@@ -3,6 +3,7 @@ package com.ykh;
 import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Lists;
 
+import com.ykh.common.BeanTranslatorUtil;
 import com.ykh.dao.conference.domain.Conference;
 import com.ykh.pojo.User;
 import com.ykh.tang.agent.excep.CMSException;
@@ -67,9 +68,9 @@ public class PushServiceTest {
 		System.out.print(pushService.push("http://devyt.xiezuoyun.cn:8080/ykh_cms_v01/","conference/stopConference",conferenceSeedBody));
 	}
 	@Test
-	public  void joinConference(){
+	public  void joinConference() throws Exception {
 
-
+		BeanTranslatorUtil.copyUser2UserInfo(this.buildUser());
 
 		System.out.print(pushService.push("http://devyt.xiezuoyun.cn:8080/ykh_cms_v01/","conference/joinConference",this.buildUser()));
 	}
@@ -490,4 +491,5 @@ public class PushServiceTest {
 
 		return user;
 	}
+
 }

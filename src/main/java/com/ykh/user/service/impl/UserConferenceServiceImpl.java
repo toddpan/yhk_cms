@@ -64,7 +64,7 @@ public class UserConferenceServiceImpl implements UserConferenceService {
         tempUser.setStatus(1);
         tempUser.setTempConferenceId(request.getTempConferenceId());
         tempUserDao.save(tempUser);
-
+        request.setTempuserid(tempUser.getIdTempUser());
         try {
         userInfo=    BeanTranslatorUtil.copyUser2UserInfo(request);
         }catch (Exception e){
