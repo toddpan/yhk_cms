@@ -3,6 +3,7 @@ package com.ykh.tang.agent;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.alibaba.fastjson.JSON;
 import com.ykh.tang.agent.vo.RoleInfo;
 import com.ykh.tang.agent.excep.CMSException;
 import com.ykh.tang.agent.message.BlackUserMsgFault;
@@ -69,6 +70,7 @@ import com.ykh.tang.agent.vo.SubConferenceInfo;
 import com.ykh.tang.agent.vo.UserChannel;
 import com.ykh.tang.agent.vo.UserConferenceStatus;
 import com.ykh.tang.agent.vo.UserServiceAddr;
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 
 /**
@@ -80,6 +82,7 @@ import org.springframework.stereotype.Component;
 public class ICMSAgent
 
 {
+	Logger logger=Logger.getLogger(ICMSAgent.class);
 	private IMessageHandler handler;
 
 	private IMessageHandler serviceHandler;
@@ -467,11 +470,15 @@ public class ICMSAgent
 
 	public void setHandler(Object handler)
 	{
+		logger.info("[Tang CMS serviceHandler  Handler]"+ JSON.toJSONString(handler));
+
 		this.handler = (IMessageHandler)handler;
 	}
 
 	public void setServiceHandler(Object serviceHandler)
 	{
+		logger.info("[Tang CMS serviceHandler  serviceHandler]"+ JSON.toJSONString(serviceHandler));
+
 		this.serviceHandler = (IMessageHandler)serviceHandler;
 	}
 

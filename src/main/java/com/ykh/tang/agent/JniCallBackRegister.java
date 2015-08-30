@@ -36,17 +36,6 @@ public class JniCallBackRegister {
         agent.addServiceMessageHandler(getmessageHandlerByGroup);
     }
 
-    public void setAgent(ICMSAgentInterface agent) {
-        this.agent = agent;
-    }
 
-    public void setGetmessageHandler(GetmessageHandler getmessageHandler) {
-        this.getmessageHandler = getmessageHandler;
-    }
-
-    public void setGetmessageHandlerByGroup(
-            GetmessageHandlerByGroup getmessageHandlerByGroup) {
-        this.getmessageHandlerByGroup = getmessageHandlerByGroup;
-    }
 }
 
