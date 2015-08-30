@@ -66,7 +66,7 @@ public class UserConferenceServiceImpl implements UserConferenceService {
 
         tempUser.setUserId(request.getSeqNo());
         tempUser.setUsername(request.getUsername());
-        tempUser.setStatus(1);
+        tempUser.setStatus(request.getUserStatus()==null ? 0:request.getUserStatus());
         tempUser.setTempConferenceId(request.getTempConferenceId());
         tempUserDao.save(tempUser);
         request.setTempuserid(tempUser.getIdTempUser());
