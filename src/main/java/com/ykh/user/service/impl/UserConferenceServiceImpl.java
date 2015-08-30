@@ -1,5 +1,6 @@
 package com.ykh.user.service.impl;
 
+import com.google.common.collect.Lists;
 import com.maxc.rest.common.exception.RestException;
 import com.ykh.common.BeanTranslatorUtil;
 import com.ykh.common.Constants;
@@ -22,6 +23,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.Entity;
+import java.util.List;
 
 /**
  * Created by ant_shake_tree on 15/8/27.
@@ -50,7 +52,9 @@ public class UserConferenceServiceImpl implements UserConferenceService {
             //
             if(conft!=request.getTempConferenceId()){
                 tempUserDao.delete(tempUserDao.findByUsername(request.getUsername()));
-                icmsAgent.expelUser(Constants.site,conft, YkhUtils.getAllServicetypelist());
+                List<String> userArr = Lists.newLinkedList();
+                userArr.add(tempUser.getIdTempUser()+"");
+                icmsAgent.expelUser(Constants.site,conft, userArr);
             }
         }else{
             tempUser = new TempUser();
@@ -64,9 +68,10 @@ public class UserConferenceServiceImpl implements UserConferenceService {
         try {
         userInfo=    BeanTranslatorUtil.copyUser2UserInfo(request);
         }catch (Exception e){
+            e.printStackTrace();
             RestException  r = new RestException();
             r.setErrorCode(UserInfoException.ERROR_CODE);
-            r.setMessage(UserInfoException.message);
+            r.setMessage(UserInfoException.message+" "+e.getMessage());
             throw r;
         }
 
