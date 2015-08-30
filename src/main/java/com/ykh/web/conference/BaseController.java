@@ -2,6 +2,8 @@ package com.ykh.web.conference;
 
 import com.maxc.rest.common.exception.ExceptionCode;
 import com.maxc.rest.common.exception.RestException;
+import com.ykh.conference.service.exception.CMSErrorCode;
+import com.ykh.tang.agent.excep.CMSException;
 import com.ykh.vo.res.Response;
 import org.apache.log4j.Logger;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -25,7 +27,12 @@ public class BaseController {
 			re.getHead().setError(resstException.getErrorCode());
 			re.getHead().setMessage(ex.getMessage());
 			return re;
-		}else{
+		}else if (ex instanceof CMSException){
+
+			re.getHead().setError(Integer.parseInt(((CMSException) ex).getCodeID()));
+			re.getHead().setMessage("CMS exception.");
+			return re;
+		} else{
 			re.getHead().setError(ExceptionCode.UnknowException.getErrorCode());
 			re.getHead().setMessage("unknowException ["+ex.getMessage()+"]");
 			return re;
