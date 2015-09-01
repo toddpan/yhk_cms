@@ -68,10 +68,10 @@ public class Session {
 	public static Object removeCache(String key) {
 		return session.remove(key);
 	}
-	public static Object getCache(String seed, Object key) {
-		Object v=getStateBySeed(seed).getCache(key);
-		return v;
-	}
+//	public static Object getCache(String seed, Object key) {
+//		Object v=getStateBySeed(seed).getCache(key);
+//		return v;
+//	}
 	
 	/**
 	 * Session.cacheSize()
@@ -103,7 +103,7 @@ public class Session {
 	public static void removeCacheByOrigin(String key) {
 		session.remove(key);
 	}
-	public static <V> State getStateBySeed(String seed) {
-		return State.getinstance(seed);
-	}
+//	public static <V> State getStateBySeed(String seed) {
+//		return State.getinstance(seed);
+//	}
 }

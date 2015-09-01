@@ -12,4 +12,7 @@ public interface ConfJoinTempConfDao extends Dao<ConfJoinTempConf,Long> {
     ConfJoinTempConf findByBmsStatusLessThanAndTempConfIdAndConfId(int i, Integer seed, Integer conferenceId);
 
     ConfJoinTempConf findByTempConfId(Integer tempConferenceID);
+    Long deleteByTempConfId(Integer tempConferenceID);
+
+    ConfJoinTempConf findByTempConfIdAndBmsStatus(Integer tempConfID, Integer integer);
 }

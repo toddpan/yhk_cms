@@ -52,7 +52,7 @@ public  class ConferenceServiceImpl implements ConferenceService {
 //		confInfo.setPassword(conference.getPassword());
 		confInfo.setStopParams(dao.getAutoStopParams());
 //		confInfo.setRoleInfo(dao.get);
-		confInfo.setRoleInfo(dao.getRuleInfos().getRoleInfo());
+		confInfo.setRoleInfo(dao.getRuleInfos());
 
 		long startSenconde = 0l;
 		if(conference.getStarttime()==null){
@@ -76,14 +76,14 @@ public  class ConferenceServiceImpl implements ConferenceService {
 
 		confInfo.setPlanStartTime0((int)endTimeSeconds& 0xFFFFFFFF);
 		confInfo.setPlanStartTime1((int)endTimeSeconds>>32 & 0xffffffff);
-		confInfo.setServiceConfigs(dao.getServiceConfigs().getServiceConfigs());
+		confInfo.setServiceConfigs(dao.getServiceConfigs());
 		confInfo.setConfScale(dao.getConfScale());
 		confInfo.setBillingCode(dao.getBillingcode() + "");
 //		confInfo.setSubConference();
 		//TODO 空的子会议
 		SubConferenceInfo subConfInfo = new SubConferenceInfo();
-		subConfInfo.setServiceConfigArr(dao.getServiceConfigs().getServiceConfigs());
-		subConfInfo.setRoleInfoArr(dao.getRuleInfos().getRoleInfo());
+		subConfInfo.setServiceConfigArr(dao.getServiceConfigs());
+		subConfInfo.setRoleInfoArr(dao.getRuleInfos());
 		confInfo.setSubConference(subConfInfo);
 		icmsAgent.createConferenceWithoutUser(Constants.site, confInfo, YkhUtils.getAllServicetypelist());
 		confJoinTempConfDao.save(confJoinTempConf);

@@ -23,6 +23,8 @@ package com.ykh.services.conference.impl;
 
 import java.util.Date;
 
+import com.ykh.dao.conference.ConfJoinTempConfDao;
+import com.ykh.dao.conference.domain.ConfJoinTempConf;
 import com.ykh.dao.user.TempUserDao;
 import com.ykh.dao.user.domain.TempUser;
 import org.apache.log4j.Logger;
@@ -51,6 +53,8 @@ public class GetmessageHandler implements IMessageHandler {
 	private final static Logger LOGGER = Logger.getLogger(GetmessageHandler.class);
 	@Autowired
 	TempUserDao tempUserDao;
+	@Autowired
+	ConfJoinTempConfDao confJoinTempConfDao;
 	/**
 	 * handle接口实现，判断接收信号的类型，做相应的处理
 	 * 
@@ -72,6 +76,8 @@ public class GetmessageHandler implements IMessageHandler {
 				ConfStartMsgResult confStartMsgResult = (ConfStartMsgResult)msg;			
 				Integer tempConfID = confStartMsgResult.getConfID();
 				LOGGER.info("Tang CMS receive start conference message=" + tempConfID);
+			TempUser tempUser =new TempUser();
+
 
 //				/********************add by lilonglong 2011-09-22*********************/
 //				Cdrconferencemsg cdrconferencemsg =  new Cdrconferencemsg();
@@ -82,11 +88,11 @@ public class GetmessageHandler implements IMessageHandler {
 //				/******************end***********************/
 //				
 //				//add by tanyunhua 2011-10-31		user online时，start conference后，修改会议状态
-//				ConfJoinTempConf confJoinTempConf = ConferenceBusinessImpl.getConfJoinTempConfManager().getConfJoinTempConfByTempIDAndStatus(tempConfID, new Integer(1));
-//				if(confJoinTempConf != null){
-//					confJoinTempConf.setBmsStatus(Consts.CONF_STATUS_BMS_START);
-//					ConferenceBusinessImpl.getConfJoinTempConfManager().update(confJoinTempConf);
-//				}
+				ConfJoinTempConf confJoinTempConf = confJoinTempConfDao.findByTempConfIdAndBmsStatus(tempConfID, new Integer(1));
+				if(confJoinTempConf != null){
+					confJoinTempConf.setBmsStatus(Consts.CONF_STATUS_BMS_START);
+					confJoinTempConfDao.save(confJoinTempConf);
+				}
 				//end add
 //				Cdrconferenceinfo cdrconf = ConferenceBusinessImpl.getCdrConferenceInfoManager().queryCdrConfByConfIDAndTempID(tempConfID);
 //				if (cdrconf == null) {
@@ -113,8 +119,9 @@ public class GetmessageHandler implements IMessageHandler {
 
 
 			Integer onLineUserid = userOnlineMsgResult.getUserID();
-
-
+			TempUser tempUser =tempUserDao.find(onLineUserid);
+			tempUser.setStatus(Consts.ONLINE);
+			tempUserDao.save(tempUser);
 
 
 //			// 添加数据库cdruser记录
@@ -145,8 +152,10 @@ public class GetmessageHandler implements IMessageHandler {
 			
 			Ip ip = (Ip)joinUserInfo.getIP();
 			String ips = ip.getIP0() + "." + ip.getIP1() + "." + ip.getIP2() + "." + ip.getIP3();
-			
-						
+			TempUser joinUser=tempUserDao.find(joinUserInfo.getUserID());
+			joinUser.setStatus(Consts.JOIN);
+			tempUserDao.save(joinUser);
+
 			// 添加数据库cdruser记录
 //			Cdruserinfo cdruserinfoJoin = new Cdruserinfo();
 //			cdruserinfoJoin.setIpaddr(ips);
@@ -185,7 +194,9 @@ public class GetmessageHandler implements IMessageHandler {
 					+"|" + userOfflineMsgResult.getUserID() + "|" + Consts.OFFLINE + "|" + 
 					userOfflineMsgResult.getTimestamp());
 
-
+			TempUser off=tempUserDao.find(userOfflineMsgResult.getUserID());
+			off.setStatus(Consts.OFFLINE);
+			tempUserDao.save(off);
 			break;
 		case Consts.BMS_SUB_CONF_USER_JOIN_NOTIFY&0xFFFF:
 			// 收到用户加入子会成功消息
@@ -228,6 +239,9 @@ public class GetmessageHandler implements IMessageHandler {
 //				} catch (Exception e) {
 //					dealKeysException(e);
 //				}
+				TempUser exit=tempUserDao.find(Integer.parseInt(userid));
+				exit.setStatus(Consts.EXIT);
+				tempUserDao.save(exit);
 			}
 			break;
 		case Consts.BMS_CONF_USER_EXPEL_ERR_NOTIFY&0xFFFF:
@@ -250,6 +264,8 @@ public class GetmessageHandler implements IMessageHandler {
 				Integer tempConfID = confStopMsgResult.getConfID();
 				
 				Date endtime = new Date();
+				confJoinTempConfDao.deleteByTempConfId(tempConfID);
+				tempUserDao.deleteByTempConferenceId(tempConfID);
 //				/********************add by lilonglong 2011-09-22*********************/
 //				Cdrconferencemsg cdrconferencemsg =  new Cdrconferencemsg();
 //				cdrconferencemsg.setTempconferenceid(tempConfID);

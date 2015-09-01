@@ -10,4 +10,6 @@ public interface TempUserDao extends Dao<TempUser,Integer> {
     TempUser findByUserId(Integer userId);
 
     TempUser findByUsername(String username);
+
+    Long deleteByTempConferenceId(Integer tempConfID);
 }
