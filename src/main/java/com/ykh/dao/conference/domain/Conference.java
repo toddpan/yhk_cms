@@ -8,10 +8,6 @@ import com.ykh.common.ParseJSON;
 //import com.ykh.pojo.Product;
 import com.ykh.tang.agent.vo.AutoStopParams;
 import com.ykh.tang.agent.vo.RoleInfo;
-import com.ykh.tang.agent.vo.SubConferenceInfo;
-import org.codehaus.jackson.JsonProcessingException;
-import org.codehaus.jackson.map.ObjectMapper;
-import org.springframework.security.core.GrantedAuthority;
 
 import com.ykh.common.cache.CacheDomain;
 import com.ykh.dao.Request;
@@ -105,9 +101,9 @@ public class Conference implements CacheDomain,Request<Conference>{
 	private  String password;
 	private  Integer confScale;
 	@Convert(converter = ListServiceConfigConverJson.class)
-	private ServiceConfig serviceConfigs;
+	private List<String> serviceConfigs;
 	@Convert(converter = ListRuleInfoConverJson.class)
-	private RuleInfoBody ruleInfos;
+	List<RoleInfo>  ruleInfos;
 	@Transient
 	public Object getId() {
 		return conferenceId;
@@ -300,27 +296,29 @@ public class Conference implements CacheDomain,Request<Conference>{
 		}
 
 	}
-	public  static  class  ListServiceConfigConverJson implements AttributeConverter<ServiceConfig,String>{
+	public  static  class  ListServiceConfigConverJson implements AttributeConverter<Object, String> {
 
 		@Override
-		public String convertToDatabaseColumn(ServiceConfig attribute) {
+		public String convertToDatabaseColumn(Object attribute) {
 			return JSON.toJSONString(attribute);
 		}
 
 		@Override
-		public ServiceConfig convertToEntityAttribute(String dbData) {
-			return JSON.parseObject(dbData,ServiceConfig.class);
+		public List<String> convertToEntityAttribute(String dbData) {
+			return JSON.parseArray(dbData, String.class);
+
 		}
-	}	public  static  class  ListRuleInfoConverJson implements AttributeConverter<RuleInfoBody,String>{
+	}
+	public  static  class  ListRuleInfoConverJson implements AttributeConverter<Object,String>{
 
 		@Override
-		public String convertToDatabaseColumn(RuleInfoBody attribute) {
+		public String convertToDatabaseColumn(Object attribute) {
 			return JSON.toJSONString(attribute);
 		}
 
 		@Override
-		public RuleInfoBody convertToEntityAttribute(String dbData) {
-			return JSON.parseObject(dbData,RuleInfoBody.class);
+		public List<RoleInfo>  convertToEntityAttribute(String dbData) {
+			return JSON.parseArray(dbData, RoleInfo.class);
 		}
 	}
 
@@ -350,19 +348,20 @@ public class Conference implements CacheDomain,Request<Conference>{
 		}
 	}
 
-	public ServiceConfig getServiceConfigs() {
+
+	public List<String> getServiceConfigs() {
 		return serviceConfigs;
 	}
 
-	public void setServiceConfigs(ServiceConfig serviceConfigs) {
+	public void setServiceConfigs(List<String> serviceConfigs) {
 		this.serviceConfigs = serviceConfigs;
 	}
 
-	public RuleInfoBody getRuleInfos() {
+	public List<RoleInfo> getRuleInfos() {
 		return ruleInfos;
 	}
 
-	public void setRuleInfos(RuleInfoBody ruleInfos) {
+	public void setRuleInfos(List<RoleInfo> ruleInfos) {
 		this.ruleInfos = ruleInfos;
 	}
 

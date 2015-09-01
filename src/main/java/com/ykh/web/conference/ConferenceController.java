@@ -1,6 +1,6 @@
 package com.ykh.web.conference;
 
-//import com.ykh.conference.service.impl.ConferenceServiceImpl;
+//import ConferenceServiceImpl;
 import com.ykh.dao.conference.domain.Conference;
 import com.ykh.facade.ConferenceFacade;
 import com.ykh.facade.impl.ConferenceFacadeImpl;

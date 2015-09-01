@@ -2,7 +2,6 @@ package com.ykh.web.conference;
 
 import com.maxc.rest.common.exception.ExceptionCode;
 import com.maxc.rest.common.exception.RestException;
-import com.ykh.conference.service.exception.CMSErrorCode;
 import com.ykh.tang.agent.excep.CMSException;
 import com.ykh.vo.res.Response;
 import org.apache.log4j.Logger;

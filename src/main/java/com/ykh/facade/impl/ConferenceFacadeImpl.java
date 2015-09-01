@@ -3,9 +3,8 @@ package com.ykh.facade.impl;
 import com.maxc.rest.common.RestBeanUtils;
 import com.maxc.rest.common.exception.ResourceNoFoundException;
 import com.maxc.rest.common.exception.RestAssert;
-import com.ykh.conference.service.ConferenceSeedService;
-//import com.ykh.conference.service.ConferenceService;
-import com.ykh.conference.service.ConferenceService;
+//import ConferenceService;
+import com.ykh.services.conference.ConferenceService;
 import com.ykh.dao.conference.ConferenceDao;
 import com.ykh.dao.conference.ConferenceSeedDao;
 import com.ykh.dao.conference.domain.Conference;
@@ -14,11 +13,10 @@ import com.ykh.facade.ConferenceFacade;
 //import com.ykh.tang.agent.ICMSAgent;
 import com.ykh.pojo.User;
 import com.ykh.tang.agent.vo.UserChannel;
-import com.ykh.user.service.UserConferenceService;
+import com.ykh.services.user.UserConferenceService;
 import com.ykh.vo.body.ConferenceSeedBody;
 import com.ykh.vo.res.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 /**

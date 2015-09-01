@@ -150,4 +150,6 @@ public class Consts
 	public static final int UserServiceAddr_key = 0x0040;
 	public static final int SubConferenceInfo_key = 0x0041;
 	public static final int BMSUserInfo_key = 0x0042;
+	public static int ERROR_CODE=0x5fffff01;
+	public static String message="cp userInfo exception.";
 }

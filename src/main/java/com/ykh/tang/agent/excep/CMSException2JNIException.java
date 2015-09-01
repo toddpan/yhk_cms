@@ -1,6 +1,6 @@
 package com.ykh.tang.agent.excep;
 
-import com.ykh.conference.service.exception.JNIException;
+import com.ykh.services.conference.exception.JNIException;
 
 public class CMSException2JNIException {
 

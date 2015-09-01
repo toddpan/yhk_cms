@@ -2,7 +2,7 @@
 //
 //import com.ykh.dao.conference.ConferenceDao;
 //import com.ykh.dao.conference.domain.Conference;
-//import com.ykh.user.service.impl.UserServiceImpl;
+//import UserServiceImpl;
 //import com.ykh.vo.req.LoginInfo;
 //import com.ykh.vo.req.NullResponse;
 //import org.springframework.beans.factory.annotation.Autowired;
