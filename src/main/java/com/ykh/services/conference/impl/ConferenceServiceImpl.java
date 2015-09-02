@@ -1,5 +1,6 @@
 package com.ykh.services.conference.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.maxc.rest.common.ConfigUtil;
 import com.maxc.rest.common.exception.RestException;
 import com.ykh.common.Constants;
@@ -88,7 +89,7 @@ public  class ConferenceServiceImpl implements ConferenceService {
 		icmsAgent.createConferenceWithoutUser(Constants.site, confInfo, YkhUtils.getAllServicetypelist());
 		confJoinTempConfDao.save(confJoinTempConf);
 		//开会
-		logger.info("createConference===> end");
+		logger.info("createConference===> end"+ JSON.toJSONString(confInfo));
 		return  confInfo;
 	}
 	@Override
