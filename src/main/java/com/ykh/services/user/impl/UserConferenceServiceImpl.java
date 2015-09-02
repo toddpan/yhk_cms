@@ -5,6 +5,7 @@ import com.google.common.collect.Lists;
 import com.maxc.rest.common.exception.RestException;
 import com.ykh.common.BeanTranslatorUtil;
 import com.ykh.common.Constants;
+import com.ykh.common.ParseJSON;
 import com.ykh.services.conference.exception.CMSErrorCode;
 import com.ykh.dao.conference.ConfJoinTempConfDao;
 import com.ykh.dao.conference.domain.ConfJoinTempConf;
@@ -81,7 +82,13 @@ public class UserConferenceServiceImpl implements UserConferenceService {
         tempUser.setUserChannel(userChannel);
         //修改
         tempUserDao.save(tempUser);
-        logger.info("userJoinConference  ===> jni end UserChannel"+JSON.toJSONString(userChannel));
+        logger.info("userJoinConference  ===> jni end UserChannel" + JSON.toJSONString(userChannel));
+        logger.info("userJoinConference  ===> jni end UserChannel"+ userChannel.getCtsAddr().get(0).getHotServerIP0());
+        logger.info("userJoinConference  ===> jni end UserChannel"+ userChannel.getCtsAddr().get(0).getHotServerIP1());
+        logger.info("userJoinConference  ===> jni end UserChannel"+ userChannel.getCtsAddr().get(0).getHotServerIP2());
+        logger.info("userJoinConference  ===> jni end UserChannel"+ userChannel.getCtsAddr().get(0).getHotServerIP3());
+        
+
         userChannel.setTempConferenceID(request.getTempConferenceId());
         return userChannel;
     }

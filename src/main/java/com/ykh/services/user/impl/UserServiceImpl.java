@@ -5,7 +5,7 @@
  * Date:2014年8月8日上午11:17:23
  * Copyright (c) 2014 All Rights Reserved.
  *
-*/
+ */
 
 package com.ykh.services.user.impl;
 
@@ -23,7 +23,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public UserDetails loadUserByUsername(String username)
 			throws UsernameNotFoundException {
-	return  userDao.findByUsername(username);
+		return  userDao.findByUsername(username);
 	}
 
 
