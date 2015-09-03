@@ -18,6 +18,7 @@ import com.ykh.dao.Request;
  * @date 2013-2-3 上午1:07:59
  */
 @Entity
+@Table
 public class Conference implements CacheDomain,Request<Conference>{
 	/**
 	 * serialVersionUID:
