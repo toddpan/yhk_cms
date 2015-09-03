@@ -1,88 +1,254 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d4b3055-56c4-442d-b7fc-7e076d0a937e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/State$CacheValue.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/State.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/ConferenceSeedService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/ConferenceService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/Conferenceuserinfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/Conferenceuservalue.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/CtServiceAddr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/DtServiceAddr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/IProductRole.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/ProductRole.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/UserService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/adapter/MapAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/adapter/MapElements.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/exception/CMSErrorCode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/exception/JNIException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/exception/ParameterException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/impl/ConferenceSeedServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/impl/ConferenceServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/impl/Consts.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/impl/GetmessageHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/impl/GetmessageHandlerByGroup.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/impl/WhiteIPList.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/util/BmsSiteUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/util/CMSException2JNIException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/conference/service/util/IPTranslatorUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/user/service/UserService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/user/service/impl/UserServiceImpl.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/web/conference/BaseController.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/web/conference/BaseController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/excep/CMSException2JNIException.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/excep/CMSException2JNIException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/domain/Conference$JpaConverterJson.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/domain/Conference$JpaConverterJson.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/domain/Conference.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/domain/Conference.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/facade/impl/ConferenceFacadeImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/facade/impl/ConferenceFacadeImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/ykh/facade/impl/ConferenceFacadeImplTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/ykh/facade/impl/ConferenceFacadeImplTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/Consts.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/Consts.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/ICMSAgent.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/ICMSAgent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/ICMSAgentImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/ICMSAgentImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/Session.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/common/Session.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/UserChannel.class" afterPath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/UserChannel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/common/BeanTranslatorUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/common/BeanTranslatorUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/Conference.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/Conference.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+    <list default="true" id="409cd922-7d23-4975-906d-ba7453ccc8ac" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/ykh_cms_v01_ykh_cms_v01_exploded.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/CMSBeanUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/Constants.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/ExcecutorUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/MacAddress.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/Monitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/ParseJSON.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/PolicyValue.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/RuntimeUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/Session.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/StringUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/TPoolExecutor$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/TPoolExecutor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/cache/Cache$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/cache/Cache.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/cache/CacheDomain.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/cache/CacheValue.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/cache/DelayItem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/cache/Pair.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/config/PersistenceContext.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/Dao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/GenericsUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/PageRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/Request.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/annotation/DaoHelper$IgnoreValue.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/annotation/DaoHelper$SearchMethod.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/annotation/DaoHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/ConferenceDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/ConferenceSeedDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/domain/ConfJoinTempConf.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/domain/Conference$JpaConverterJson.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/domain/Conference.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/domain/ConferenceSeed.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/suport/DaoSupport.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/suport/GernalDaoSupport.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/suport/PageView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/suport/QueryUtil$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/suport/QueryUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/suport/RepositoryFactoryBean$MyRepositoryFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/suport/RepositoryFactoryBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/DomainDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/GroupDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/OrganizationDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/RoleDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/SessionDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/UserDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/domain/DeliveryGroup.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/domain/Domain.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/domain/Organization.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/domain/Role.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/domain/Session.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/domain/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/facade/ConferenceFacade.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/facade/impl/ConferenceFacadeImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/Consts.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/ICMSAgent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/ICMSAgentImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/ICMSAgentInterface.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/IMessageHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/excep/CMSException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/excep/CMSException2JNIException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/BMSUserInfoInConf.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/BackIp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/BaseConfMsgFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/BaseConfMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/BlackUserMsgFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/BlackUserMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ChangeUserRoleMsgFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ChangeUserRoleMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/Channel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ChannelAndUserInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ChannelInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConfMsgRec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConfStartMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConfStopMsgFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConfStopMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConfSysLockMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConfSysUnlockMsgFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConfUserLockMsgFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConfUserLockMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConfUserUnlockMsgFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConfUserUnlockMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConferenceInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/CreateSubConfMsgFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/CreateSubConfMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ExpelUserMsgFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ExpelUserMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/IMessage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/IMessageHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/Ip.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/JoinUserInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/MsgHeader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/PhoneUserOfflineMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/PhoneUserOnlineMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/PlanStartTime.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/PlanStopTime.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/QueryConfChannelMsgFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/QueryConfChannelMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/QueryConfInfoMsgFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/QueryConfInfoMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/QueryUserListFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/QueryUserListResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ServiceOfflineMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ServiceOnlineMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/StartServiceMsgFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/StartServiceMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/StopServiceMsgFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/StopServiceMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/SubConfInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/SysDTSIPModify.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/Time0.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UnblackUserMsgFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UnblackUserMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UpdateConfConfigMsgFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UpdateConfConfigMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UpdateConfDesMsgFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UpdateConfDesMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserDefineMsgFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserError.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserExitConfMsgFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserExitConfMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserExitSubConfMsgFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserJoinConfResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserJoinSubConfMsgFault.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserJoinSubConfMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserOfflineMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserOnlineMsgResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/AutoStopParams.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/BMSConferenceInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/BMSUserBillInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/BMSUserInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/BMSUserInfoNotify.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/ConferenceBillInfoBMS.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/ConferenceInfoBMS.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/RoleInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/Struct5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/SubConferenceInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/UserChannel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/UserConferenceStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/UserServiceAddr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/body/ConferenceSeedBody.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/req/DeleteComputePool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/req/LoginInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/req/NullResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/BmsResponse$BmsBody.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/BmsResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/ConferenceResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/CreateConferenceResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/Header.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/Job.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/JobResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/LoginResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/OptionConferenceStatusResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/Response.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/UserChannelResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/UserConferenceStatusResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/UserNumResponse$UserNumBody.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/UserNumResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/web/conference/BaseController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/web/conference/ConferenceController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/web/conference/ControllerConstans.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/dev.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/ykh/facade/impl/ConferenceFacadeImplTest.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/BlackIPList.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/BlackIPList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/util/BmsSiteUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/util/BmsSiteUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/exception/CMSErrorCode.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/exception/CMSErrorCode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/util/CMSException2JNIException.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/util/CMSException2JNIException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Cdrconferenceinfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Cdrconferenceinfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Cdrconferencemsg.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Cdrconferencemsg.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Cdrusergroupinfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Cdrusergroupinfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Cdruserinfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Cdruserinfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConfJoinTempConf.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConfJoinTempConf.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/ConferenceBusinessImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/ConferenceBusinessImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/web/conference/ConferenceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/web/conference/ConferenceController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConferenceMessage.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConferenceMessage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/ConferenceService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/ConferenceService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/ConferenceServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/ConferenceServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConferenceSite.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConferenceSite.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConferenceVODemoApp.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConferenceVODemoApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferenceprivilege.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferenceprivilege.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferencerole.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferencerole.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferenceservice.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferenceservice.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConferenceserviceDemoApp.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConferenceserviceDemoApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferenceservicevalue.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferenceservicevalue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferenceuserinfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferenceuserinfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/Conferenceuserinfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/Conferenceuserinfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/Conferenceuservalue.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/Conferenceuservalue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/Consts.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/Consts.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/CtServiceAddr.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/CtServiceAddr.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/CtServiceAddr.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/CtServiceAddr.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/CtServiceAddrDTO.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/CtServiceAddrDTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/DeliveryGroup.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/DeliveryGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/DtServiceAddr.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/DtServiceAddr.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/DtServiceAddr.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/DtServiceAddr.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/DtServiceAddrDTO.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/DtServiceAddrDTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/GetmessageHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/GetmessageHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/GetmessageHandlerByGroup.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/GetmessageHandlerByGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/GroupDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/GroupDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/util/IPTranslatorUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/util/IPTranslatorUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/IProductRole.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/IProductRole.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/exception/JNIException.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/exception/JNIException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/adapter/MapAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/adapter/MapAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/adapter/MapElements.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/adapter/MapElements.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/Organization.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/Organization.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/OrganizationDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/OrganizationDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/exception/ParameterException.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/exception/ParameterException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/PreBillingCode.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/PreBillingCode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/PreBillingCodeScope.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/PreBillingCodeScope.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/PreConfPassCode.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/PreConfPassCode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/PreConfPassCodeScope.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/PreConfPassCodeScope.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Product.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Product.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ProductRole.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ProductRole.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/ProductRole.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/ProductRole.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Productlibtype.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Productlibtype.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/ykh/PushServiceTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/ykh/PushServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/RecordFile.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/RecordFile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/Role.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/Role.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/RoleDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/RoleDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Router.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Router.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Servicelib.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Servicelib.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Servicelibtype.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Servicelibtype.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Servicelibvalue.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Servicelibvalue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/SubConference.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/SubConference.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/TempConferenceInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/TempConferenceInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Tempconfid.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Tempconfid.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Tempuser.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Tempuser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/UserDTO.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/UserDTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/UserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/user/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/user/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/UserServiceDTO.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/UserServiceDTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/user/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/user/impl/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/WhiteIPList.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/WhiteIPList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/WhiteIPList.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/WhiteIPList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
-    <list id="3014eb27-48d3-4899-8d62-c31bffffbd43" name="Failed commit: Default" comment="修改创建会议" />
-    <list id="b07270e0-52cd-49e1-9b47-08e6b9ba46bb" name="Failed commit: Failed commit: Default" comment="修改创建会议" />
-    <list id="6aa4b022-957c-4330-9065-241af4d6ba87" name="Failed commit: Default (2)" comment="rebuild">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/config/AppConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/config/AppConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/common/CMSBeanUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/common/CMSBeanUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/common/cache/Cache.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/common/cache/Cache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/common/cache/CacheDomain.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/common/cache/CacheDomain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/common/cache/CacheValue.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/common/cache/CacheValue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/ConfJoinTempConf.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/ConfJoinTempConf.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConfJoinTempConfDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConfJoinTempConfDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConferenceDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConferenceDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConferenceSeedDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConferenceSeedDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/common/ConfigUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/common/ConfigUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/common/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/common/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/Dao.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/Dao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/annotation/DaoHelper.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/annotation/DaoHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/common/cache/DelayItem.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/common/cache/DelayItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/common/ExcecutorUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/common/ExcecutorUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/GenericsUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/GenericsUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/common/IPTranslatorUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/common/IPTranslatorUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/common/MacAddress.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/common/MacAddress.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/common/Monitor.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/common/Monitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/PageRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/PageRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/common/cache/Pair.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/common/cache/Pair.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/common/ParseJSON.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/common/ParseJSON.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/config/PersistenceContext.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/config/PersistenceContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/common/PolicyValue.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/common/PolicyValue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/Request.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/Request.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/common/RuntimeUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/common/RuntimeUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/common/Session.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/common/Session.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/config/SpringWebAppInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/config/SpringWebAppInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/common/StringUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/common/StringUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/config/WebConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/config/WebConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/common/YkhUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/common/YkhUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ykh_cms_v01.iml" afterPath="$PROJECT_DIR$/ykh_cms_v01.iml" />
     </list>
     <ignored path="ykh_cms_v01.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -105,144 +271,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserChannel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/vo/UserChannel.java">
+      <file leaf-file-name="BeanTranslatorUtil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/common/BeanTranslatorUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="31" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.4178082">
+              <caret line="101" column="13" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
               <folding>
-                <element signature="e#480#481#0" expanded="true" />
-                <element signature="e#501#502#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserConferenceService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/services/user/UserConferenceService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="38" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserConferenceServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/services/user/impl/UserConferenceServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6424242">
-              <caret line="100" column="42" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
-              <folding>
-                <element signature="e#5578#5579#0" expanded="true" />
-                <element signature="e#5605#5606#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CtServiceAddrDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/pojo/CtServiceAddrDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
-              <folding>
-                <element signature="e#873#874#0" expanded="true" />
-                <element signature="e#895#896#0" expanded="true" />
-                <element signature="e#940#941#0" expanded="true" />
-                <element signature="e#971#972#0" expanded="true" />
-                <element signature="e#1006#1007#0" expanded="true" />
-                <element signature="e#1031#1032#0" expanded="true" />
-                <element signature="e#1082#1083#0" expanded="true" />
-                <element signature="e#1119#1120#0" expanded="true" />
-                <element signature="e#1153#1154#0" expanded="true" />
-                <element signature="e#1176#1177#0" expanded="true" />
-                <element signature="e#1224#1225#0" expanded="true" />
-                <element signature="e#1257#1258#0" expanded="true" />
-                <element signature="e#1286#1287#0" expanded="true" />
-                <element signature="e#1304#1305#0" expanded="true" />
-                <element signature="e#1342#1343#0" expanded="true" />
-                <element signature="e#1365#1366#0" expanded="true" />
-                <element signature="e#1397#1398#0" expanded="true" />
-                <element signature="e#1418#1419#0" expanded="true" />
-                <element signature="e#1462#1463#0" expanded="true" />
-                <element signature="e#1491#1492#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceAddr.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/vo/UserServiceAddr.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#439#440#0" expanded="true" />
-                <element signature="e#464#465#0" expanded="true" />
-                <element signature="e#494#495#0" expanded="true" />
-                <element signature="e#517#518#0" expanded="true" />
-                <element signature="e#561#562#0" expanded="true" />
-                <element signature="e#594#595#0" expanded="true" />
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#647#648#0" expanded="true" />
-                <element signature="e#691#692#0" expanded="true" />
-                <element signature="e#724#725#0" expanded="true" />
-                <element signature="e#754#755#0" expanded="true" />
-                <element signature="e#777#778#0" expanded="true" />
-                <element signature="e#821#822#0" expanded="true" />
-                <element signature="e#854#855#0" expanded="true" />
-                <element signature="e#884#885#0" expanded="true" />
-                <element signature="e#907#908#0" expanded="true" />
-                <element signature="e#951#952#0" expanded="true" />
-                <element signature="e#984#985#0" expanded="true" />
-                <element signature="e#1017#1018#0" expanded="true" />
-                <element signature="e#1043#1044#0" expanded="true" />
-                <element signature="e#1093#1094#0" expanded="true" />
-                <element signature="e#1132#1133#0" expanded="true" />
-                <element signature="e#1165#1166#0" expanded="true" />
-                <element signature="e#1191#1192#0" expanded="true" />
-                <element signature="e#1241#1242#0" expanded="true" />
-                <element signature="e#1280#1281#0" expanded="true" />
-                <element signature="e#1313#1314#0" expanded="true" />
-                <element signature="e#1339#1340#0" expanded="true" />
-                <element signature="e#1389#1390#0" expanded="true" />
-                <element signature="e#1428#1429#0" expanded="true" />
-                <element signature="e#1461#1462#0" expanded="true" />
-                <element signature="e#1487#1488#0" expanded="true" />
-                <element signature="e#1537#1538#0" expanded="true" />
-                <element signature="e#1576#1577#0" expanded="true" />
-                <element signature="e#1624#1625#0" expanded="true" />
-                <element signature="e#1661#1662#0" expanded="true" />
-                <element signature="e#1689#1690#0" expanded="true" />
-                <element signature="e#1710#1711#0" expanded="true" />
-                <element signature="e#1750#1751#0" expanded="true" />
-                <element signature="e#1779#1780#0" expanded="true" />
-                <element signature="e#1807#1808#0" expanded="true" />
-                <element signature="e#1828#1829#0" expanded="true" />
-                <element signature="e#1868#1869#0" expanded="true" />
-                <element signature="e#1897#1898#0" expanded="true" />
-                <element signature="e#1922#1923#0" expanded="true" />
-                <element signature="e#1940#1941#0" expanded="true" />
-                <element signature="e#1974#1975#0" expanded="true" />
-                <element signature="e#1997#1998#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceAddr.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../tang-cms-uc/cms_agent/src/com/gnetis/tang/agent/vo/UserServiceAddr.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DtServiceAddrDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/pojo/DtServiceAddrDTO.java">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/pojo/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
@@ -251,34 +293,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestBeanUtils.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/rest_common/rest_common/1.0/rest_common-1.0.jar!/com/maxc/rest/common/RestBeanUtils.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.6">
-              <caret line="227" column="23" selection-start-line="227" selection-start-column="23" selection-end-line="227" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/pojo/UserServiceDTO.java">
+      <file leaf-file-name="IPTranslatorUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/common/IPTranslatorUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="55" column="52" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="52" />
-              <folding>
-                <element signature="e#1165#1166#0" expanded="true" />
-                <element signature="e#1202#1203#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TempUser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/TempUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -286,78 +305,12 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="JUnit4 Test Class" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
-    </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/web/conference/ConferenceController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/pojo/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/user/service/UserConferenceService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/facade/ConferenceFacade.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferenceservice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferenceprivilege.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConferenceMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferenceservicevalue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Servicelibvalue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ProductRole.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Servicelib.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Servicelibtype.java" />
-        <option value="$PROJECT_DIR$/src/main/test/com/ykh/facade/impl/ConferenceFacadeImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/ConferenceServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/sss.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/GetmessageHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/impl/GetmessageHandlerByGroup.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/user/service/impl/UserConferenceServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/web/conference/BaseController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/ICMSAgent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/JniCallBackRegister.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/exception/ParameterException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/exception/UserInfoException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/Consts.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/common/State.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConfJoinTempConfDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/GetmessageHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/TempUserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/common/Session.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/util/IPTranslatorUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/common/IPTranslatorUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/util/BeanTranslatorUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/conference/service/util/BeanTranslatorUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/common/BeanTranslatorUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/ConferenceServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/services/user/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/Conference.java" />
-        <option value="$PROJECT_DIR$/src/main/test/com/ykh/PushServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/ICMSAgentImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/vo/BMSUserInfo.java" />
-        <option value="$PROJECT_DIR$/../../tang-cms-uc/cms_dto/src/com/gnetis/tang/conferencemanagement/serviceinterface/dto/UserServiceDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/pojo/UserDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/pojo/UserServiceDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/vo/res/UserChannelResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/facade/impl/ConferenceFacadeImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/vo/UserChannel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/TempUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/pojo/CtServiceAddrDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/vo/UserServiceAddr.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ykh/services/user/impl/UserConferenceServiceImpl.java" />
-      </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
@@ -370,18 +323,13 @@
         <option name="mavenHome" value="Bundled (Maven 3)" />
       </MavenGeneralSettings>
     </option>
-    <option name="enabledProfiles">
-      <list>
-        <option value="dev" />
-      </list>
-    </option>
   </component>
   <component name="NamedScopeManager">
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
-    <option name="y" value="103" />
+    <option name="x" value="46" />
+    <option name="y" value="23" />
     <option name="width" value="1394" />
     <option name="height" value="877" />
   </component>
@@ -408,6 +356,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -415,10 +364,6 @@
               <option name="myItemId" value="ykh_cms_v01" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -426,25 +371,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: antlr:antlr:2.7.7" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ykh_cms_v01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="antlr-2.7.7.jar" />
+              <option name="myItemId" value="yhk_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -454,17 +381,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ykh_cms_v01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ykh_cms_v01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ykh_cms_v01" />
+              <option name="myItemId" value="yhk_cms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -473,120 +390,13 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ykh_cms_v01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ykh_cms_v01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ykh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ykh_cms_v01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ykh_cms_v01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ykh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ykh_cms_v01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ykh_cms_v01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ykh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conference" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ykh_cms_v01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ykh_cms_v01" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms_dto" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -594,188 +404,8 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/ykh" />
-    <property name="FullScreen" value="false" />
-    <property name="OverrideImplement.combined" value="true" />
-    <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/ant_shake_tree/Downloads/source/ykh_cms_v01/src/main/java/com/ykh/tang/agent/vo/ConferenceInfoBMS.java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../tang-cms-uc" />
   </component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.ykh.dao.conference" />
-      <recent name="com.ykh.facade.impl" />
-      <recent name="com.ykh.conference.service" />
-      <recent name="com.ykh.dao.user" />
-      <recent name="com.ykh.user.service.impl" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.ykh.pojo" />
-      <recent name="com.ykh.dao.conference.domain" />
-      <recent name="com.ykh.web.conference" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/com/ykh/pojo" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/ykh" />
-      <recent name="$PROJECT_DIR$/target/classes" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.ykh.user.service" />
-      <recent name="com.ykh.vo.req" />
-      <recent name="com.ykh.vo.res" />
-      <recent name="com.ykh.facade" />
-      <recent name="com.ykh.conference.service" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main" />
-      <recent name="$PROJECT_DIR$/src/test/java/org/ykh" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.PushServiceTest.testUserChannel">
-    <configuration default="false" name="PushServiceTest.opeanConference" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ykh.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ykh_cms_v01" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ykh" />
-      <option name="MAIN_CLASS_NAME" value="com.ykh.PushServiceTest" />
-      <option name="METHOD_NAME" value="opeanConference" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="PushServiceTest.createConference" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ykh.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ykh_cms_v01" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ykh" />
-      <option name="MAIN_CLASS_NAME" value="com.ykh.PushServiceTest" />
-      <option name="METHOD_NAME" value="createConference" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="PushServiceTest.startConf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ykh.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ykh_cms_v01" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ykh" />
-      <option name="MAIN_CLASS_NAME" value="com.ykh.PushServiceTest" />
-      <option name="METHOD_NAME" value="startConf" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="PushServiceTest.joinConference" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ykh.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ykh_cms_v01" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ykh" />
-      <option name="MAIN_CLASS_NAME" value="com.ykh.PushServiceTest" />
-      <option name="METHOD_NAME" value="joinConference" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="PushServiceTest.testUserChannel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ykh.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ykh_cms_v01" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ykh" />
-      <option name="MAIN_CLASS_NAME" value="com.ykh.PushServiceTest" />
-      <option name="METHOD_NAME" value="testUserChannel" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings />
@@ -976,70 +606,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <pass-parent-envs>true</pass-parent-envs>
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
-      <method />
-    </configuration>
-    <configuration default="false" name="ConferenceFacadeImplTest.test" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ykh.facade.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ykh_cms_v01" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ykh.facade.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.ykh.facade.impl.ConferenceFacadeImplTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="SessionDaoTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ykh.dao.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ykh_cms_v01" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ykh.dao.user" />
-      <option name="MAIN_CLASS_NAME" value="com.ykh.dao.user.SessionDaoTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="false" name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.23" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
@@ -1104,1162 +676,101 @@
       </ConfigurationWrapper>
       <method />
     </configuration>
-    <configuration default="false" name="UserServiceImplTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ykh.user.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ykh_cms_v01" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.ykh.user.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.ykh.user.service.impl.UserServiceImplTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ConferenceFacadeImplTest.test" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.SessionDaoTest" />
-      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.UserServiceImplTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PushServiceTest.opeanConference" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.PushServiceTest.createConference" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.PushServiceTest.startConf" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.PushServiceTest.joinConference" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.PushServiceTest.testUserChannel" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
     </list>
-    <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.PushServiceTest.testUserChannel" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PushServiceTest.joinConference" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PushServiceTest.startConf" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PushServiceTest.createConference" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PushServiceTest.opeanConference" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1d4b3055-56c4-442d-b7fc-7e076d0a937e" name="Default" comment="" />
-      <created>1440121552261</created>
+      <changelist id="409cd922-7d23-4975-906d-ba7453ccc8ac" name="Default" comment="" />
+      <created>1441322148327</created>
       <option name="number" value="Default" />
-      <updated>1440121552261</updated>
-      <workItem from="1440121553468" duration="5173000" />
-      <workItem from="1440126845507" duration="1801000" />
-      <workItem from="1440135663124" duration="1945000" />
-      <workItem from="1440141894671" duration="103000" />
-      <workItem from="1440142045666" duration="20000" />
-      <workItem from="1440142151197" duration="4087000" />
-      <workItem from="1440152863138" duration="352000" />
-      <workItem from="1440164172307" duration="6465000" />
-      <workItem from="1440332871462" duration="174000" />
-      <workItem from="1440379173897" duration="12354000" />
-      <workItem from="1440401982933" duration="2000" />
-      <workItem from="1440402008966" duration="789000" />
-      <workItem from="1440403513442" duration="260000" />
-      <workItem from="1440404123918" duration="26000" />
-      <workItem from="1440404210407" duration="201000" />
-      <workItem from="1440404462574" duration="1577000" />
-      <workItem from="1440407522926" duration="1383000" />
-      <workItem from="1440409676332" duration="2637000" />
-      <workItem from="1440470093606" duration="1725000" />
-      <workItem from="1440475303278" duration="241000" />
-      <workItem from="1440478636138" duration="5000" />
-      <workItem from="1440478669356" duration="440000" />
-      <workItem from="1440484550383" duration="667000" />
-      <workItem from="1440512881914" duration="703000" />
-      <workItem from="1440548284343" duration="962000" />
-      <workItem from="1440581390122" duration="48000" />
-      <workItem from="1440583775827" duration="1167000" />
-      <workItem from="1440585057056" duration="14000" />
-      <workItem from="1440585124672" duration="147000" />
-      <workItem from="1440585299403" duration="15000" />
-      <workItem from="1440585455155" duration="2250000" />
-      <workItem from="1440638229779" duration="1261000" />
-      <workItem from="1440639805169" duration="1915000" />
-      <workItem from="1440642737268" duration="158000" />
-      <workItem from="1440643038787" duration="70000" />
-      <workItem from="1440643597840" duration="1051000" />
-      <workItem from="1440645404038" duration="2079000" />
-      <workItem from="1440656794585" duration="21000" />
-      <workItem from="1440658312728" duration="158000" />
-      <workItem from="1440675061015" duration="2174000" />
-      <workItem from="1440678448159" duration="1231000" />
-      <workItem from="1440723979029" duration="128000" />
-      <workItem from="1440724718559" duration="1945000" />
-      <workItem from="1440728631968" duration="84000" />
-      <workItem from="1440743691527" duration="361000" />
-      <workItem from="1440744302279" duration="164000" />
-      <workItem from="1440744542448" duration="173000" />
-      <workItem from="1440769950625" duration="4971000" />
-      <workItem from="1440806892479" duration="444000" />
-      <workItem from="1440810261087" duration="676000" />
-      <workItem from="1440823417083" duration="6035000" />
-      <workItem from="1440830824594" duration="394000" />
-      <workItem from="1440831328793" duration="531000" />
-      <workItem from="1440831904902" duration="1321000" />
-      <workItem from="1440833495690" duration="1312000" />
-      <workItem from="1440834864366" duration="94000" />
-      <workItem from="1440835203569" duration="170000" />
-      <workItem from="1440860001781" duration="4408000" />
-      <workItem from="1440905409127" duration="4165000" />
-      <workItem from="1440917467423" duration="65000" />
-      <workItem from="1440919674792" duration="6682000" />
-      <workItem from="1440934778546" duration="257000" />
-      <workItem from="1440935051645" duration="1060000" />
-      <workItem from="1440937797430" duration="174000" />
-      <workItem from="1440938352457" duration="4615000" />
-      <workItem from="1441072489707" duration="809000" />
-      <workItem from="1441074679705" duration="323000" />
-      <workItem from="1441080091946" duration="846000" />
-      <workItem from="1441085908636" duration="44000" />
-      <workItem from="1441112350511" duration="1681000" />
-      <workItem from="1441118228498" duration="4641000" />
-      <workItem from="1441206406764" duration="4911000" />
-      <workItem from="1441244514213" duration="681000" />
-      <workItem from="1441251643260" duration="3788000" />
+      <updated>1441322148327</updated>
+      <workItem from="1441322150327" duration="308000" />
     </task>
-    <task id="LOCAL-00001" summary="userjoinconf">
-      <created>1440647108492</created>
+    <task id="LOCAL-00001" summary="最新修改">
+      <created>1441322373119</created>
       <option name="number" value="00001" />
       <option name="project" value="LOCAL" />
-      <updated>1440647108492</updated>
+      <updated>1441322373119</updated>
     </task>
-    <task id="LOCAL-00002" summary="agent 加载位置调整。">
-      <created>1440658418914</created>
-      <option name="number" value="00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1440658418914</updated>
-    </task>
-    <task id="LOCAL-00003" summary="测试 openConf">
-      <created>1440679047268</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1440679047268</updated>
-    </task>
-    <task id="LOCAL-00004" summary="测试 openConf">
-      <created>1440724741873</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1440724741873</updated>
-    </task>
-    <task id="LOCAL-00005" summary="获取临时会议Id出现错误，验证非空。">
-      <created>1440725834196</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1440725834196</updated>
-    </task>
-    <task id="LOCAL-00006" summary="修改创建会议逻辑，添加模版">
-      <created>1440772152272</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1440772152272</updated>
-    </task>
-    <task id="LOCAL-00007" summary="修改创建会议逻辑，添加模版">
-      <created>1440772457363</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1440772457363</updated>
-    </task>
-    <task id="LOCAL-00008" summary="测试">
-      <created>1440772980536</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1440772980536</updated>
-    </task>
-    <task id="LOCAL-00009" summary="草">
-      <created>1440773472532</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1440773472532</updated>
-    </task>
-    <task id="LOCAL-00010" summary="草">
-      <created>1440773628054</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1440773628054</updated>
-    </task>
-    <task id="LOCAL-00011" summary="草">
-      <created>1440807195246</created>
-      <option name="number" value="00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1440807195246</updated>
-    </task>
-    <task id="LOCAL-00012" summary="草">
-      <created>1440827156789</created>
-      <option name="number" value="00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1440827156789</updated>
-    </task>
-    <task id="LOCAL-00013" summary="修改seed 的实现">
-      <created>1440829710965</created>
-      <option name="number" value="00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1440829710965</updated>
-    </task>
-    <task id="LOCAL-00014" summary="修改seed 的实现">
-      <created>1440830447208</created>
-      <option name="number" value="00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1440830447208</updated>
-    </task>
-    <task id="LOCAL-00015" summary="修改seed 的实现">
-      <created>1440830572013</created>
-      <option name="number" value="00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1440830572013</updated>
-    </task>
-    <task id="LOCAL-00016" summary="修改seed 的实现">
-      <created>1440831012782</created>
-      <option name="number" value="00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1440831012782</updated>
-    </task>
-    <task id="LOCAL-00017" summary="add log&#10;">
-      <created>1440832362971</created>
-      <option name="number" value="00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1440832362971</updated>
-    </task>
-    <task id="LOCAL-00018" summary="add log&#10;">
-      <created>1440834704867</created>
-      <option name="number" value="00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1440834704867</updated>
-    </task>
-    <task id="LOCAL-00019" summary="add log&#10;">
-      <created>1440835337808</created>
-      <option name="number" value="00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1440835337808</updated>
-    </task>
-    <task id="LOCAL-00020" summary="add log&#10;add start stop join test and update site error&#10;">
-      <created>1440860806079</created>
-      <option name="number" value="00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1440860806079</updated>
-    </task>
-    <task id="LOCAL-00021" summary="add log&#10;add start stop join test and update site error&#10;">
-      <created>1440863735305</created>
-      <option name="number" value="00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1440863735305</updated>
-    </task>
-    <task id="LOCAL-00022" summary="add log&#10;add start stop join test and update site error&#10;">
-      <created>1440864313529</created>
-      <option name="number" value="00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1440864313529</updated>
-    </task>
-    <task id="LOCAL-00023" summary="add log&#10;add start stop join test and update site error&#10;">
-      <created>1440909391245</created>
-      <option name="number" value="00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1440909391245</updated>
-    </task>
-    <task id="LOCAL-00024" summary="add log&#10;add start stop join test and update site error&#10;">
-      <created>1440909592939</created>
-      <option name="number" value="00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1440909592939</updated>
-    </task>
-    <task id="LOCAL-00025" summary="add log&#10;add start stop join test and update site error&#10;">
-      <created>1440920025962</created>
-      <option name="number" value="00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1440920025962</updated>
-    </task>
-    <task id="LOCAL-00026" summary="add log&#10;add start stop join test and update site error&#10;">
-      <created>1440924567215</created>
-      <option name="number" value="00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1440924567215</updated>
-    </task>
-    <task id="LOCAL-00027" summary="提交最新加入会议">
-      <created>1440924825754</created>
-      <option name="number" value="00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1440924825754</updated>
-    </task>
-    <task id="LOCAL-00028" summary="提交最新加入会议">
-      <created>1440925818631</created>
-      <option name="number" value="00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1440925818631</updated>
-    </task>
-    <task id="LOCAL-00029" summary="提交最新加入会议">
-      <created>1440926486098</created>
-      <option name="number" value="00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1440926486098</updated>
-    </task>
-    <task id="LOCAL-00030" summary="修改创建会议">
-      <created>1440928389254</created>
-      <option name="number" value="00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1440928389254</updated>
-    </task>
-    <task id="LOCAL-00031" summary="修改创建会议">
-      <created>1440929218437</created>
-      <option name="number" value="00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1440929218437</updated>
-    </task>
-    <task id="LOCAL-00032" summary="修改创建会议">
-      <created>1440929585743</created>
-      <option name="number" value="00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1440929585743</updated>
-    </task>
-    <task id="LOCAL-00033" summary="修改创建会议">
-      <created>1440937946398</created>
-      <option name="number" value="00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1440937946398</updated>
-    </task>
-    <task id="LOCAL-00034" summary="修改创建会议">
-      <created>1440938773762</created>
-      <option name="number" value="00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1440938773762</updated>
-    </task>
-    <task id="LOCAL-00035" summary="修改创建会议">
-      <created>1440939037043</created>
-      <option name="number" value="00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1440939037043</updated>
-    </task>
-    <task id="LOCAL-00036" summary="修改创建会议">
-      <created>1440940864432</created>
-      <option name="number" value="00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1440940864432</updated>
-    </task>
-    <task id="LOCAL-00037" summary="修改创建会议">
-      <created>1440942169564</created>
-      <option name="number" value="00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1440942169564</updated>
-    </task>
-    <task id="LOCAL-00038" summary="修改创建会议">
-      <created>1440943645264</created>
-      <option name="number" value="00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1440943645264</updated>
-    </task>
-    <task id="LOCAL-00039" summary="rebuild">
-      <created>1441120649741</created>
-      <option name="number" value="00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1441120649741</updated>
-    </task>
-    <task id="LOCAL-00040" summary="rebuild">
-      <created>1441124872866</created>
-      <option name="number" value="00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1441124872866</updated>
-    </task>
-    <task id="LOCAL-00041" summary="rebuild">
-      <created>1441206831731</created>
-      <option name="number" value="00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1441206831731</updated>
-    </task>
-    <task id="LOCAL-00042" summary="rebuild">
-      <created>1441207070273</created>
-      <option name="number" value="00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1441207070273</updated>
-    </task>
-    <task id="LOCAL-00043" summary="rebuild">
-      <created>1441210395663</created>
-      <option name="number" value="00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1441210395663</updated>
-    </task>
-    <task id="LOCAL-00044" summary="rebuild">
-      <created>1441210442758</created>
-      <option name="number" value="00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1441210442758</updated>
-    </task>
-    <task id="LOCAL-00045" summary="rebuild">
-      <created>1441244232272</created>
-      <option name="number" value="00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1441244232272</updated>
-    </task>
-    <task id="LOCAL-00046" summary="sssss">
-      <created>1441244346400</created>
-      <option name="number" value="00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1441244346400</updated>
-    </task>
-    <task id="LOCAL-00047" summary="sssss">
-      <created>1441244722123</created>
-      <option name="number" value="00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1441244722123</updated>
-    </task>
-    <task id="LOCAL-00048" summary="sssss">
-      <created>1441255716464</created>
-      <option name="number" value="00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1441255716464</updated>
-    </task>
-    <option name="localTasksCounter" value="49" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115804000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="308000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="103" width="1394" height="877" extended-state="0" />
+    <frame x="46" y="23" width="1394" height="877" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33375797" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5694268" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32356688" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24482249" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35031846" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
-    <layout-to-restore>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5694268" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28550297" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35031846" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299363" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33375797" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32356688" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
-  </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <confirmMoveToFailedCommit value="2" />
-    <MESSAGE value="userjoinconf" />
-    <MESSAGE value="agent 加载位置调整。" />
-    <MESSAGE value="测试 openConf" />
-    <MESSAGE value="获取临时会议Id出现错误，验证非空。" />
-    <MESSAGE value="修改创建会议逻辑，添加模版" />
-    <MESSAGE value="测试" />
-    <MESSAGE value="草" />
-    <MESSAGE value="修改seed 的实现" />
-    <MESSAGE value="add log&#10;" />
-    <MESSAGE value="add log&#10;add start stop join test and update site error&#10;" />
-    <MESSAGE value="提交最新加入会议" />
-    <MESSAGE value="修改创建会议" />
-    <MESSAGE value="rebuild" />
-    <MESSAGE value="sssss" />
-    <option name="LAST_COMMIT_MESSAGE" value="sssss" />
+    <MESSAGE value="最新修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="最新修改" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ykh/facade/impl/ConferenceFacadeImpl.java</url>
-          <line>70</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/../../tang-cms-uc/cms_dto/lib/tang-calendar.jar!/com/gnet/tang/calendar/entity/ConferenceEvent.class</url>
-          <line>7</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/vo/UserChannel.java</url>
-          <line>47</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="11" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/ConfJoinTempConfDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/user/TempUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/GetmessageHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.08">
-          <caret line="369" column="30" selection-start-line="369" selection-start-column="30" selection-end-line="369" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/common/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="108" column="1" selection-start-line="108" selection-start-column="1" selection-end-line="108" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/services/conference/util/IPTranslatorUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/common/IPTranslatorUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/config/PersistenceContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/config/SpringWebAppInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/config/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/services/conference/ConferenceSeedService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/ConferenceBusinessImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/Consts.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/pojo/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/ConferenceSeedServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../tang-cms-uc/cms_manager/src/main/java/com/gnetis/tang/conferencemanagement/util/BeanTranslatorUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6472946">
-          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/common/BeanTranslatorUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="275" column="0" selection-start-line="275" selection-start-column="0" selection-end-line="275" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2035#2043#0" expanded="true" />
-            <element signature="e#2333#2341#0" expanded="true" />
-            <element signature="e#9315#9330#0" expanded="true" />
-            <element signature="e#10104#10119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferencerole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/ykh/dao/user/SessionDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/web/conference/ControllerConstans.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/web/conference/ConferenceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.259259">
-          <caret line="71" column="39" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/vo/ConferenceInfoBMS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/ICMSAgentInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/config/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/conference/domain/Conference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/message/UserJoinConfResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/ykh/PushServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51229507">
-          <caret line="492" column="11" selection-start-line="492" selection-start-column="11" selection-end-line="492" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/services/user/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5614267">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4178082">
+          <caret line="101" column="13" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="108" column="17" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/ICMSAgentImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="579" column="48" selection-start-line="579" selection-start-column="45" selection-end-line="579" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../tang-cms-uc/cms_agent/src/com/gnetis/tang/agent/vo/BMSUserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="24" />
-          <folding>
-            <element signature="e#1108#1109#0" expanded="true" />
-            <element signature="e#1127#1128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/vo/BMSUserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../tang-cms-uc/cms_agent/src/com/gnetis/tang/agent/vo/UserChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/facade/ConferenceFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../tang-cms-uc/cms_dto/src/com/gnetis/tang/conferencemanagement/serviceinterface/dto/CtServiceAddrDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/pojo/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../tang-cms-uc/cms_dto/src/com/gnetis/tang/conferencemanagement/serviceinterface/dto/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../tang-cms-uc/cms_dto/src/com/gnetis/tang/conferencemanagement/serviceinterface/dto/UserServiceDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
-          <folding>
-            <element signature="e#1120#1121#0" expanded="true" />
-            <element signature="e#1145#1146#0" expanded="true" />
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1248#1249#0" expanded="true" />
-            <element signature="e#1327#1328#0" expanded="true" />
-            <element signature="e#1352#1353#0" expanded="true" />
-            <element signature="e#1418#1419#0" expanded="true" />
-            <element signature="e#1455#1456#0" expanded="true" />
-            <element signature="e#1509#1510#0" expanded="true" />
-            <element signature="e#1527#1528#0" expanded="true" />
-            <element signature="e#1564#1565#0" expanded="true" />
-            <element signature="e#1587#1588#0" expanded="true" />
-            <element signature="e#1626#1627#0" expanded="true" />
-            <element signature="e#1655#1656#0" expanded="true" />
-            <element signature="e#1714#1715#0" expanded="true" />
-            <element signature="e#1759#1760#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/vo/res/UserChannelResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.62963">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#630#631#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/services/conference/ConferenceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="45" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/ConferenceServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/services/conference/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/facade/impl/ConferenceFacadeImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="140" column="71" selection-start-line="140" selection-start-column="71" selection-end-line="140" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/services/user/UserConferenceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/TempUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/rest_common/rest_common/1.0/rest_common-1.0.jar!/com/maxc/rest/common/RestBeanUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.6">
-          <caret line="227" column="23" selection-start-line="227" selection-start-column="23" selection-end-line="227" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/pojo/UserServiceDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="55" column="52" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="52" />
-          <folding>
-            <element signature="e#1165#1166#0" expanded="true" />
-            <element signature="e#1202#1203#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/vo/UserChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="31" />
-          <folding>
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/pojo/DtServiceAddrDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../tang-cms-uc/cms_agent/src/com/gnetis/tang/agent/vo/UserServiceAddr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/pojo/CtServiceAddrDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
-          <folding>
-            <element signature="e#873#874#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
-            <element signature="e#1031#1032#0" expanded="true" />
-            <element signature="e#1082#1083#0" expanded="true" />
-            <element signature="e#1119#1120#0" expanded="true" />
-            <element signature="e#1153#1154#0" expanded="true" />
-            <element signature="e#1176#1177#0" expanded="true" />
-            <element signature="e#1224#1225#0" expanded="true" />
-            <element signature="e#1257#1258#0" expanded="true" />
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1304#1305#0" expanded="true" />
-            <element signature="e#1342#1343#0" expanded="true" />
-            <element signature="e#1365#1366#0" expanded="true" />
-            <element signature="e#1397#1398#0" expanded="true" />
-            <element signature="e#1418#1419#0" expanded="true" />
-            <element signature="e#1462#1463#0" expanded="true" />
-            <element signature="e#1491#1492#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/tang/agent/vo/UserServiceAddr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#884#885#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-            <element signature="e#951#952#0" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
-            <element signature="e#1165#1166#0" expanded="true" />
-            <element signature="e#1191#1192#0" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
-            <element signature="e#1280#1281#0" expanded="true" />
-            <element signature="e#1313#1314#0" expanded="true" />
-            <element signature="e#1339#1340#0" expanded="true" />
-            <element signature="e#1389#1390#0" expanded="true" />
-            <element signature="e#1428#1429#0" expanded="true" />
-            <element signature="e#1461#1462#0" expanded="true" />
-            <element signature="e#1487#1488#0" expanded="true" />
-            <element signature="e#1537#1538#0" expanded="true" />
-            <element signature="e#1576#1577#0" expanded="true" />
-            <element signature="e#1624#1625#0" expanded="true" />
-            <element signature="e#1661#1662#0" expanded="true" />
-            <element signature="e#1689#1690#0" expanded="true" />
-            <element signature="e#1710#1711#0" expanded="true" />
-            <element signature="e#1750#1751#0" expanded="true" />
-            <element signature="e#1779#1780#0" expanded="true" />
-            <element signature="e#1807#1808#0" expanded="true" />
-            <element signature="e#1828#1829#0" expanded="true" />
-            <element signature="e#1868#1869#0" expanded="true" />
-            <element signature="e#1897#1898#0" expanded="true" />
-            <element signature="e#1922#1923#0" expanded="true" />
-            <element signature="e#1940#1941#0" expanded="true" />
-            <element signature="e#1974#1975#0" expanded="true" />
-            <element signature="e#1997#1998#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/services/user/impl/UserConferenceServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6424242">
-          <caret line="100" column="42" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
-          <folding>
-            <element signature="e#5578#5579#0" expanded="true" />
-            <element signature="e#5605#5606#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>ykh_cms_v01:war</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Web</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>ykh_cms_v01</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
