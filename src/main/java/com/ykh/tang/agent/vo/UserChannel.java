@@ -37,7 +37,7 @@ public class UserChannel
 		dtsAddr = Addr;
 	}
 	
-	public List getArrayInstance(){
+	public Object getArrayInstance(){
 		return new ArrayList<UserServiceAddr>();
 	}
 	public int getTempConferenceID()
