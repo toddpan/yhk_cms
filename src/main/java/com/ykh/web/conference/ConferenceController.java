@@ -16,13 +16,13 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/conference")
 //@Controller
 public class ConferenceController {
-    //	@Autowired ConferenceServiceImpl userServcie;
-    @Autowired
+//	@Autowired ConferenceServiceImpl userServcie;
+	@Autowired
     ConferenceFacade conferenceFacade;
     @RequestMapping(value = "/conference/{id}/{status}", method = RequestMethod.GET)
     public @ResponseBody
     Conference loginSession(@PathVariable int id,
-                            @PathVariable boolean status) {
+            @PathVariable boolean status) {
 
         return new Conference();
     }
@@ -53,16 +53,16 @@ public class ConferenceController {
 
 
 
-    public Integer queryUserNum(String applicationID, Integer tempConfID)
-            throws Exception {
-        // TODO Auto-generated method stub
-        return null;
-    }
+	public Integer queryUserNum(String applicationID, Integer tempConfID)
+			throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
-    @RequestMapping(value = "/openConference", method = RequestMethod.POST, consumes = { ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML }, produces = {ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML })
-    public @ResponseBody ConferenceResponse OpenConference(@RequestBody Conference conference){
-        return conferenceFacade.openConference(conference);
-    }
+	@RequestMapping(value = "/openConference", method = RequestMethod.POST, consumes = { ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML }, produces = {ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML })
+	public @ResponseBody ConferenceResponse OpenConference(@RequestBody Conference conference){
+		return conferenceFacade.openConference(conference);
+	}
     @RequestMapping(value = "/modifyConference ", method = RequestMethod.POST, consumes = { ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML }, produces = {ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML })
     public @ResponseBody ConferenceResponse modifyConference(@RequestBody Conference conference){
         return conferenceFacade.modifyConference(conference);
@@ -82,7 +82,7 @@ public class ConferenceController {
     }
     @RequestMapping(value = "/queryUserNum", method = RequestMethod.POST, consumes = { ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML }, produces = {ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML })
     public UserNumResponse queryUserNum(@RequestBody ConferenceSeedBody conference){
-        return conferenceFacade.queryUserNum(conference);
+           return conferenceFacade.queryUserNum(conference);
     }
     @RequestMapping(value = "/getUserConferenceStatus", method = RequestMethod.POST, consumes = { ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML }, produces = {ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML })
     public UserConferenceStatusResponse getUserConferenceStatus(@RequestBody ConferenceSeedBody conference) throws Exception {

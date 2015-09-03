@@ -5,8 +5,6 @@ import com.google.common.collect.Lists;
 
 import com.ykh.common.BeanTranslatorUtil;
 import com.ykh.dao.conference.domain.Conference;
-
-
 import com.ykh.pojo.User;
 import com.ykh.tang.agent.excep.CMSException;
 import com.ykh.tang.agent.message.ConfStartMsgResult;
@@ -468,19 +466,16 @@ public class PushServiceTest {
 	}
 	private User buildUser() {
 
-		List<String> rolemap = Lists.newArrayList();
-		rolemap.add("1");
-		rolemap.add("2");
-//		rolemap.put(4);
-//		rolemap.put(5, new ArrayList<Integer>());
-//		rolemap.put(10, new ArrayList<Integer>());
-//		rolemap.put(11, new ArrayList<Integer>());
-//		rolemap.put(12, new ArrayList<Integer>());
-//		rolemap.put(13, new ArrayList<Integer>());
-//		rolemap.put(14, new ArrayList<Integer>());
+		Map<Integer, List<Integer>> rolemap = new HashMap<Integer, List<Integer>>();
+		rolemap.put(4, new ArrayList<Integer>());
+		rolemap.put(5, new ArrayList<Integer>());
+		rolemap.put(10, new ArrayList<Integer>());
+		rolemap.put(11, new ArrayList<Integer>());
+		rolemap.put(12, new ArrayList<Integer>());
+		rolemap.put(13, new ArrayList<Integer>());
+		rolemap.put(14, new ArrayList<Integer>());
 
 		User user = new User();
-
 		user.setTempConferenceId(5701632);
 		user.setUsername("liming");
 		user.setUserStatus(0);

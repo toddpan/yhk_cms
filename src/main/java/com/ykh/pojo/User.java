@@ -12,8 +12,6 @@
 
 package com.ykh.pojo;
 
-import com.google.common.collect.Lists;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -22,7 +20,7 @@ import java.util.Map;
  * ClassName:User
  * <p>
  * ClassDesc：临时缓存用户对象，主要为实现用户列表
- *
+ * 
  * @author admin
  * @version 1.0
  * @since Ver 1.0
@@ -33,7 +31,7 @@ public class User implements java.io.Serializable {
 	// Fields
 
 	private static final long serialVersionUID = 1L;
-	private Integer seqNo;
+	private Integer seqNo; 
 	private Integer tempuserid;
 	private String username;
 	private Integer clientType;
@@ -44,7 +42,7 @@ public class User implements java.io.Serializable {
 	private Integer userStatus;
 
 	private Integer tempConferenceId;
-	private List<String> rolemap = Lists.newArrayList();
+	private Map<Integer, List<Integer>> rolemap = new HashMap<Integer, List<Integer>>();
 
 	// Constructors
 	/** default constructor */
@@ -53,7 +51,7 @@ public class User implements java.io.Serializable {
 
 	/** full constructor */
 	public User(Integer tempuserid, String userName, Integer clientType, Integer pinCode, Integer domain, String ipaddr, Boolean isowner, Integer userStatus,
-			List<String> rolemap) {
+			Map<Integer, List<Integer>> rolemap) {
 		this.tempuserid = tempuserid;
 		this.username = userName;
 		this.clientType = clientType;
@@ -100,7 +98,7 @@ public class User implements java.io.Serializable {
 
 	/**
 	 * clientType
-	 *
+	 * 
 	 * @return the clientType
 	 * @since CodingExample Ver 1.0
 	 */
@@ -111,7 +109,7 @@ public class User implements java.io.Serializable {
 
 	/**
 	 * clientType
-	 *
+	 * 
 	 * @param clientType the clientType to set
 	 * @since Ver 1.0
 	 */
@@ -122,7 +120,7 @@ public class User implements java.io.Serializable {
 
 	/**
 	 * domain
-	 *
+	 * 
 	 * @return the domain
 	 * @since CodingExample Ver 1.0
 	 */
@@ -133,7 +131,7 @@ public class User implements java.io.Serializable {
 
 	/**
 	 * domain
-	 *
+	 * 
 	 * @param domain the domain to set
 	 * @since Ver 1.0
 	 */
@@ -142,11 +140,25 @@ public class User implements java.io.Serializable {
 		this.domain = domain;
 	}
 
-	public List<String> getRolemap() {
+	// Property accessors
+
+	/**
+	 * rolemap
+	 * 
+	 * @return the rolemap
+	 */
+
+	public Map<Integer, List<Integer>> getRolemap() {
 		return rolemap;
 	}
 
-	public void setRolemap(List<String> rolemap) {
+	/**
+	 * rolemap
+	 * 
+	 * @param rolemap the rolemap to set
+	 */
+
+	public void setRolemap(Map<Integer, List<Integer>> rolemap) {
 		this.rolemap = rolemap;
 	}
 
@@ -169,7 +181,7 @@ public class User implements java.io.Serializable {
 
 	/**
 	 * isowner
-	 *
+	 * 
 	 * @return the isowner
 	 */
 
@@ -179,7 +191,7 @@ public class User implements java.io.Serializable {
 
 	/**
 	 * isowner
-	 *
+	 * 
 	 * @param isowner the isowner to set
 	 */
 
@@ -189,7 +201,7 @@ public class User implements java.io.Serializable {
 
 	/**
 	 * ipaddr
-	 *
+	 * 
 	 * @return the ipaddr
 	 */
 
@@ -199,7 +211,7 @@ public class User implements java.io.Serializable {
 
 	/**
 	 * ipaddr
-	 *
+	 * 
 	 * @param ipaddr the ipaddr to set
 	 */
 
@@ -209,7 +221,7 @@ public class User implements java.io.Serializable {
 
 	/**
 	 * userStatus
-	 *
+	 * 
 	 * @return the userStatus
 	 */
 
@@ -219,7 +231,7 @@ public class User implements java.io.Serializable {
 
 	/**
 	 * userStatus
-	 *
+	 * 
 	 * @param userStatus the userStatus to set
 	 */
 
@@ -234,7 +246,7 @@ public class User implements java.io.Serializable {
 	public void setPinCode(Integer pinCode) {
 		this.pinCode = pinCode;
 	}
-
+	
 	public Integer getSeqNo() {
 		return seqNo;
 	}

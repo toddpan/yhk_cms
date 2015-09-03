@@ -5,7 +5,6 @@ import com.maxc.rest.common.ConfigUtil;
 import com.maxc.rest.common.exception.RestException;
 import com.ykh.common.Constants;
 import com.ykh.common.YkhUtils;
-import com.ykh.pojo.User;
 import com.ykh.services.conference.ConferenceSeedService;
 import com.ykh.services.conference.exception.CMSErrorCode;
 import com.ykh.dao.conference.ConfJoinTempConfDao;
@@ -19,6 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.ykh.dao.conference.domain.Conference;
+import com.ykh.dao.user.domain.User;
 
 @Service
 public  class ConferenceServiceImpl implements ConferenceService {

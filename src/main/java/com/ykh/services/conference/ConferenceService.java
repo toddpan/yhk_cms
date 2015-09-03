@@ -2,7 +2,7 @@ package com.ykh.services.conference;
 
 import com.ykh.dao.conference.domain.ConfJoinTempConf;
 import com.ykh.dao.conference.domain.Conference;
-import com.ykh.pojo.User;
+import com.ykh.dao.user.domain.User;
 import com.ykh.tang.agent.vo.ConferenceInfoBMS;
 import com.ykh.tang.agent.vo.UserChannel;
 import com.ykh.tang.agent.vo.UserConferenceStatus;

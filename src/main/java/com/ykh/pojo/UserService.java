@@ -19,7 +19,7 @@ import java.util.List;
  * ClassName:UserServiceAddr
  * <p>
  * ClassDesc：用简单的话描述本类
- *
+ * 
  * @author admin
  * @version 1.0
  * @since Ver 1.0
@@ -53,7 +53,7 @@ public class UserService implements Serializable {
 	 * ctsaddrlist
 	 * @return  the ctsaddrlist
 	 */
-
+	
 	public List<CtServiceAddr> getCtsaddrlist() {
 		return ctsaddrlist;
 	}
@@ -62,7 +62,7 @@ public class UserService implements Serializable {
 	 * ctsaddrlist
 	 * @param   ctsaddrlist    the ctsaddrlist to set
 	 */
-
+	
 	public void setCtsaddrlist(List<CtServiceAddr> ctsaddrlist) {
 		this.ctsaddrlist = ctsaddrlist;
 	}
@@ -71,7 +71,7 @@ public class UserService implements Serializable {
 	 * dtsaddrlist
 	 * @return  the dtsaddrlist
 	 */
-
+	
 	public List<DtServiceAddr> getDtsaddrlist() {
 		return dtsaddrlist;
 	}
@@ -80,14 +80,14 @@ public class UserService implements Serializable {
 	 * dtsaddrlist
 	 * @param   dtsaddrlist    the dtsaddrlist to set
 	 */
-
+	
 	public void setDtsaddrlist(List<DtServiceAddr> dtsaddrlist) {
 		this.dtsaddrlist = dtsaddrlist;
 	}
 
 	/**
 	 * user
-	 *
+	 * 
 	 * @return the user
 	 */
 
@@ -97,7 +97,7 @@ public class UserService implements Serializable {
 
 	/**
 	 * user
-	 *
+	 * 
 	 * @param user the user to set
 	 */
 
@@ -107,7 +107,7 @@ public class UserService implements Serializable {
 
 	/**
 	 * tempconfernceid
-	 *
+	 * 
 	 * @return the tempconfernceid
 	 */
 
@@ -117,7 +117,7 @@ public class UserService implements Serializable {
 
 	/**
 	 * tempconfernceid
-	 *
+	 * 
 	 * @param tempconfernceid the tempconfernceid to set
 	 */
 
