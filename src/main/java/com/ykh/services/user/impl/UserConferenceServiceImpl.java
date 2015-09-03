@@ -83,10 +83,7 @@ public class UserConferenceServiceImpl implements UserConferenceService {
         //修改
         tempUserDao.save(tempUser);
         logger.info("userJoinConference  ===> jni end UserChannel" + ParseJSON.toJson(userChannel));
-        logger.info("userJoinConference  ===> jni end UserChannel"+ userChannel.getCtsAddr().get(0).getHotServerIP0());
-        logger.info("userJoinConference  ===> jni end UserChannel"+ userChannel.getCtsAddr().get(0).getHotServerIP1());
-        logger.info("userJoinConference  ===> jni end UserChannel"+ userChannel.getCtsAddr().get(0).getHotServerIP2());
-        logger.info("userJoinConference  ===> jni end UserChannel"+ userChannel.getCtsAddr().get(0).getHotServerIP3());
+
 
 
         userChannel.setTempConferenceID(request.getTempConferenceId());

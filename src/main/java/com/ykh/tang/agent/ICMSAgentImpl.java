@@ -5,15 +5,7 @@ import java.util.List;
 
 import com.ykh.tang.agent.excep.CMSException;
 import com.ykh.tang.agent.message.ConfStartMsgResult;
-import com.ykh.tang.agent.vo.AutoStopParams;
-import com.ykh.tang.agent.vo.BMSUserBillInfo;
-import com.ykh.tang.agent.vo.BMSUserInfo;
-import com.ykh.tang.agent.vo.ConferenceBillInfoBMS;
-import com.ykh.tang.agent.vo.ConferenceInfoBMS;
-import com.ykh.tang.agent.vo.RoleInfo;
-import com.ykh.tang.agent.vo.SubConferenceInfo;
-import com.ykh.tang.agent.vo.UserChannel;
-import com.ykh.tang.agent.vo.UserConferenceStatus;
+import com.ykh.tang.agent.vo.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -554,21 +546,21 @@ public class ICMSAgentImpl implements ICMSAgentInterface {
 		UserChannel userchannel = test.createConferenceWithUser(1, confInfo,
 				userInfo, servicetypelist);
 		System.out.println("userid:" + userchannel.getUserID());
-		if (userchannel.getCtsAddr() != null) {
-			int size = userchannel.getCtsAddr().size();
-			System.out.println("ctsaddr size :" + size);
-			if (size > 0)
-				System.out.println("cts addr: "
-						+ userchannel.getCtsAddr().get(0).getGroupID());
-		}
-
-		if (userchannel.getDtsAddr() != null) {
-			int size = userchannel.getDtsAddr().size();
-			System.out.println("dtsaddr size :" + size);
-			if (size > 0)
-				System.out.println("dts addr: "
-						+ userchannel.getDtsAddr().get(0).getGroupID());
-		}
+//		if (userchannel.getCtsAddr() != null) {
+//			int size =( (List<UserServiceAddr>)(userchannel.getCtsAddr())).size();
+//			System.out.println("ctsaddr size :" + size);
+//			if (size > 0)
+//				System.out.println("cts addr: "
+//						+ userchannel.getCtsAddr().get(0).getGroupID());
+//		}
+//
+//		if (userchannel.getDtsAddr() != null) {
+//			int size = userchannel.getDtsAddr().size();
+//			System.out.println("dtsaddr size :" + size);
+//			if (size > 0)
+//				System.out.println("dts addr: "
+//						+ userchannel.getDtsAddr().get(0).getGroupID());
+//		}
 
 		// update conference service configs
 		// List<String> newservconfarr = new ArrayList<String>();

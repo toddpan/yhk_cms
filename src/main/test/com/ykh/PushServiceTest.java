@@ -488,5 +488,20 @@ public class PushServiceTest {
 
 		return user;
 	}
+	@Test
+	public void testUserChannel(){
+		UserChannel userChannel =new UserChannel();
+
+		UserServiceAddr userServiceAddr=new UserServiceAddr();
+		userServiceAddr.setServerIP0(1);
+		userServiceAddr.setServerIP1(3);
+		userServiceAddr.setServerIP2(2);
+		userServiceAddr.setServerIP2(3);
+
+		List<UserServiceAddr> l=Lists.newArrayList();
+		l.add(userServiceAddr);
+		userChannel.setCtsAddr(l);
+		System.out.print(JSON.toJSONString(userChannel));
+	}
 
 }
