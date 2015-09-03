@@ -2,21 +2,22 @@ package com.ykh.services.user.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Lists;
+import com.maxc.rest.common.RestBeanUtils;
 import com.maxc.rest.common.exception.RestException;
 import com.ykh.common.BeanTranslatorUtil;
 import com.ykh.common.Constants;
-import com.ykh.common.ParseJSON;
-import com.ykh.services.conference.exception.CMSErrorCode;
+import com.ykh.common.IPTranslatorUtil;
+import com.ykh.pojo.*;
 import com.ykh.dao.conference.ConfJoinTempConfDao;
 import com.ykh.dao.conference.domain.ConfJoinTempConf;
 import com.ykh.dao.user.TempUserDao;
 import com.ykh.dao.user.domain.TempUser;
-import com.ykh.pojo.User;
 import com.ykh.services.user.UserConferenceService;
 import com.ykh.tang.agent.Consts;
 import com.ykh.tang.agent.ICMSAgentInterface;
 import com.ykh.tang.agent.vo.BMSUserInfo;
 import com.ykh.tang.agent.vo.UserChannel;
+import com.ykh.tang.agent.vo.UserServiceAddr;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -36,7 +37,7 @@ public class UserConferenceServiceImpl implements UserConferenceService {
     @Autowired
     ConfJoinTempConfDao confJoinTempConfDao;
     @Override
-    public UserChannel userJoinConference(User request) {
+    public UserServiceDTO userJoinConference(User request) {
         logger.info("UserConferenceServiceImpl ==>"+ JSON.toJSONString(request));
         TempUser tempUser=null;
         if(request.getTempuserid()!=null)
@@ -75,18 +76,50 @@ public class UserConferenceServiceImpl implements UserConferenceService {
         }
 
         logger.info("userJoinConference  ===> jni start" + request.getTempConferenceId());
-
+        UserServiceDTO dto=new UserServiceDTO();
         UserChannel userChannel = icmsAgent.userJoinConference(Constants.site, request.getTempConferenceId(), userInfo);
         tempUser.setPinCode(userInfo.pinCode);
         tempUser.setClientType(userInfo.getClientType());
-        tempUser.setUserChannel(userChannel);
         //修改
+        tempUser.setUserChannel(dto);
         tempUserDao.save(tempUser);
-        logger.info("userJoinConference  ===> jni end UserChannel" + ParseJSON.toJson(userChannel));
-
-
-
+        //logger.info("userJoinConference  ===> jni end UserChannel" + ParseJSON.toJson(userChannel));
         userChannel.setTempConferenceID(request.getTempConferenceId());
-        return userChannel;
+        UserDTO userDTO= new UserDTO();
+        userDTO.setTempuserid(tempUser.getIdTempUser());
+        RestBeanUtils.copyProperties(userDTO, request, false);
+        userDTO.setTempuserid(tempUser.getIdTempUser());
+        dto.setUser(userDTO);
+        List<CtServiceAddrDTO> list= Lists.newArrayList();
+        for (UserServiceAddr ctServiceAddr:userChannel.getCtsAddr()){
+            CtServiceAddrDTO ctServiceAddrDTO=new CtServiceAddrDTO();
+            String accessip= IPTranslatorUtil.longToIP(ctServiceAddr.getServerIP0());
+            String bakaccessip=	IPTranslatorUtil.longToIP(ctServiceAddr.getHotServerIP0());
+            ctServiceAddrDTO.setAccessip(accessip);
+            ctServiceAddrDTO.setBakassessip(bakaccessip);
+            ctServiceAddrDTO.setGroupID(ctServiceAddr.groupID);
+            ctServiceAddrDTO.setChannelID(ctServiceAddr.getChannel());
+            ctServiceAddrDTO.setType(ctServiceAddr.getServiceType());
+
+            list.add(ctServiceAddrDTO);
+        }
+        List<DtServiceAddrDTO> dtServiceAddrDTOs= Lists.newArrayList();
+//        for (UserServiceAddr dtServiceAddr:userChannel.getDtsAddr()){
+//            DtServiceAddrDTO dtServiceAddrDTO=new DtServiceAddrDTO();
+//            String accessip= IPTranslatorUtil.longToIP(dtServiceAddr.getServerIP0());
+//            String bakaccessip=	IPTranslatorUtil.longToIP(dtServiceAddr.getHotServerIP0());
+//            dtServiceAddrDTO.setAccessip(accessip);
+//            dtServiceAddrDTO.setBakassessip(bakaccessip);
+//            dtServiceAddrDTOs.add(ctServiceAddrDTO);
+//        }
+        dto.setTempconfernceid(userChannel.getTempConferenceID());
+//        dto.setDtsaddrlist();
+        dto.setCtsaddrlist(list);
+        dto.setTempconfernceid(request.getTempConferenceId());
+
+        return dto;
+    }
+    private long intToLong(int a){
+        return a*1l;
     }
 }

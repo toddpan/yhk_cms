@@ -1,6 +1,7 @@
 package com.ykh.dao.user.domain;
 
 import com.alibaba.fastjson.JSON;
+import com.ykh.pojo.UserServiceDTO;
 import com.ykh.tang.agent.vo.UserChannel;
 
 import javax.persistence.*;
@@ -27,7 +28,7 @@ public class TempUser {
 //    <element name="time " type="t"/>
     private Integer status;
     @Convert(converter = UserChannelConverJson.class)
-    private UserChannel userChannel;
+    private UserServiceDTO userChannel;
 
     public Integer getStatus() {
         return status;
@@ -97,11 +98,11 @@ public class TempUser {
         }
     }
 
-    public UserChannel getUserChannel() {
+    public UserServiceDTO getUserChannel() {
         return userChannel;
     }
 
-    public void setUserChannel(UserChannel userChannel) {
+    public void setUserChannel(UserServiceDTO userChannel) {
         this.userChannel = userChannel;
     }
 }

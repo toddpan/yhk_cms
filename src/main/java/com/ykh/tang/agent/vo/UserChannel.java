@@ -8,8 +8,8 @@ import java.util.List;
 public class UserChannel
 {
 	public  int userID;// 用户ID
-	public  List<UserServiceAddr> ctsAddr= Lists.newArrayList();// 接入服务器地址列表
-	public  List<UserServiceAddr> dtsAddr= Lists.newArrayList();;// 传输服务器地址列表
+	public  List<UserServiceAddr> ctsAddr;// 接入服务器地址列表
+	public  List<UserServiceAddr> dtsAddr;// 传输服务器地址列表
 	public  int tempConferenceID;		  //cmsagent不使用该变量
 	
 	public int getUserID()
@@ -20,7 +20,7 @@ public class UserChannel
 	{
 		userID = ID;
 	}
-	public Object getCtsAddr()
+	public List<UserServiceAddr> getCtsAddr()
 	{
 		return ctsAddr;
 	}
@@ -28,7 +28,7 @@ public class UserChannel
 	{
 		ctsAddr = Addr;
 	}
-	public Object getDtsAddr()
+	public List<UserServiceAddr> getDtsAddr()
 	{
 		return dtsAddr;
 	}

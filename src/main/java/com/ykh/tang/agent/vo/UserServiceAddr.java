@@ -15,123 +15,99 @@ public class UserServiceAddr
 	public int channel; // 通道ID
 	public int priv; // 权限
 
-	public int getServiceType()
-	{
+	public int getServiceType() {
 		return serviceType;
 	}
 
-	public void setServiceType(int serviceType)
-	{
-		this.serviceType = serviceType;
-	}
-
-	public int getServerIP0()
-	{
+	public int getServerIP0() {
 		return serverIP0;
 	}
 
-	public void setServerIP0(int serverIP0)
-	{
+	public void setServerIP0(int serverIP0) {
 		this.serverIP0 = serverIP0;
 	}
 
-	public int getServerIP1()
-	{
+	public int getServerIP1() {
 		return serverIP1;
 	}
 
-	public void setServerIP1(int serverIP1)
-	{
+	public void setServerIP1(int serverIP1) {
 		this.serverIP1 = serverIP1;
 	}
 
-	public int getServerIP2()
-	{
+	public int getServerIP2() {
 		return serverIP2;
 	}
 
-	public void setServerIP2(int serverIP2)
-	{
+	public void setServerIP2(int serverIP2) {
 		this.serverIP2 = serverIP2;
 	}
 
-	public int getServerIP3()
-	{
+	public int getServerIP3() {
 		return serverIP3;
 	}
 
-	public void setServerIP3(int serverIP3)
-	{
+	public void setServerIP3(int serverIP3) {
 		this.serverIP3 = serverIP3;
 	}
 
-	public int getHotServerIP0()
-	{
+	public int getHotServerIP0() {
 		return hotServerIP0;
 	}
 
-	public void setHotServerIP0(int hotServerIP0)
-	{
+	public void setHotServerIP0(int hotServerIP0) {
 		this.hotServerIP0 = hotServerIP0;
 	}
 
-	public int getHotServerIP1()
-	{
+	public int getHotServerIP1() {
 		return hotServerIP1;
 	}
 
-	public void setHotServerIP1(int hotServerIP1)
-	{
+	public void setHotServerIP1(int hotServerIP1) {
 		this.hotServerIP1 = hotServerIP1;
 	}
 
-	public int getHotServerIP2()
-	{
+	public int getHotServerIP2() {
 		return hotServerIP2;
 	}
 
-	public void setHotServerIP2(int hotServerIP2)
-	{
+	public void setHotServerIP2(int hotServerIP2) {
 		this.hotServerIP2 = hotServerIP2;
 	}
 
-	public int getHotServerIP3()
-	{
+	public int getHotServerIP3() {
 		return hotServerIP3;
 	}
 
-	public void setHotServerIP3(int hotServerIP3)
-	{
+	public void setHotServerIP3(int hotServerIP3) {
 		this.hotServerIP3 = hotServerIP3;
 	}
 
-	public int getGroupID()
-	{
+	public void setServiceType(int serviceType) {
+		this.serviceType = serviceType;
+	}
+
+	public int getGroupID() {
 		return groupID;
 	}
 
-	public void setGroupID(int groupID)
-	{
+	public void setGroupID(int groupID) {
 		this.groupID = groupID;
 	}
 
-	public int getChannel()
-	{
+	public int getChannel() {
 		return channel;
 	}
 
-	public void setChannel(int channel)
-	{
+	public void setChannel(int channel) {
 		this.channel = channel;
 	}
 
-	public int getPriv()
-	{
+	public int getPriv() {
 		return priv;
 	}
 
-	public void setPriv(int priv)
-	{
+	public void setPriv(int priv) {
 		this.priv = priv;
 	}
 }
