@@ -85,16 +85,16 @@ public class TempUser {
     public void setPinCode(Integer pinCode) {
         this.pinCode = pinCode;
     }
-    public  static  class  UserChannelConverJson implements AttributeConverter<UserChannel,String>{
+    public  static  class  UserChannelConverJson implements AttributeConverter<UserServiceDTO,String>{
 
         @Override
-        public String convertToDatabaseColumn(UserChannel attribute) {
+        public String convertToDatabaseColumn(UserServiceDTO attribute) {
             return JSON.toJSONString(attribute);
         }
 
         @Override
-        public UserChannel convertToEntityAttribute(String dbData) {
-            return JSON.parseObject(dbData,UserChannel.class);
+        public UserServiceDTO convertToEntityAttribute(String dbData) {
+            return JSON.parseObject(dbData,UserServiceDTO.class);
         }
     }
 
