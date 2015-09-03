@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../tang-cms-uc/cms_agent/cms_agent.iml" filepath="$PROJECT_DIR$/../../tang-cms-uc/cms_agent/cms_agent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../tang-cms-uc/cms_domain/cms_domain.iml" filepath="$PROJECT_DIR$/../../tang-cms-uc/cms_domain/cms_domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../tang-cms-uc/cms_dto/cms_dto.iml" filepath="$PROJECT_DIR$/../../tang-cms-uc/cms_dto/cms_dto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../tang-cms-uc/cms_manager/cms_manager.iml" filepath="$PROJECT_DIR$/../../tang-cms-uc/cms_manager/cms_manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../tang-cms-uc/cms_pojo/cms_pojo.iml" filepath="$PROJECT_DIR$/../../tang-cms-uc/cms_pojo/cms_pojo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ykh_cms_v01.iml" filepath="$PROJECT_DIR$/ykh_cms_v01.iml" />
     </modules>
   </component>
