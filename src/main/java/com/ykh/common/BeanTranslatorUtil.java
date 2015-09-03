@@ -61,7 +61,7 @@ public class BeanTranslatorUtil {
 	 *
 	 * @param user
 	 *            用户对象
-	 * @param conferenceRoleManager
+	 * @param user
 	 *            IConferenceRole接口
 	 * @return UserInfo dbus生成的userinfo对象
 	 * @throws Exception
@@ -79,11 +79,11 @@ public class BeanTranslatorUtil {
 			return null;
 		}
 		// 转换获得的角色ID信息
-		Set<Integer> roleidSet = user.getRolemap().keySet();
-		List<String> roleIdList = new ArrayList<String>();
-		for(Integer roleID : roleidSet) {
-			roleIdList.add(roleID+"");
-		}
+
+//		List<String> roleIdList = new ArrayList<String>();
+//		for(Integer roleID : roleidSet) {
+//			roleIdList.add(roleID+"");
+//		}
 
 		LOGGER.info("userJoin user ip=" + user.getIpaddr());
 
@@ -113,7 +113,7 @@ public class BeanTranslatorUtil {
 
 		userInfo.setDomain(user.getDomain());
 		userInfo.setIPArr(ipList);
-		userInfo.setRoleTypeArr(roleIdList);
+		userInfo.setRoleTypeArr(user.getRolemap());
 
 		if(user.getUserStatus() != null)
 			userInfo.setStatus(user.getUserStatus());
@@ -141,7 +141,7 @@ public class BeanTranslatorUtil {
 	 * @since JDK1.6
 	 * @par 需求:REQ1.10[Tang]: svn://vobserver/tang/doc/SRS.doc
 	 * @see
-//	 */
+	//	 */
 //	public static ConferenceInfoBMS copyConference2ConferenceInfo(Conference conference, Integer tempConferenceID, User user,
 //			IProductRole productRoleManager) throws Exception {
 //		// 参数为空判断
@@ -280,7 +280,7 @@ public class BeanTranslatorUtil {
 	 *
 	 * 提取UserServiceAddr列表中DtServiceAddr信息（数据传输服务器地址对象）
 	 *
-	 * @param list
+	 * @param userservicelist
 	 *            UserServiceAddr列表
 	 * @return List<DtServiceAddr> 数据传输地址列表
 	 * @code {这里可以添加函数调用示例代码}
