@@ -1,17 +1,12 @@
 package com.ykh.vo.res;
 
-import com.google.common.collect.Lists;
 import com.ykh.pojo.UserServiceDTO;
-import com.ykh.tang.agent.vo.UserChannel;
-import com.ykh.tang.agent.vo.UserServiceAddr;
-
-import java.util.List;
 
 /**
  * Created by ant_shake_tree on 15/8/21.
  */
 public class UserChannelResponse {
-    private Header head;
+    private Header head =new Header();
     private UserServiceDTO body;
 
     public Header getHead() {

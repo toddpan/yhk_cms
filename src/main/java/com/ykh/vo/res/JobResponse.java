@@ -1,7 +1,7 @@
 package com.ykh.vo.res;
 
 public class JobResponse {
-	private Header head;
+	private Header head=new Header();
 	private Job body;
 	public Header getHead() {
 		return head;

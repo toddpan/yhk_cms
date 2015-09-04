@@ -21,6 +21,7 @@ import com.ykh.services.user.UserConferenceService;
 import com.ykh.tang.agent.vo.UserServiceAddr;
 import com.ykh.vo.body.ConferenceSeedBody;
 import com.ykh.vo.res.*;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -140,7 +141,6 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
 //        RestAssert.notNull(request.getUserId(),"userId");
         UserServiceDTO userChannel =userConferenceService.userJoinConference(request);
         UserChannelResponse response= new UserChannelResponse();
-        
         response.setBody(userChannel);
         return response;
     }
