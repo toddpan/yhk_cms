@@ -2,253 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="409cd922-7d23-4975-906d-ba7453ccc8ac" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/ykh_cms_v01_ykh_cms_v01_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/CMSBeanUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/Constants.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/ExcecutorUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/MacAddress.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/Monitor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/ParseJSON.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/PolicyValue.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/RuntimeUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/Session.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/StringUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/TPoolExecutor$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/TPoolExecutor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/cache/Cache$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/cache/Cache.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/cache/CacheDomain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/cache/CacheValue.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/cache/DelayItem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/common/cache/Pair.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/config/PersistenceContext.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/Dao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/GenericsUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/PageRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/Request.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/annotation/DaoHelper$IgnoreValue.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/annotation/DaoHelper$SearchMethod.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/annotation/DaoHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/ConferenceDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/ConferenceSeedDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/domain/ConfJoinTempConf.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/domain/Conference$JpaConverterJson.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/domain/Conference.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/conference/domain/ConferenceSeed.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/suport/DaoSupport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/suport/GernalDaoSupport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/suport/PageView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/suport/QueryUtil$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/suport/QueryUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/suport/RepositoryFactoryBean$MyRepositoryFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/suport/RepositoryFactoryBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/DomainDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/GroupDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/OrganizationDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/RoleDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/SessionDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/UserDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/domain/DeliveryGroup.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/domain/Domain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/domain/Organization.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/domain/Role.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/domain/Session.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/dao/user/domain/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/facade/ConferenceFacade.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/facade/impl/ConferenceFacadeImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/Consts.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/ICMSAgent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/ICMSAgentImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/ICMSAgentInterface.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/IMessageHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/excep/CMSException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/excep/CMSException2JNIException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/BMSUserInfoInConf.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/BackIp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/BaseConfMsgFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/BaseConfMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/BlackUserMsgFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/BlackUserMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ChangeUserRoleMsgFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ChangeUserRoleMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/Channel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ChannelAndUserInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ChannelInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConfMsgRec.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConfStartMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConfStopMsgFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConfStopMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConfSysLockMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConfSysUnlockMsgFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConfUserLockMsgFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConfUserLockMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConfUserUnlockMsgFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConfUserUnlockMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ConferenceInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/CreateSubConfMsgFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/CreateSubConfMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ExpelUserMsgFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ExpelUserMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/IMessage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/IMessageHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/Ip.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/JoinUserInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/MsgHeader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/PhoneUserOfflineMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/PhoneUserOnlineMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/PlanStartTime.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/PlanStopTime.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/QueryConfChannelMsgFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/QueryConfChannelMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/QueryConfInfoMsgFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/QueryConfInfoMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/QueryUserListFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/QueryUserListResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ServiceOfflineMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/ServiceOnlineMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/StartServiceMsgFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/StartServiceMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/StopServiceMsgFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/StopServiceMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/SubConfInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/SysDTSIPModify.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/Time0.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UnblackUserMsgFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UnblackUserMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UpdateConfConfigMsgFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UpdateConfConfigMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UpdateConfDesMsgFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UpdateConfDesMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserDefineMsgFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserError.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserExitConfMsgFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserExitConfMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserExitSubConfMsgFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserJoinConfResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserJoinSubConfMsgFault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserJoinSubConfMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserOfflineMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/message/UserOnlineMsgResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/AutoStopParams.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/BMSConferenceInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/BMSUserBillInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/BMSUserInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/BMSUserInfoNotify.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/ConferenceBillInfoBMS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/ConferenceInfoBMS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/RoleInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/Struct5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/SubConferenceInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/UserChannel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/UserConferenceStatus.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/tang/agent/vo/UserServiceAddr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/body/ConferenceSeedBody.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/req/DeleteComputePool.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/req/LoginInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/req/NullResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/BmsResponse$BmsBody.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/BmsResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/ConferenceResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/CreateConferenceResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/Header.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/Job.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/JobResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/LoginResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/OptionConferenceStatusResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/Response.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/UserChannelResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/UserConferenceStatusResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/UserNumResponse$UserNumBody.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/vo/res/UserNumResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/web/conference/BaseController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/web/conference/ConferenceController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ykh/web/conference/ControllerConstans.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/dev.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/ykh/facade/impl/ConferenceFacadeImplTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/BlackIPList.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/BlackIPList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/util/BmsSiteUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/util/BmsSiteUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/exception/CMSErrorCode.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/exception/CMSErrorCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/util/CMSException2JNIException.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/util/CMSException2JNIException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Cdrconferenceinfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Cdrconferenceinfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Cdrconferencemsg.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Cdrconferencemsg.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Cdrusergroupinfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Cdrusergroupinfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Cdruserinfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Cdruserinfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConfJoinTempConf.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConfJoinTempConf.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/ConferenceBusinessImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/ConferenceBusinessImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/web/conference/ConferenceController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/web/conference/ConferenceController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConferenceMessage.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConferenceMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/ConferenceService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/ConferenceService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/ConferenceServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/ConferenceServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConferenceSite.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConferenceSite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConferenceVODemoApp.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConferenceVODemoApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferenceprivilege.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferenceprivilege.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferencerole.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferencerole.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferenceservice.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferenceservice.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConferenceserviceDemoApp.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ConferenceserviceDemoApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferenceservicevalue.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferenceservicevalue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferenceuserinfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Conferenceuserinfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/Conferenceuserinfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/Conferenceuserinfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/Conferenceuservalue.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/Conferenceuservalue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/Consts.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/Consts.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/CtServiceAddr.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/CtServiceAddr.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/CtServiceAddr.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/CtServiceAddr.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/CtServiceAddrDTO.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/CtServiceAddrDTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/DeliveryGroup.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/DeliveryGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/DtServiceAddr.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/DtServiceAddr.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/DtServiceAddr.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/DtServiceAddr.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/DtServiceAddrDTO.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/DtServiceAddrDTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/GetmessageHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/GetmessageHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/GetmessageHandlerByGroup.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/GetmessageHandlerByGroup.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/GroupDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/GroupDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/util/IPTranslatorUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/util/IPTranslatorUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/IProductRole.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/IProductRole.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/exception/JNIException.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/exception/JNIException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/adapter/MapAdapter.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/adapter/MapAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/adapter/MapElements.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/adapter/MapElements.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/Organization.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/Organization.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/OrganizationDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/OrganizationDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/exception/ParameterException.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/exception/ParameterException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/PreBillingCode.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/PreBillingCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/PreBillingCodeScope.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/PreBillingCodeScope.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/PreConfPassCode.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/PreConfPassCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/PreConfPassCodeScope.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/PreConfPassCodeScope.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Product.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Product.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ProductRole.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/ProductRole.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/ProductRole.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/ProductRole.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Productlibtype.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Productlibtype.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/com/ykh/PushServiceTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/ykh/PushServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/RecordFile.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/RecordFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/Role.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/Role.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/RoleDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/RoleDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Router.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Router.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Servicelib.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Servicelib.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Servicelibtype.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Servicelibtype.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Servicelibvalue.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Servicelibvalue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/SubConference.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/SubConference.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/TempConferenceInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/TempConferenceInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Tempconfid.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Tempconfid.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Tempuser.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/Tempuser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/domain/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/UserDTO.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/UserDTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/dao/user/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/user/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/user/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/UserServiceDTO.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/UserServiceDTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/user/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/user/impl/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/WhiteIPList.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/pojo/WhiteIPList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/WhiteIPList.java" afterPath="$PROJECT_DIR$/src/main/java/com/ykh/services/conference/impl/WhiteIPList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ykh_cms_v01.iml" afterPath="$PROJECT_DIR$/ykh_cms_v01.iml" />
     </list>
     <ignored path="ykh_cms_v01.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -271,13 +25,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BeanTranslatorUtil.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BeanTranslatorUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/common/BeanTranslatorUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4178082">
+            <state vertical-scroll-proportion="-11.296296">
               <caret line="101" column="13" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/config/AppConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConferenceSeedDaoTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/test/com/ykh/dao/conference/ConferenceSeedDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDaoTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/test/com/ykh/dao/user/UserDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#778#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConferenceFacadeImplTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/test/com/ykh/facade/impl/ConferenceFacadeImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.20211361">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserServiceImplTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/test/com/ykh/services/user/impl/UserServiceImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="3" selection-start-line="0" selection-start-column="2" selection-end-line="20" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <marker date="1441329350000" expanded="true" signature="357:409" placeholder="/**...*/" />
+                <marker date="1441329350000" expanded="true" signature="412:507" placeholder="@{...}" />
+                <marker date="1441329350000" expanded="true" signature="675:732" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -311,6 +122,13 @@
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/test/com/ykh/services/user/impl/UserServiceImplTest.java" />
+      </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
@@ -390,6 +208,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ykh_cms_v01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yhk_cms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ykh" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -687,7 +531,7 @@
       <created>1441322148327</created>
       <option name="number" value="Default" />
       <updated>1441322148327</updated>
-      <workItem from="1441322150327" duration="308000" />
+      <workItem from="1441322150327" duration="1435000" />
     </task>
     <task id="LOCAL-00001" summary="最新修改">
       <created>1441322373119</created>
@@ -695,11 +539,23 @@
       <option name="project" value="LOCAL" />
       <updated>1441322373119</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="最新修改">
+      <created>1441322517338</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1441322517338</updated>
+    </task>
+    <task id="LOCAL-00003" summary="最新修改">
+      <created>1441329481914</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1441329481914</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308000" />
+    <option name="totallyTimeSpent" value="1435000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="23" width="1394" height="877" extended-state="0" />
@@ -764,11 +620,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/common/BeanTranslatorUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4178082">
+        <state vertical-scroll-proportion="-11.296296">
           <caret line="101" column="13" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ykh/config/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/ykh/dao/conference/ConferenceSeedDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/ykh/dao/user/UserDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#778#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/ykh/services/user/impl/UserServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="3" selection-start-line="0" selection-start-column="2" selection-end-line="20" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <marker date="1441329350000" expanded="true" signature="357:409" placeholder="/**...*/" />
+            <marker date="1441329350000" expanded="true" signature="412:507" placeholder="@{...}" />
+            <marker date="1441329350000" expanded="true" signature="675:732" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/ykh/facade/impl/ConferenceFacadeImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20211361">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
