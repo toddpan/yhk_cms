@@ -21,6 +21,7 @@ import com.ykh.services.user.UserConferenceService;
 import com.ykh.tang.agent.vo.UserServiceAddr;
 import com.ykh.vo.body.ConferenceSeedBody;
 import com.ykh.vo.res.*;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -43,18 +44,18 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
     UserConferenceService userConferenceService;
 
     public ConferenceResponse openConference(Conference conference) {
-            RestAssert.notNull(Conference.class,conference);
-            RestAssert.notNull(conference.getBillingcode(),"billingcode");
-            RestAssert.notNull(conference.getConferencename(),"conferencename");
-            RestAssert.notNull(conference.getAutoStopParams(),"autoStopParams");
-            RestAssert.notNull(conference.getConfScale(),"confScale");
+        RestAssert.notNull(Conference.class,conference);
+        RestAssert.notNull(conference.getBillingcode(),"billingcode");
+        RestAssert.notNull(conference.getConferencename(),"conferencename");
+        RestAssert.notNull(conference.getAutoStopParams(),"autoStopParams");
+        RestAssert.notNull(conference.getConfScale(),"confScale");
 //            RestAssert.notNull(conference.getPassword(), "password");
 
-            conferenceDao.save(conference);
-            ConferenceResponse response =new ConferenceResponse();
-            response.setBody(conference);
-            return response;
-        }
+        conferenceDao.save(conference);
+        ConferenceResponse response =new ConferenceResponse();
+        response.setBody(conference);
+        return response;
+    }
 
     public ConferenceResponse modifyConference(Conference conference) {
         RestAssert.notNull(Conference.class,conference);
@@ -140,7 +141,6 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
 //        RestAssert.notNull(request.getUserId(),"userId");
         UserServiceDTO userChannel =userConferenceService.userJoinConference(request);
         UserChannelResponse response= new UserChannelResponse();
-        
         response.setBody(userChannel);
         return response;
     }
