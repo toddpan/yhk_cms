@@ -17,11 +17,9 @@ import com.ykh.facade.ConferenceFacade;
 //import com.ykh.tang.agent.ICMSAgent;
 import com.ykh.pojo.User;
 import com.ykh.tang.agent.vo.UserChannel;
-import com.ykh.services.user.UserConferenceService;
 import com.ykh.tang.agent.vo.UserServiceAddr;
 import com.ykh.vo.body.ConferenceSeedBody;
 import com.ykh.vo.res.*;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -35,13 +33,13 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
 
     @Autowired
     ConferenceService conferenceService;
-    @Autowired
-    ConferenceSeedDao conferenceSeedDao;
-    @Autowired
-    ConferenceDao conferenceDao;
+//    @Autowired
+//    ConferenceSeedDao conferenceSeedDao;
+//    @Autowired
+//    ConferenceDao conferenceDao;
 
-    @Autowired
-    UserConferenceService userConferenceService;
+//    @Autowired
+//    UserConferenceService userConferenceService;
 
     public ConferenceResponse openConference(Conference conference) {
         RestAssert.notNull(Conference.class,conference);
@@ -50,21 +48,17 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
         RestAssert.notNull(conference.getAutoStopParams(),"autoStopParams");
         RestAssert.notNull(conference.getConfScale(),"confScale");
 //            RestAssert.notNull(conference.getPassword(), "password");
-
-        conferenceDao.save(conference);
+        conferenceService.openConference(conference);
         ConferenceResponse response =new ConferenceResponse();
         response.setBody(conference);
         return response;
     }
 
     public ConferenceResponse modifyConference(Conference conference) {
-        RestAssert.notNull(Conference.class,conference);
+        RestAssert.notNull(Conference.class, conference);
         RestAssert.notNull(conference.getConferenceId(), "conferenceId");
-        Conference dao =conferenceDao.findOne(conference.getConferenceId());
-        RestBeanUtils.copyProperties(dao, conference, false);
-        conferenceDao.save(conference);
         ConferenceResponse response =new ConferenceResponse();
-        response.setBody(conference);
+        response.setBody(conferenceService.modifyConference(conference));
         return response;
     }
 
@@ -82,10 +76,7 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
     public Response stopConference(ConferenceSeedBody conference) {
         RestAssert.notNull(conference);
         RestAssert.notNull(conference.getTempConferenceId(), "tempConferenceId");
-        ConferenceSeed conferenceSeed =conferenceSeedDao.findOne(conference.getTempConferenceId());
-        if(conferenceSeed==null){
-            throw new ResourceNoFoundException();
-        }
+
         //TODO 停止
         conferenceService.stopConference("",conference.getTempConferenceId());
         return new Response();
@@ -94,10 +85,7 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
     public Response deleteConference(ConferenceSeedBody conference) {
         RestAssert.notNull(conference);
         RestAssert.notNull(conference.getTempConferenceId(), "tempConferenceId");
-        ConferenceSeed conferenceSeed =conferenceSeedDao.findOne(conference.getTempConferenceId());
-        if(conferenceSeed==null){
-            throw new ResourceNoFoundException();
-        }
+
         //TODO 删除
         conferenceService.deleteConference("",conference.getTempConferenceId());
 
@@ -107,10 +95,10 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
     public UserNumResponse queryUserNum(ConferenceSeedBody conference) {
         RestAssert.notNull(conference);
         RestAssert.notNull(conference.getTempConferenceId(), "tempConferenceId");
-        ConferenceSeed conferenceSeed =conferenceSeedDao.findOne(conference.getTempConferenceId());
-        if(conferenceSeed==null){
-            throw new ResourceNoFoundException();
-        }
+//        ConferenceSeed conferenceSeed =conferenceSeedDao.findOne(conference.getTempConferenceId());
+//        if(conferenceSeed==null){
+//            throw new ResourceNoFoundException();
+//        }
         //TODO queryNum;
         UserNumResponse response =new UserNumResponse();
         return response;
@@ -119,10 +107,10 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
     public UserConferenceStatusResponse getUserConferenceStatus(ConferenceSeedBody conference) {
         RestAssert.notNull(conference);
         RestAssert.notNull(conference.getTempConferenceId(), "tempConferenceId");
-        ConferenceSeed conferenceSeed =conferenceSeedDao.findOne(conference.getTempConferenceId());
-        if(conferenceSeed==null){
-            throw new ResourceNoFoundException();
-        }
+//        ConferenceSeed conferenceSeed =conferenceSeedDao.findOne(conference.getTempConferenceId());
+//        if(conferenceSeed==null){
+//            throw new ResourceNoFoundException();
+//        }
         UserConferenceStatusResponse response=new UserConferenceStatusResponse();
         return response;
     }
@@ -139,8 +127,9 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
         RestAssert.notNull(User.class, request);
         RestAssert.notNull(request.getTempConferenceId(), "tempConferenceId");
 //        RestAssert.notNull(request.getUserId(),"userId");
-        UserServiceDTO userChannel =userConferenceService.userJoinConference(request);
+        UserServiceDTO userChannel =conferenceService.userJoinConference(request);
         UserChannelResponse response= new UserChannelResponse();
+
         response.setBody(userChannel);
         return response;
     }
