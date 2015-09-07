@@ -3,6 +3,7 @@ package com.ykh.services.conference;
 import com.ykh.dao.conference.domain.ConfJoinTempConf;
 import com.ykh.dao.conference.domain.Conference;
 import com.ykh.pojo.User;
+import com.ykh.pojo.UserServiceDTO;
 import com.ykh.tang.agent.vo.ConferenceInfoBMS;
 import com.ykh.tang.agent.vo.UserChannel;
 import com.ykh.tang.agent.vo.UserConferenceStatus;
@@ -151,4 +152,10 @@ public interface ConferenceService {
 	 */
 	public Integer initConference(String applicationID, Integer conferenceID)
 			throws Exception;
+
+	void openConference(Conference conference);
+
+	Conference modifyConference(Conference conference);
+
+	UserServiceDTO userJoinConference(User request);
 }
