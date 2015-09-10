@@ -6,6 +6,7 @@ import javax.persistence.*;
 import com.alibaba.fastjson.JSON;
 import com.ykh.common.ParseJSON;
 //import com.ykh.pojo.Product;
+import com.ykh.dao.PageRequest;
 import com.ykh.tang.agent.vo.AutoStopParams;
 import com.ykh.tang.agent.vo.RoleInfo;
 
@@ -19,7 +20,7 @@ import com.ykh.dao.Request;
  */
 @Entity
 @Table
-public class Conference implements CacheDomain,Request<Conference>{
+public class Conference  extends PageRequest implements CacheDomain {
 	/**
 	 * serialVersionUID:
 	 * @since JDK 1.7

@@ -8,6 +8,7 @@ import com.ykh.pojo.User;
 import com.ykh.tang.agent.vo.UserChannel;
 import com.ykh.tang.agent.vo.UserConferenceStatus;
 import com.ykh.vo.body.ConferenceSeedBody;
+import com.ykh.vo.req.ConferencePageRequest;
 import com.ykh.vo.res.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -27,37 +28,9 @@ public class ConferenceController {
         return new Conference();
     }
 
-//    @RequestMapping(value = "/conference/createconference/{applicationID}/{tempConferenceID}",
-//    		method = RequestMethod.POST)
-//    public @ResponseBody
-//    Conference createConference(@PathVariable int applicationID,
-//    		@PathVariable int tempConferenceID,
-//    		@RequestBody Conference confenceInfo) {
-//    	try {
-//			userServcie.createConference(applicationID, tempConferenceID,confenceInfo);
-//		} catch (Exception e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//    	//Boolean ret =createConference(applicationID,tempConferenceID,confenceInfo);
-//        return confenceInfo;
-//    }
-
-
-//	public Boolean stopConference(String applicationID, Integer tempConferenceID)
-//			throws Exception {
-//		// TODO Auto-generated method stub
-//		return null;
-//	}
 
 
 
-
-    public Integer queryUserNum(String applicationID, Integer tempConfID)
-            throws Exception {
-        // TODO Auto-generated method stub
-        return null;
-    }
 
     @RequestMapping(value = "/openConference", method = RequestMethod.POST, consumes = { ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML }, produces = {ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML })
     public @ResponseBody ConferenceResponse OpenConference(@RequestBody Conference conference){
@@ -104,4 +77,13 @@ public class ConferenceController {
         // TODO Auto-generated method stub
         return conferenceFacade.getBMSConferenceInfo(conference);
     }
+
+    @RequestMapping(value = "/searchConferenceTemp", method = RequestMethod.POST, consumes = { ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML }, produces = {ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML })
+    public PageResponse searchConferenceTemp(@RequestBody Conference conference)
+            throws Exception {
+        // TODO Auto-generated method stub
+        return conferenceFacade.searchConferenceTemp(conference);
+    }
+
+
 }

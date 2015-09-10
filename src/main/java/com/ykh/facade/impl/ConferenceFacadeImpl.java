@@ -2,6 +2,7 @@ package com.ykh.facade.impl;
 
 import com.google.common.collect.Lists;
 import com.maxc.rest.common.RestBeanUtils;
+import com.maxc.rest.common.Utils;
 import com.maxc.rest.common.exception.ResourceNoFoundException;
 import com.maxc.rest.common.exception.RestAssert;
 //import ConferenceService;
@@ -56,7 +57,7 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
 
     public ConferenceResponse modifyConference(Conference conference) {
         RestAssert.notNull(Conference.class, conference);
-        RestAssert.notNull(conference.getConferenceId(), "conferenceId");
+        RestAssert.notNull(conference.getConferenceId(), "tempConferenceId");
         ConferenceResponse response =new ConferenceResponse();
         response.setBody(conferenceService.modifyConference(conference));
         return response;
@@ -64,7 +65,7 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
 
     public CreateConferenceResponse createConference(Conference conference) {
         RestAssert.notNull(Conference.class,conference);
-        RestAssert.notNull(conference.getConferenceId(), "conferenceId");
+        RestAssert.notNull(conference.getConferenceId(), "tempConferenceId");
         RestAssert.notNull(conference.getConferencename(), "conferencename");
         CreateConferenceResponse response =new CreateConferenceResponse();
         CreateConferenceResponse.CreateConferenceBody body=new CreateConferenceResponse.CreateConferenceBody();
@@ -78,7 +79,7 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
         RestAssert.notNull(conference.getTempConferenceId(), "tempConferenceId");
 
         //TODO 停止
-        conferenceService.stopConference("",conference.getTempConferenceId());
+        conferenceService.stopConference("", conference.getTempConferenceId());
         return new Response();
     }
 
@@ -87,7 +88,7 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
         RestAssert.notNull(conference.getTempConferenceId(), "tempConferenceId");
 
         //TODO 删除
-        conferenceService.deleteConference("",conference.getTempConferenceId());
+        conferenceService.deleteConference("", conference.getTempConferenceId());
 
         return new Response();
     }
@@ -100,6 +101,8 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
 //            throw new ResourceNoFoundException();
 //        }
         //TODO queryNum;
+//        conferenceService.queryUserNum("",conference.getTempConferenceId());
+
         UserNumResponse response =new UserNumResponse();
         return response;
     }
@@ -139,5 +142,17 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
 
 //        conferenceService.getBMSConferenceInfo(conference.getTempConferenceId());
         return new BmsResponse();
+    }
+
+    @Override
+    public PageResponse searchConferenceTemp(Conference conference) {
+        RestAssert.notNull(Conference.class,conference);
+        PageResponse pageResponse=new PageResponse();
+        pageResponse.setBody(conferenceService.searchConference(conference));
+        return pageResponse;
+    }
+
+    public static void main(String[] args){
+        System.out.println(Integer.toHexString((int) (Utils.hashCode("confScale") & 6917529027641081855L)));
     }
 }

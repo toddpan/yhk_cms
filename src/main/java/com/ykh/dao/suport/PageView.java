@@ -1,14 +1,14 @@
 package com.ykh.dao.suport;
 
 public class PageView {
-	private long totalpage = 1;
-	private int maxresult = 15;
+	private int totalpage = 1;
+	private int pageSize = 15;
 	private int currentpage = 1;
-	private long totalrecord;
+	private int totalrecord;
 	private int pagecode = 10;
 
 	public int getFirstResult() {
-		return (this.currentpage - 1) * this.maxresult;
+		return (this.currentpage - 1) * this.pageSize;
 	}
 
 	public int getPagecode() {
@@ -19,34 +19,39 @@ public class PageView {
 		this.pagecode = pagecode;
 	}
 
-	public PageView(int maxresult, int currentpage) {
-		this.maxresult = maxresult;
+	public PageView(int pageSize, int currentpage) {
+		this.pageSize = pageSize;
 		if(currentpage<1){
 			this.currentpage=1;}
 		else{
 		this.currentpage = currentpage;}
 	}
 
-	public long getTotalrecord() {
+	public int getTotalrecord() {
 		return totalrecord;
 	}
 
-	public void setTotalrecord(long totalrecord) {
+	public void setTotalrecord(int totalrecord) {
 		this.totalrecord = totalrecord;
-		setTotalpage(this.totalrecord % this.maxresult == 0 ? this.totalrecord
-				/ this.maxresult : this.totalrecord / this.maxresult + 1);
+		int tp=this.totalrecord / this.pageSize;
+		int mod=this.totalrecord % this.pageSize;
+		setTotalpage( mod== 0 ? tp : tp + 1);
 	}
 
-	public long getTotalpage() {
+	public int getTotalpage() {
 		return totalpage;
 	}
 
-	public void setTotalpage(long totalpage) {
+	public void setTotalpage(int totalpage) {
 		this.totalpage = totalpage;
 	}
 
-	public int getMaxresult() {
-		return maxresult;
+	public int getPageSize() {
+		return pageSize;
+	}
+
+	public void setPageSize(int pageSize) {
+		this.pageSize = pageSize;
 	}
 
 	public int getCurrentpage() {
