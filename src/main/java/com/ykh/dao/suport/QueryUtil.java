@@ -1,5 +1,16 @@
 package com.ykh.dao.suport;
 
+<<<<<<< HEAD
+=======
+import java.beans.PropertyDescriptor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+
+>>>>>>> upstream/master
 import com.maxc.rest.common.ConfigUtil;
 import com.ykh.common.ParseJSON;
 import com.ykh.dao.GenericsUtils;
@@ -8,6 +19,7 @@ import com.ykh.dao.Request;
 import com.ykh.dao.annotation.DaoHelper;
 import org.springframework.beans.BeanWrapper;
 import org.springframework.beans.BeanWrapperImpl;
+import org.springframework.data.domain.Sort;
 import org.springframework.util.StringUtils;
 
 import java.beans.PropertyDescriptor;
@@ -151,19 +163,18 @@ public class QueryUtil {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-
 		}
 		hql.append(" 1=1 ");
 		if (req instanceof PageRequest)
-			if (!StringUtils.isEmpty(((PageRequest<T>) req).getSortkey())) {
-				hql.append(" order by ").append(
-						((PageRequest<T>) req).getSortkey());
-				if (((PageRequest<T>) req).getAscend() == 1) {
-					hql.append(" asc");
-				} else {
-					hql.append(" desc");
-				}
+		{
+			Map<String, Sort.Direction> od =((PageRequest) req).getOrders();
+			StringBuilder sb= new StringBuilder(" order by ");
+			for (String key: od.keySet()){
+				sb.append(key).append(" ").append(od.get(key)).append(",");
 			}
+			hql.append(sb.substring(0,sb.length()-1));
+		}
+
 
 		return new QueryUtil(hql.toString(), strs);
 	}

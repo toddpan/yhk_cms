@@ -25,13 +25,11 @@ public class TempUser {
 //    <element name="ip" type="au" size="4"/>
 //    <element name="role_type" type="au"/>
 //    <element name="time " type="t"/>
-    private Integer status;
+    private int status;
     @Convert(converter = UserChannelConverJson.class)
     private UserServiceDTO userChannel;
 
-    public Integer getStatus() {
-        return status;
-    }
+
 
     public void setStatus(Integer status) {
         this.status = status;
@@ -95,6 +93,14 @@ public class TempUser {
         public UserServiceDTO convertToEntityAttribute(String dbData) {
             return JSON.parseObject(dbData,UserServiceDTO.class);
         }
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
     }
 
     public UserServiceDTO getUserChannel() {

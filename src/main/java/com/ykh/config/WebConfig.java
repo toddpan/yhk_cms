@@ -211,7 +211,6 @@ public class WebConfig extends WebMvcConfigurationSupport {
         registrar.setFormatter(new DateFormatter(Constants.DATE_FORMAT_HOURE_MINUTE_SENCOND));
 
         registrar.registerFormatters(conversionService);
-//super.mvcConversionService()
         return conversionService;
     }
 

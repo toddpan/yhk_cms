@@ -131,4 +131,5 @@ public interface ICMSAgentInterface
 	
 	public void agentInit();
 
+	void agentDestroy();
 }

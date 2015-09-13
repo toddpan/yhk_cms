@@ -5,6 +5,8 @@ import com.ykh.tang.agent.excep.CMSException;
 import com.ykh.tang.agent.message.*;
 import com.ykh.tang.agent.vo.*;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -20,15 +22,18 @@ public class ICMSAgent
 
 {
 	Logger logger=Logger.getLogger(ICMSAgent.class);
+	@Autowired
+	@Qualifier("getmessageHandler")
 	private IMessageHandler handler;
-
+	@Autowired
+	@Qualifier("getmessageHandlerByGroup")
 	private IMessageHandler serviceHandler;
 
 	static
 	{
 		try{
 			System.out.println("load cmsagent start!!!!!!!");
-			System.loadLibrary("cmsagent");
+			System.load("/tang/lib/libcmsagent.so.1.0.0");
 			System.out.println("load cmsagent end!!!!!!!");
 		}catch(Exception e){
 			e.printStackTrace();
@@ -36,7 +41,7 @@ public class ICMSAgent
 		}
 	}
 
-	private static  final  ICMSAgent ICMS_AGENT=new ICMSAgent();
+//	private static  final  ICMSAgent ICMS_AGENT=new ICMSAgent();
 
 
 	// 初始化
@@ -423,13 +428,13 @@ public class ICMSAgent
 	public ICMSAgent() {
 	}
 
-	public ICMSAgent(IMessageHandler handler,IMessageHandler serviceHandler){
-		this.handler=handler;
-		this.serviceHandler=serviceHandler;
-	}
+//	public ICMSAgent(IMessageHandler handler,IMessageHandler serviceHandler){
+//		this.handler=handler;
+//		this.serviceHandler=serviceHandler;
+//	}
 
-	public static ICMSAgent getInstance(){
-		return ICMS_AGENT;
-	}
+//	public static ICMSAgent getInstance(){
+//		return ICMS_AGENT;
+//	}
 
 }

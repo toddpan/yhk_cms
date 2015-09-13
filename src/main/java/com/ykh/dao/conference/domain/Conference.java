@@ -2,8 +2,13 @@ package com.ykh.dao.conference.domain;
 
 import com.alibaba.fastjson.JSON;
 import com.ykh.common.ParseJSON;
+<<<<<<< HEAD
 import com.ykh.common.cache.CacheDomain;
 import com.ykh.dao.Request;
+=======
+//import com.ykh.pojo.Product;
+import com.ykh.dao.PageRequest;
+>>>>>>> upstream/master
 import com.ykh.tang.agent.vo.AutoStopParams;
 import com.ykh.tang.agent.vo.RoleInfo;
 
@@ -20,7 +25,7 @@ import java.util.List;
  */
 @Entity
 @Table
-public class Conference implements CacheDomain,Request<Conference>{
+public class Conference  extends PageRequest implements CacheDomain {
 	/**
 	 * serialVersionUID:
 	 * @since JDK 1.7

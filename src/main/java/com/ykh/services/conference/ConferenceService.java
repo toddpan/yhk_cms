@@ -1,10 +1,21 @@
 package com.ykh.services.conference;
 
+<<<<<<< HEAD
+=======
+import com.ykh.dao.Dao;
+import com.ykh.dao.conference.domain.ConfJoinTempConf;
+>>>>>>> upstream/master
 import com.ykh.dao.conference.domain.Conference;
 import com.ykh.pojo.User;
+import com.ykh.pojo.UserServiceDTO;
 import com.ykh.tang.agent.vo.ConferenceInfoBMS;
 import com.ykh.tang.agent.vo.UserChannel;
 import com.ykh.tang.agent.vo.UserConferenceStatus;
+<<<<<<< HEAD
+=======
+import com.ykh.vo.req.ConferenceRequest;
+import com.ykh.vo.res.PageResponse;
+>>>>>>> upstream/master
 
 public interface ConferenceService {
 	/**
@@ -24,7 +35,7 @@ public interface ConferenceService {
 	 * 注意事项：会议的具体服务值信息通过32为二进制码表示，具体编码值和业务管理协议。
 	 * 临时会议ID（32位二进制）的生成遵从一定的业务规则——前24位代表主会ID，后八位代表子会ID。 该方法创建会议后，会议没有启动。
 	 *
-	 * @param conferenceID
+	 * @param conference
 	 *            会议标识
 	 * @return boolean 返回是否创建成功
 	 * @throws Exception
@@ -72,15 +83,14 @@ public interface ConferenceService {
 	 * @param tempConfID
 	 *            临时会议ID
 	 * @return
-	 * @throws JNIException
+	 * @throws Exception
 	 */
-	public Integer queryUserNum(String applicationID, Integer tempConfID)
+	public Integer queryUserNum(Integer tempConfID)
 			throws Exception;
 	/**
 	 * 直接启动一个会议
 	 *
-	 * @param applicationID
-	 *            应用ID
+	 *           用户信息
 	 * @param tempConferenceID
 	 *            临时会议ID
 	 * @return
@@ -120,7 +130,7 @@ public interface ConferenceService {
 	 * @param tempUserID
 	 *            临时用户ID
 	 * @return
-	 * @throws JNIException
+	 * @throws Exception
 	 */
 	public UserConferenceStatus getUserConferenceStatus(String applicationID, Integer tempConfID,
 														Integer tempUserID) throws Exception;
@@ -149,4 +159,14 @@ public interface ConferenceService {
 	 */
 	public Integer initConference(String applicationID, Integer conferenceID)
 			throws Exception;
+
+	void openConference(Conference conference);
+
+	Conference modifyConference(Conference conference);
+
+	UserServiceDTO userJoinConference(User request);
+
+	public Dao.PageVO<Conference> searchConference(Conference conference);
+	UserServiceDTO startConferecneWithUser(Integer conferenceId, User request);
+	public UserServiceDTO startConferenceWithUser(User request);
 }

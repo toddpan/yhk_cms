@@ -295,6 +295,11 @@ public class ICMSAgentImpl implements ICMSAgentInterface {
 		icmsAgent.agentInit();
 	}
 
+	@Override
+	public void agentDestroy() {
+		icmsAgent.agentDestroy();
+	}
+
 	public void agentDestory() {
 		icmsAgent.agentDestroy();
 	}

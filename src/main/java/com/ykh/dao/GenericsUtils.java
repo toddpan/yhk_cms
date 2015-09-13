@@ -1,5 +1,7 @@
 package com.ykh.dao;
 
+import org.springframework.data.domain.*;
+
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 
@@ -7,7 +9,6 @@ public class GenericsUtils {
 	@SuppressWarnings("rawtypes")
 	public static Class getSuperClassGenricType(Class clazz, int index) {
 		Type genType = clazz.getGenericSuperclass();
-
 		if (!(genType instanceof ParameterizedType)) {
 			return Object.class;
 		}

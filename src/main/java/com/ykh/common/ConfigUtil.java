@@ -11,7 +11,7 @@
 // */
 //public class  ConfigUtil{
 //	private static final Properties PROPERTIES = new Properties();
-//	private  static String LLS_CONFIG="/Config.properties";
+//	private  static String LLS_CONFIG="/config.properties";
 //	public static void loadConfigFileByPath(String path)  {
 //		InputStream inputStream = ConfigUtil.class.getResourceAsStream(path);
 //		try {
