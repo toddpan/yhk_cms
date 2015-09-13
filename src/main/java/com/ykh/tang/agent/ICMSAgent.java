@@ -91,7 +91,7 @@ public class ICMSAgent
 	{
 		try{
 			System.out.println("load cmsagent start!!!!!!!");
-			System.loadLibrary("cmsagent");
+			System.load("/tang/lib/libcmsagent.so.1.0.0");
 			System.out.println("load cmsagent end!!!!!!!");
 		}catch(Exception e){
 			e.printStackTrace();
