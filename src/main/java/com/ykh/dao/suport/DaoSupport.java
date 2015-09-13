@@ -13,9 +13,6 @@ import javax.persistence.Query;
 import java.io.Serializable;
 import java.util.List;
 
-/**
- * Created by ant_shake_tree on 15/7/24.
- */
 @Transactional
 public class DaoSupport<T,ID extends  Serializable>  extends SimpleJpaRepository<T,ID> implements Dao<T, ID> {
     private final EntityManager entityManager;
@@ -30,7 +27,6 @@ public class DaoSupport<T,ID extends  Serializable>  extends SimpleJpaRepository
         Query q = this.entityManager.createQuery("select count(*) " + hql);
         return prepareParamlizedQuery(q, values).getFirstResult();
     }
-
 
     public void excuteNative(String hql, Object... args) {
         prepareParamlizedQuery(this.entityManager.createNativeQuery(hql), args)
@@ -108,11 +104,6 @@ public class DaoSupport<T,ID extends  Serializable>  extends SimpleJpaRepository
             return null;
         }
     }
-
-    public T find(ID id) {
-        return this.findOne(id);
-    }
-
     @Override
     public PageVO<T> findPages(PageRequest<T> request) {
         QueryUtil queryUtil = QueryUtil.getHqlByDomain(request);
@@ -123,6 +114,9 @@ public class DaoSupport<T,ID extends  Serializable>  extends SimpleJpaRepository
         pageVO.setContents(ls);
         pageVO.setPage(pageView);
         return pageVO;
+    }
+    public T find(ID id) {
+        return this.findOne(id);
     }
 
 }

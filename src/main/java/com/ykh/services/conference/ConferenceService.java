@@ -29,7 +29,7 @@ public interface ConferenceService {
 	 * 注意事项：会议的具体服务值信息通过32为二进制码表示，具体编码值和业务管理协议。
 	 * 临时会议ID（32位二进制）的生成遵从一定的业务规则——前24位代表主会ID，后八位代表子会ID。 该方法创建会议后，会议没有启动。
 	 *
-	 * @param conferenceID
+	 * @param conference
 	 *            会议标识
 	 * @return boolean 返回是否创建成功
 	 * @throws Exception
@@ -77,15 +77,14 @@ public interface ConferenceService {
 	 * @param tempConfID
 	 *            临时会议ID
 	 * @return
-	 * @throws JNIException
+	 * @throws Exception
 	 */
 	public Integer queryUserNum(Integer tempConfID)
 			throws Exception;
 	/**
 	 * 直接启动一个会议
 	 *
-	 * @param applicationID
-	 *            应用ID
+	 *           用户信息
 	 * @param tempConferenceID
 	 *            临时会议ID
 	 * @return
@@ -125,7 +124,7 @@ public interface ConferenceService {
 	 * @param tempUserID
 	 *            临时用户ID
 	 * @return
-	 * @throws JNIException
+	 * @throws Exception
 	 */
 	public UserConferenceStatus getUserConferenceStatus(String applicationID, Integer tempConfID,
 														Integer tempUserID) throws Exception;
@@ -162,4 +161,6 @@ public interface ConferenceService {
 	UserServiceDTO userJoinConference(User request);
 
 	public Dao.PageVO<Conference> searchConference(Conference conference);
+	UserServiceDTO startConferecneWithUser(Integer conferenceId, User request);
+	public UserServiceDTO startConferenceWithUser(User request);
 }

@@ -10,6 +10,8 @@ import com.ykh.tang.agent.vo.*;
 import com.ykh.vo.body.ConferenceSeedBody;
 import com.ykh.vo.res.ConferenceResponse;
 import com.ykh.vo.res.CreateConferenceResponse;
+import com.ykh.vo.res.Response;
+import com.ykh.vo.res.UserChannelResponse;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +22,7 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.*;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -75,9 +78,38 @@ public class ConferenceFacadeImplTest {
         Thread.sleep(100);
         this.joinConference(response1.getBody().getTempConferenceId());
         Thread.sleep(100);
-        this.stopConference(response1.getBody().getTempConferenceId());
+//        this.stopConference(response1.getBody().getTempConferenceId());
         System.out.println(ws);
         Files.write(Paths.get("test.txt"),ws,Charset.defaultCharset(),StandardOpenOption.CREATE);
+    }
+    @Test
+    public void startConferecneWithUserAll() throws InterruptedException, IOException {
+        Conference conference =new Conference();
+        ConferenceInfoBMS bms =getTestConferenceInfo();
+        conference.setPassword(bms.getPassword());
+        conference.setConferencename(bms.getName());
+        conference.setAutoStopParams((AutoStopParams) bms.getStopParams());
+        conference.setBillingcode("753053");
+        conference.setConfScale(bms.getConfScale());
+        conference.setPassword(bms.getPassword());
+        conference.setServiceConfigs(bms.getServiceConfigs());
+        conference.setRuleInfos(bms.getRoleInfo());
+        ConferenceResponse response= conferenceFacade.openConference(conference);
+        User user=this.buildUser();
+        Thread.sleep(2000);
+        user.setConferenceId(response.getBody().getConferenceId());
+        UserChannelResponse response1=this.startConferecneWithUser(user);
+        String s=JSON.toJSONString(response1);
+        System.out.println(s);
+        List<String> strings =new ArrayList<>(2);
+        strings.add(JSON.toJSONString(user));
+        strings.add(s);
+        Files.write(Paths.get("test2.txt"),strings,Charset.defaultCharset(),StandardOpenOption.CREATE);
+    }
+
+    private UserChannelResponse startConferecneWithUser( User user) {
+
+     return   this.conferenceFacade.startConferecneWithUser(user);
     }
 
     public void modifyConference(){
@@ -92,8 +124,8 @@ public class ConferenceFacadeImplTest {
         ConferenceSeedBody conferenceSeedBody =new ConferenceSeedBody();
         conferenceSeedBody.setTempConferenceId(temId);
         ws.add("startConf request : ===>" + JSON.toJSONString(conferenceSeedBody));
-
-        ws.add("startConf response : ===> "+conferenceFacade.startConference(conferenceSeedBody));
+        Response response =conferenceFacade.startConference(conferenceSeedBody);
+        ws.add("startConf response : ===> "+JSON.toJSONString(response));
     }
 
     public  void stopConference(int temid){
@@ -518,6 +550,33 @@ public class ConferenceFacadeImplTest {
         User user = new User();
 
         user.setTempConferenceId(tempid);
+        user.setUsername("liming");
+        user.setUserStatus(0);
+        user.setClientType(2);
+        user.setPinCode(1234);
+        user.setDomain(1);
+        user.setIsowner(true);
+        user.setRolemap(rolemap);
+        user.setIpaddr("192.168.13.99");
+
+        return user;
+    }
+    private User buildUser() {
+
+        List<String> rolemap = Lists.newArrayList();
+        rolemap.add("1");
+        rolemap.add("2");
+//		rolemap.put(4);
+//		rolemap.put(5, new ArrayList<Integer>());
+//		rolemap.put(10, new ArrayList<Integer>());
+//		rolemap.put(11, new ArrayList<Integer>());
+//		rolemap.put(12, new ArrayList<Integer>());
+//		rolemap.put(13, new ArrayList<Integer>());
+//		rolemap.put(14, new ArrayList<Integer>());
+
+        User user = new User();
+
+//        user.setTempConferenceId(tempid);
         user.setUsername("liming");
         user.setUserStatus(0);
         user.setClientType(2);

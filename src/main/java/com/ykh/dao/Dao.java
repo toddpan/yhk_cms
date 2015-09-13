@@ -47,7 +47,6 @@ public interface Dao<T,ID extends Serializable> extends JpaRepository<T,ID> {
 	public PageVO<T> findPages(PageRequest<T> request);
 
 	public int getCount(String hql, Object... values);
-
 	public static class PageVO<T>{
 		List<T> contents;
 		PageView page;

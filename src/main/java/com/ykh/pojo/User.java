@@ -14,6 +14,7 @@ package com.ykh.pojo;
 
 import com.google.common.collect.Lists;
 
+import javax.persistence.Transient;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -42,7 +43,8 @@ public class User implements java.io.Serializable {
 	private String ipaddr;
 	private Boolean isowner;
 	private Integer userStatus;
-
+	@Transient
+	private Integer conferenceId;
 	private Integer tempConferenceId;
 	private List<String> rolemap = Lists.newArrayList();
 
@@ -245,6 +247,14 @@ public class User implements java.io.Serializable {
 
 	public Integer getTempConferenceId() {
 		return tempConferenceId;
+	}
+
+	public Integer getConferenceId() {
+		return conferenceId;
+	}
+
+	public void setConferenceId(Integer conferenceId) {
+		this.conferenceId = conferenceId;
 	}
 
 	public void setTempConferenceId(Integer tempConferenceId) {

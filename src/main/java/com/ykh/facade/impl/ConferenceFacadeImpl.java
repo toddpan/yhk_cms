@@ -152,6 +152,16 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
         return pageResponse;
     }
 
+    @Override
+    public UserChannelResponse startConferecneWithUser(User request) {
+        RestAssert.notNull(User.class,request);
+        RestAssert.notNull(request.getConferenceId(), "conferenceId");
+        UserServiceDTO res=conferenceService.startConferecneWithUser(request.getConferenceId(),request);
+        UserChannelResponse response =new UserChannelResponse();
+        response.setBody(res);
+        return response;
+    }
+
     public static void main(String[] args){
         System.out.println(Integer.toHexString((int) (Utils.hashCode("confScale") & 6917529027641081855L)));
     }

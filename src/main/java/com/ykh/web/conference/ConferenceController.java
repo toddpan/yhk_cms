@@ -28,10 +28,6 @@ public class ConferenceController {
         return new Conference();
     }
 
-
-
-
-
     @RequestMapping(value = "/openConference", method = RequestMethod.POST, consumes = { ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML }, produces = {ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML })
     public @ResponseBody ConferenceResponse OpenConference(@RequestBody Conference conference){
         return conferenceFacade.openConference(conference);
@@ -43,6 +39,10 @@ public class ConferenceController {
     @RequestMapping(value = "/createConference ", method = RequestMethod.POST, consumes = { ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML }, produces = {ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML })
     public @ResponseBody CreateConferenceResponse createConference(@RequestBody Conference conference){
         return conferenceFacade.createConference(conference);
+    }
+    @RequestMapping(value = "/startConferecneWithUser ", method = RequestMethod.POST, consumes = { ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML }, produces = {ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML })
+    public @ResponseBody UserChannelResponse startConferecneWithUser(@RequestBody User request){
+        return conferenceFacade.startConferecneWithUser(request);
     }
     @RequestMapping(value = "/stopConference  ", method = RequestMethod.POST, consumes = { ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML }, produces = {ControllerConstans.CONTENT_TYPE,ControllerConstans.CONTENT_TYPE_XML })
     public @ResponseBody Response stopConference(@RequestBody ConferenceSeedBody conference){
