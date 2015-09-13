@@ -1,9 +1,9 @@
 package com.ykh.dao;
 
-import javax.persistence.Transient;
-
 import org.codehaus.jackson.map.annotate.JsonSerialize;
 import org.codehaus.jackson.map.annotate.JsonSerialize.Inclusion;
+
+import javax.persistence.Transient;
 /**
  * 暂时用不到
  * @author ant_shake_tree

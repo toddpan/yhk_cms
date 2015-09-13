@@ -1,11 +1,6 @@
 package com.ykh.tang.agent.vo;
 
 import java.util.List;
-import java.util.Objects;
-
-import com.ykh.tang.agent.vo.RoleInfo;
-import com.ykh.tang.agent.vo.SubConferenceInfo;
-import com.ykh.tang.agent.vo.AutoStopParams;
 
 public class ConferenceInfoBMS
 {

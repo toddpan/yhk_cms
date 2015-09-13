@@ -1,11 +1,11 @@
 package com.ykh.common;
 
+import org.springframework.beans.BeanUtils;
+
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
-
-import org.springframework.beans.BeanUtils;
 
 public class CMSBeanUtils extends BeanUtils {
 	public static void copyPropertiesByNotNull(Object source, Object target,String[] ignorePropertyStrs) {

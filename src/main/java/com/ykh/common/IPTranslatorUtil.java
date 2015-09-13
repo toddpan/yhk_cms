@@ -2,13 +2,6 @@ package com.ykh.common;
 
 import org.apache.log4j.Logger;
 import sun.net.util.IPAddressUtil;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
-import java.util.List;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.atomic.AtomicBoolean;
 /**
  * IPTranslatorUtil 字符串IP地址和整数类型转换工具类
  *

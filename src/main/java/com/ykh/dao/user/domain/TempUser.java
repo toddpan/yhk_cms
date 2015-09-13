@@ -2,7 +2,6 @@ package com.ykh.dao.user.domain;
 
 import com.alibaba.fastjson.JSON;
 import com.ykh.pojo.UserServiceDTO;
-import com.ykh.tang.agent.vo.UserChannel;
 
 import javax.persistence.*;
 

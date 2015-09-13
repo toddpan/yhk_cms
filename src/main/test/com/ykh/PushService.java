@@ -1,9 +1,6 @@
 package com.ykh;
-import java.io.IOException;
-import java.nio.charset.Charset;
 
 import com.alibaba.fastjson.JSON;
-import com.maxc.rest.common.ParseJSON;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
@@ -13,6 +10,9 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
+
+import java.io.IOException;
+import java.nio.charset.Charset;
 
 @Component
 public class PushService {

@@ -1,27 +1,13 @@
 package com.ykh.common;
 
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import com.ykh.common.IPTranslatorUtil;
-import com.ykh.dao.conference.domain.Conference;
 import com.ykh.pojo.CtServiceAddr;
 import com.ykh.pojo.DtServiceAddr;
 import com.ykh.pojo.User;
-import com.ykh.tang.agent.vo.AutoStopParams;
-import com.ykh.tang.agent.vo.BMSUserBillInfo;
-import com.ykh.tang.agent.vo.BMSUserInfo;
-import com.ykh.tang.agent.vo.ConferenceBillInfoBMS;
-import com.ykh.tang.agent.vo.ConferenceInfoBMS;
-import com.ykh.tang.agent.vo.RoleInfo;
-import com.ykh.tang.agent.vo.SubConferenceInfo;
-import com.ykh.tang.agent.vo.UserServiceAddr;
-
+import com.ykh.tang.agent.vo.*;
 import org.apache.log4j.Logger;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * BeanTranslatorUtil:业务bean翻译工具类，主要负责将一个业务bean转换成另外的业务bean

@@ -1,13 +1,13 @@
 package com.ykh.tang.agent;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.ykh.tang.agent.excep.CMSException;
 import com.ykh.tang.agent.message.ConfStartMsgResult;
 import com.ykh.tang.agent.vo.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Component
 public class ICMSAgentImpl implements ICMSAgentInterface {

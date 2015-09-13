@@ -1,11 +1,10 @@
 package com.ykh.dao.suport;
 
 
-
-import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
-import org.springframework.transaction.annotation.Transactional;
 import com.ykh.dao.Dao;
 import com.ykh.dao.Request;
+import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;

@@ -21,30 +21,19 @@
  */
 package com.ykh.services.conference.impl;
 
-import java.util.Date;
-
 import com.ykh.dao.conference.ConfJoinTempConfDao;
 import com.ykh.dao.conference.domain.ConfJoinTempConf;
 import com.ykh.dao.user.TempUserDao;
 import com.ykh.dao.user.domain.TempUser;
+import com.ykh.tang.agent.IMessageHandler;
+import com.ykh.tang.agent.message.*;
 import org.apache.log4j.Logger;
 import org.hibernate.exception.ConstraintViolationException;
-
-import com.ykh.tang.agent.IMessageHandler;
-import com.ykh.tang.agent.message.ChangeUserRoleMsgResult;
-import com.ykh.tang.agent.message.ConfStartMsgResult;
-import com.ykh.tang.agent.message.ConfStopMsgResult;
-import com.ykh.tang.agent.message.ExpelUserMsgResult;
-import com.ykh.tang.agent.message.IMessage;
-import com.ykh.tang.agent.message.Ip;
-import com.ykh.tang.agent.message.JoinUserInfo;
-import com.ykh.tang.agent.message.UserExitConfMsgResult;
-import com.ykh.tang.agent.message.UserJoinConfResult;
-import com.ykh.tang.agent.message.UserOfflineMsgResult;
-import com.ykh.tang.agent.message.UserOnlineMsgResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+
+import java.util.Date;
 
 @Component
 @Qualifier("getmessageHandler")

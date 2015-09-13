@@ -2,7 +2,6 @@ package com.ykh.services.user;
 
 import com.ykh.pojo.User;
 import com.ykh.pojo.UserServiceDTO;
-import com.ykh.tang.agent.vo.UserChannel;
 
 
 /**

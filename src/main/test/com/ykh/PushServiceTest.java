@@ -2,21 +2,14 @@ package com.ykh;
 
 import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Lists;
-
-import com.ykh.common.BeanTranslatorUtil;
 import com.ykh.dao.conference.domain.Conference;
-
-
 import com.ykh.pojo.User;
-import com.ykh.tang.agent.excep.CMSException;
-import com.ykh.tang.agent.message.ConfStartMsgResult;
 import com.ykh.tang.agent.vo.*;
 import com.ykh.vo.body.ConferenceSeedBody;
 import org.junit.Test;
-import org.w3c.dom.ls.LSException;
 
-import javax.net.ssl.SSLServerSocket;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class PushServiceTest {
 	PushService pushService=new PushService();

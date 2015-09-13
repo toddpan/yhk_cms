@@ -1,12 +1,10 @@
 package com.ykh.web.conference;
 
 //import ConferenceServiceImpl;
+
 import com.ykh.dao.conference.domain.Conference;
 import com.ykh.facade.ConferenceFacade;
-import com.ykh.facade.impl.ConferenceFacadeImpl;
 import com.ykh.pojo.User;
-import com.ykh.tang.agent.vo.UserChannel;
-import com.ykh.tang.agent.vo.UserConferenceStatus;
 import com.ykh.vo.body.ConferenceSeedBody;
 import com.ykh.vo.res.*;
 import org.springframework.beans.factory.annotation.Autowired;

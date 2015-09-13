@@ -1,12 +1,11 @@
 package com.ykh.dao.suport;
 
-import java.util.List;
+import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
-
-import org.springframework.stereotype.Repository;
+import java.util.List;
 @Repository
 public class GernalDaoSupport {
 	@PersistenceContext

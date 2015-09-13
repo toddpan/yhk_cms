@@ -1,16 +1,17 @@
 package com.ykh.dao.conference.domain;
-import java.util.*;
-
-import javax.persistence.*;
 
 import com.alibaba.fastjson.JSON;
 import com.ykh.common.ParseJSON;
-//import com.ykh.pojo.Product;
+import com.ykh.common.cache.CacheDomain;
+import com.ykh.dao.Request;
 import com.ykh.tang.agent.vo.AutoStopParams;
 import com.ykh.tang.agent.vo.RoleInfo;
 
-import com.ykh.common.cache.CacheDomain;
-import com.ykh.dao.Request;
+import javax.persistence.*;
+import java.util.Date;
+import java.util.List;
+
+//import com.ykh.pojo.Product;
 /**
  * ClassName: Conference
  * :

@@ -1,10 +1,5 @@
 package com.ykh.vo.res;
 
-import com.ykh.dao.conference.domain.ConfJoinTempConf;
-import com.ykh.dao.conference.domain.Conference;
-import com.ykh.tang.agent.vo.ConferenceInfoBMS;
-import com.ykh.vo.body.ConferenceSeedBody;
-
 /**
  * Created by ant_shake_tree on 15/8/21.
  */

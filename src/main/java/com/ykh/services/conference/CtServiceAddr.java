@@ -1,8 +1,7 @@
 package com.ykh.services.conference;
 
-import java.io.Serializable;
-
 import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 
 
 @XmlRootElement

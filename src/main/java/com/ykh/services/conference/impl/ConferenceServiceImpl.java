@@ -5,20 +5,22 @@ import com.maxc.rest.common.ConfigUtil;
 import com.maxc.rest.common.exception.RestException;
 import com.ykh.common.Constants;
 import com.ykh.common.YkhUtils;
-import com.ykh.pojo.User;
-import com.ykh.services.conference.ConferenceSeedService;
-import com.ykh.services.conference.exception.CMSErrorCode;
 import com.ykh.dao.conference.ConfJoinTempConfDao;
 import com.ykh.dao.conference.ConferenceDao;
 import com.ykh.dao.conference.domain.ConfJoinTempConf;
+import com.ykh.dao.conference.domain.Conference;
+import com.ykh.pojo.User;
+import com.ykh.services.conference.ConferenceSeedService;
 import com.ykh.services.conference.ConferenceService;
+import com.ykh.services.conference.exception.CMSErrorCode;
 import com.ykh.tang.agent.ICMSAgentInterface;
-import com.ykh.tang.agent.vo.*;
+import com.ykh.tang.agent.vo.ConferenceInfoBMS;
+import com.ykh.tang.agent.vo.SubConferenceInfo;
+import com.ykh.tang.agent.vo.UserChannel;
+import com.ykh.tang.agent.vo.UserConferenceStatus;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.ykh.dao.conference.domain.Conference;
 
 @Service
 public  class ConferenceServiceImpl implements ConferenceService {

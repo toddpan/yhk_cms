@@ -7,18 +7,17 @@ import com.maxc.rest.common.exception.RestException;
 import com.ykh.common.BeanTranslatorUtil;
 import com.ykh.common.Constants;
 import com.ykh.common.IPTranslatorUtil;
-import com.ykh.pojo.*;
 import com.ykh.dao.conference.ConfJoinTempConfDao;
 import com.ykh.dao.conference.domain.ConfJoinTempConf;
 import com.ykh.dao.user.TempUserDao;
 import com.ykh.dao.user.domain.TempUser;
+import com.ykh.pojo.*;
 import com.ykh.services.user.UserConferenceService;
 import com.ykh.tang.agent.Consts;
 import com.ykh.tang.agent.ICMSAgentInterface;
 import com.ykh.tang.agent.vo.BMSUserInfo;
 import com.ykh.tang.agent.vo.UserChannel;
 import com.ykh.tang.agent.vo.UserServiceAddr;
-
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -79,145 +78,97 @@ public class UserConferenceServiceImpl implements UserConferenceService {
 
         logger.info("userJoinConference  ===> jni start" + request.getTempConferenceId());
         UserChannel userChannel = icmsAgent.userJoinConference(Constants.site, request.getTempConferenceId(), userInfo);
-
         userChannel.setTempConferenceID(request.getTempConferenceId());
-
         UserDTO userDTO= new UserDTO();
-
         userDTO.setTempuserid(tempUser.getIdTempUser());
-
         RestBeanUtils.copyProperties(userDTO, request, false);
-
         tempUser.setPinCode(userInfo.pinCode);
-
         tempUser.setClientType(userInfo.getClientType());
-
         tempUserDao.save(tempUser);
-
         UserServiceDTO dto = getUserServiceByChannel(userChannel, userDTO);
-
         tempUser.setUserChannel(dto);
 
         return dto;
     }
-    
-private UserServiceDTO getUserServiceByChannel(UserChannel userChannel, UserDTO userDTO)
-{
-	if(userChannel.getUserID() > 0)
-	{
-		userDTO.setTempuserid(Integer.valueOf(userChannel.getUserID()));
-	}
-	UserServiceDTO userServiceDTO = new UserServiceDTO();
-	
-	userServiceDTO.setTempconfernceid(userChannel.getTempConferenceID());
-	
-	userServiceDTO.setUser(userDTO);
-	
-	String userIpaddr = userDTO.getIpaddr();
-	
-	logger.info("userIpaddr from userDTO is:" + userIpaddr);
-	
-	List<DtServiceAddrDTO> dtsaddrDTOlist = new ArrayList<DtServiceAddrDTO>();
-	
-	if (userChannel.ctsAddr == null || userChannel.ctsAddr.isEmpty())
-	
-	{
-	
-	logger.error("业务管理返回的ctsAddr地址列表为空！调用中断，直接返回NULL！");
-	
-	throw new NullPointerException("业务管理返回的ctsAddr地址列表为空！调用中断，直接返回NULL！");
-	
-	}
-	
-	if (userChannel.dtsAddr == null || userChannel.dtsAddr.isEmpty())
-	
-	{
-	
-	logger.error("业务管理返回的dtsAddr地址列表为空！");
-	
-	dtsaddrDTOlist = null;
-	
-	} else 
-	
-	{
-		
-		DtServiceAddrDTO usAddrDto = null;
-		
-		for (UserServiceAddr usaddr : userChannel.dtsAddr)
-		{
-		
-		
-			usAddrDto = new DtServiceAddrDTO();
-			
-			usAddrDto.setChannelID(intToLong(usaddr.channel));
-			
-			usAddrDto.setGroupID(intToLong(usaddr.groupID));
-			
-			usAddrDto.setType(intToLong(usaddr.serviceType));
-			
-			usAddrDto.setTransportip(IPTranslatorUtil.longToIP(usaddr.getServerIP0()));
-			
-			
-			dtsaddrDTOlist.add(usAddrDto);
-		
-		}
-	
-	}
-	
-	userServiceDTO.setDtsaddrlist(dtsaddrDTOlist);
-	
-	List<CtServiceAddrDTO> ctsaddrDTOlist = new ArrayList<CtServiceAddrDTO>();
-	
-	CtServiceAddrDTO csAddrDto = null;
-	
-	for (UserServiceAddr usaddr : userChannel.ctsAddr)
-	{
-	
-		csAddrDto = new CtServiceAddrDTO();
-		
-		csAddrDto.setType((usaddr.serviceType));
-		
-		csAddrDto.setChannelID((usaddr.channel));
-		
-		csAddrDto.setGroupID((usaddr.groupID));
-		
-		csAddrDto.setAccessip(IPTranslatorUtil.longToIP(usaddr.getServerIP0()));
-		
-		csAddrDto.setBakassessip(IPTranslatorUtil.longToIP(usaddr.getHotServerIP0()));
-		
-		if(csAddrDto != null)
-		{
-		
-			logger.info("Accessip is:" + csAddrDto.getAccessip());
-			
-			logger.info("Bakessessip is:" + csAddrDto.getBakassessip());
-			
-			ctsaddrDTOlist.add(csAddrDto);
-		}
-	
-	}
-	
-	userServiceDTO.setCtsaddrlist(ctsaddrDTOlist);
-	
-	return userServiceDTO;
 
-}
+    private UserServiceDTO getUserServiceByChannel(UserChannel userChannel, UserDTO userDTO)
+    {
+        if(userChannel.getUserID() > 0)
+        {
+            userDTO.setTempuserid(Integer.valueOf(userChannel.getUserID()));
+        }
+        UserServiceDTO userServiceDTO = new UserServiceDTO();
+        userServiceDTO.setTempconfernceid(userChannel.getTempConferenceID());
+        userServiceDTO.setUser(userDTO);
+        String userIpaddr = userDTO.getIpaddr();
+        logger.info("userIpaddr from userDTO is:" + userIpaddr);
+        List<DtServiceAddrDTO> dtsaddrDTOlist = new ArrayList<DtServiceAddrDTO>();
+        if (userChannel.ctsAddr == null || userChannel.ctsAddr.isEmpty())
+        {
+            logger.error("业务管理返回的ctsAddr地址列表为空！调用中断，直接返回NULL！");
+            throw new NullPointerException("业务管理返回的ctsAddr地址列表为空！调用中断，直接返回NULL！");
+        }
+        if (userChannel.dtsAddr == null || userChannel.dtsAddr.isEmpty())
+        {
+            logger.error("业务管理返回的dtsAddr地址列表为空！");
+            dtsaddrDTOlist = null;
+
+        } else
+
+        {
+            DtServiceAddrDTO usAddrDto = null;
+            for (UserServiceAddr usaddr : userChannel.dtsAddr)
+            {
+                usAddrDto = new DtServiceAddrDTO();
+                usAddrDto.setChannelID(intToLong(usaddr.channel));
+                usAddrDto.setGroupID(intToLong(usaddr.groupID));
+                usAddrDto.setType(intToLong(usaddr.serviceType));
+                usAddrDto.setTransportip(IPTranslatorUtil.longToIP(usaddr.getServerIP0()));
+                dtsaddrDTOlist.add(usAddrDto);
+            }
+
+        }
+
+        userServiceDTO.setDtsaddrlist(dtsaddrDTOlist);
+        List<CtServiceAddrDTO> ctsaddrDTOlist = new ArrayList<CtServiceAddrDTO>();
+        CtServiceAddrDTO csAddrDto = null;
+        for (UserServiceAddr usaddr : userChannel.ctsAddr)
+        {
+            csAddrDto = new CtServiceAddrDTO();
+            csAddrDto.setType((usaddr.serviceType));
+            csAddrDto.setChannelID((usaddr.channel));
+            csAddrDto.setGroupID((usaddr.groupID));
+            csAddrDto.setAccessip(IPTranslatorUtil.longToIP(usaddr.getServerIP0()));
+            csAddrDto.setBakassessip(IPTranslatorUtil.longToIP(usaddr.getHotServerIP0()));
+            if(csAddrDto != null)
+            {
+                logger.info("Accessip is:" + csAddrDto.getAccessip());
+                logger.info("Bakessessip is:" + csAddrDto.getBakassessip());
+                ctsaddrDTOlist.add(csAddrDto);
+            }
+        }
+
+        userServiceDTO.setCtsaddrlist(ctsaddrDTOlist);
+
+        return userServiceDTO;
+
+    }
 
     
 
-/**
+    /**
 
-* int类型数据转long
+    * int类型数据转long
 
-* @param value
+    * @param value
 
-* @return
+    * @return
 
-*/
+    */
 
-private long intToLong(int value){
+    private long intToLong(int value){
 
-return value * 1l;
+    return value * 1l;
 
-}
+    }
 }

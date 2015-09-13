@@ -1,11 +1,6 @@
 package com.ykh.config;
 
-import java.util.Properties;
-import java.util.concurrent.TimeUnit;
-
-import javax.annotation.Resource;
-import javax.sql.DataSource;
-
+import com.jolbox.bonecp.BoneCPDataSource;
 import com.ykh.dao.suport.RepositoryFactoryBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,7 +13,10 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import com.jolbox.bonecp.BoneCPDataSource;
+import javax.annotation.Resource;
+import javax.sql.DataSource;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author Petri Kainulainen

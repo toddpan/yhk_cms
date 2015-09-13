@@ -1,14 +1,9 @@
 package com.ykh.tang.agent;
 
-import java.util.List;
-
 import com.ykh.tang.agent.excep.CMSException;
-import com.ykh.tang.agent.vo.BMSUserBillInfo;
-import com.ykh.tang.agent.vo.BMSUserInfo;
-import com.ykh.tang.agent.vo.ConferenceBillInfoBMS;
-import com.ykh.tang.agent.vo.ConferenceInfoBMS;
-import com.ykh.tang.agent.vo.UserChannel;
-import com.ykh.tang.agent.vo.UserConferenceStatus;
+import com.ykh.tang.agent.vo.*;
+
+import java.util.List;
 
 public interface ICMSAgentInterface
 {

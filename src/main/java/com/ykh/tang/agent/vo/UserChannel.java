@@ -1,7 +1,5 @@
 package com.ykh.tang.agent.vo;
 
-import com.google.common.collect.Lists;
-
 import java.util.ArrayList;
 import java.util.List;
 
