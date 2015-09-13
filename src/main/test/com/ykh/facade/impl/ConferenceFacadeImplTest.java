@@ -80,7 +80,7 @@ public class ConferenceFacadeImplTest {
         Thread.sleep(100);
 //        this.stopConference(response1.getBody().getTempConferenceId());
         System.out.println(ws);
-        Files.write(Paths.get("test.txt"),ws,Charset.defaultCharset(),StandardOpenOption.CREATE);
+        Files.write(Paths.get("test2.txt"),ws,Charset.defaultCharset(),StandardOpenOption.CREATE);
     }
     @Test
     public void startConferecneWithUserAll() throws InterruptedException, IOException {

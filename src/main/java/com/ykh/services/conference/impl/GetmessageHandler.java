@@ -91,10 +91,9 @@ public class GetmessageHandler implements IMessageHandler {
 //				/******************end***********************/
 //				
 //				//add by tanyunhua 2011-10-31		user online时，start conference后，修改会议状态
-				ConfJoinTempConf confJoinTempConf = confJoinTempConfDao.findByTempConfIdAndBmsStatus(tempConfID, new Integer(1));
+				ConfJoinTempConf confJoinTempConf = confJoinTempConfDao.findByTempConfIdAndBmsStatus(tempConfID, 1);
 				if(confJoinTempConf != null){
-					confJoinTempConf.setBmsStatus(Consts.CONF_STATUS_BMS_START);
-					confJoinTempConfDao.save(confJoinTempConf);
+					confJoinTempConfDao.excuteHql("update ConfJoinTempConf set bmsStatus=? where id=?",Consts.CONF_STATUS_BMS_START,confJoinTempConf.getId());
 				}
 				//end add
 //				Cdrconferenceinfo cdrconf = ConferenceBusinessImpl.getCdrConferenceInfoManager().queryCdrConfByConfIDAndTempID(tempConfID);

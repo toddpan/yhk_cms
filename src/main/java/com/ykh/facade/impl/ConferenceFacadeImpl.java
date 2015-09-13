@@ -34,13 +34,7 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
 
     @Autowired
     ConferenceService conferenceService;
-//    @Autowired
-//    ConferenceSeedDao conferenceSeedDao;
-//    @Autowired
-//    ConferenceDao conferenceDao;
 
-//    @Autowired
-//    UserConferenceService userConferenceService;
 
     public ConferenceResponse openConference(Conference conference) {
         RestAssert.notNull(Conference.class,conference);
@@ -48,7 +42,6 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
         RestAssert.notNull(conference.getConferencename(),"conferencename");
         RestAssert.notNull(conference.getAutoStopParams(),"autoStopParams");
         RestAssert.notNull(conference.getConfScale(),"confScale");
-//            RestAssert.notNull(conference.getPassword(), "password");
         conferenceService.openConference(conference);
         ConferenceResponse response =new ConferenceResponse();
         response.setBody(conference);
@@ -86,20 +79,14 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
     public Response deleteConference(ConferenceSeedBody conference) {
         RestAssert.notNull(conference);
         RestAssert.notNull(conference.getTempConferenceId(), "tempConferenceId");
-
         //TODO 删除
         conferenceService.deleteConference("", conference.getTempConferenceId());
-
         return new Response();
     }
 
     public UserNumResponse queryUserNum(ConferenceSeedBody conference) {
         RestAssert.notNull(conference);
         RestAssert.notNull(conference.getTempConferenceId(), "tempConferenceId");
-//        ConferenceSeed conferenceSeed =conferenceSeedDao.findOne(conference.getTempConferenceId());
-//        if(conferenceSeed==null){
-//            throw new ResourceNoFoundException();
-//        }
         //TODO queryNum;
 //        conferenceService.queryUserNum("",conference.getTempConferenceId());
 
