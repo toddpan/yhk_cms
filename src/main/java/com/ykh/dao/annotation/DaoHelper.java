@@ -12,10 +12,10 @@ public @interface DaoHelper {
 	String value() default "";
 	IgnoreValue ignore() default IgnoreValue.DEFAULT;
 	SearchMethod searchMethod() default SearchMethod.equal;
-	public enum IgnoreValue {
-		 DEFAULT,ZERO,NULLCOLLECTION,NONE;
+	enum IgnoreValue {
+		 DEFAULT,ZERO,NULLCOLLECTION,NONE
 	}
-	public enum SearchMethod{
+	enum SearchMethod{
 		like,equal,gt,ge,lt,le
 	}
 }

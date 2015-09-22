@@ -10,14 +10,11 @@ import com.ykh.dao.conference.domain.Conference;
 import com.ykh.dao.conference.domain.ConferenceSeed;
 import com.ykh.facade.ConferenceFacade;
 import com.ykh.pojo.User;
-<<<<<<< HEAD
 import com.ykh.pojo.UserServiceDTO;
 import com.ykh.services.conference.ConferenceService;
 import com.ykh.services.user.UserConferenceService;
-=======
 import com.ykh.tang.agent.vo.UserChannel;
 import com.ykh.tang.agent.vo.UserServiceAddr;
->>>>>>> upstream/master
 import com.ykh.vo.body.ConferenceSeedBody;
 import com.ykh.vo.res.*;
 import org.springframework.beans.factory.annotation.Autowired;

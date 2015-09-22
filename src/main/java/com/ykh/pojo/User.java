@@ -13,12 +13,8 @@
 package com.ykh.pojo;
 
 import com.google.common.collect.Lists;
-
-<<<<<<< HEAD
-=======
 import javax.persistence.Transient;
 import java.util.HashMap;
->>>>>>> upstream/master
 import java.util.List;
 
 /**
@@ -95,11 +91,7 @@ public class User implements java.io.Serializable {
 
 		// 判断tempuserid是否相等，如果相等，则该user是同一个user
 		User user = (User) o;
-		if (this.tempuserid.equals(user.tempuserid)) {
-			return true;
-		} else {
-			return false;
-		}
+		return this.tempuserid.equals(user.tempuserid);
 	}
 
 	/**

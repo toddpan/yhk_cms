@@ -35,19 +35,19 @@ import java.util.Map;
 public interface Dao<T,ID extends Serializable> extends JpaRepository<T,ID> {
 
 
-	public  List<T> listRequest(Request<T> request);
+	List<T> listRequest(Request<T> request);
 
-	public void excuteNative(String hql, Object... args);
-	public void excuteHql(String hql, Object... args);
-	public List<T> findHql(String hql, Object... args);
-	public List<Object> findAllSql(String hql, Object... args);
+	void excuteNative(String hql, Object... args);
+	void excuteHql(String hql, Object... args);
+	List<T> findHql(String hql, Object... args);
+	List<Object> findAllSql(String hql, Object... args);
 	T findOne(Request<T> req);
 	T findOne(String hql, Object... args);
 	T find(ID id);
-	public PageVO<T> findPages(PageRequest<T> request);
+	PageVO<T> findPages(PageRequest<T> request);
 
-	public int getCount(String hql, Object... values);
-	public static class PageVO<T>{
+	int getCount(String hql, Object... values);
+	class PageVO<T>{
 		List<T> contents;
 		PageView page;
 

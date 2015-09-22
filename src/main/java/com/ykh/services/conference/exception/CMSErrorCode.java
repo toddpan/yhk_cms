@@ -20,7 +20,7 @@ public enum CMSErrorCode {
 	private final int value;
     private final String msg;
 
-    private CMSErrorCode(int v, String msg) {
+    CMSErrorCode(int v, String msg) {
         this.value =  v;
         this.msg = msg;
     }

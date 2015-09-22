@@ -1,7 +1,5 @@
 package com.ykh.dao.suport;
 
-<<<<<<< HEAD
-=======
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -10,7 +8,6 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
->>>>>>> upstream/master
 import com.maxc.rest.common.ConfigUtil;
 import com.ykh.common.ParseJSON;
 import com.ykh.dao.GenericsUtils;

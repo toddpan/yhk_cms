@@ -11,8 +11,7 @@ import com.ykh.common.BeanTranslatorUtil;
 import com.ykh.common.Constants;
 import com.ykh.common.IPTranslatorUtil;
 import com.ykh.common.YkhUtils;
-<<<<<<< HEAD
-=======
+
 import com.ykh.dao.Dao;
 import com.ykh.dao.conference.ConferenceSeedDao;
 import com.ykh.dao.conference.domain.ConferenceSeed;
@@ -21,7 +20,7 @@ import com.ykh.dao.user.domain.TempUser;
 import com.ykh.pojo.*;
 import com.ykh.services.conference.ConferenceSeedService;
 import com.ykh.services.conference.exception.CMSErrorCode;
->>>>>>> upstream/master
+
 import com.ykh.dao.conference.ConfJoinTempConfDao;
 import com.ykh.dao.conference.ConferenceDao;
 import com.ykh.dao.conference.domain.ConfJoinTempConf;
@@ -29,7 +28,7 @@ import com.ykh.dao.conference.domain.Conference;
 import com.ykh.pojo.User;
 import com.ykh.services.conference.ConferenceSeedService;
 import com.ykh.services.conference.ConferenceService;
-<<<<<<< HEAD
+
 import com.ykh.services.conference.exception.CMSErrorCode;
 import com.ykh.tang.agent.ICMSAgentInterface;
 import com.ykh.tang.agent.vo.ConferenceInfoBMS;

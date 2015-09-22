@@ -1,13 +1,7 @@
 package com.ykh.dao.suport;
-
-
-<<<<<<< HEAD
-=======
-
 import com.ykh.dao.PageRequest;
 import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
 import org.springframework.transaction.annotation.Transactional;
->>>>>>> upstream/master
 import com.ykh.dao.Dao;
 import com.ykh.dao.Request;
 import org.springframework.data.jpa.repository.support.SimpleJpaRepository;

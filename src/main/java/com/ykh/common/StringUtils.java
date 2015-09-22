@@ -105,10 +105,7 @@ public abstract class StringUtils {
 	}
 
 	public static boolean isEmpty(String ip) {
-		if(ip!=null&&!"".equals(ip)){
-			return false;
-		}
-		return true;
+		return !(ip != null && !"".equals(ip));
 	}
     
     /** 

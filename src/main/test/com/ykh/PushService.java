@@ -31,7 +31,7 @@ public class PushService {
 		String re="";
 		try {
 			HttpResponse response = client.execute(httppost);
-			re =EntityUtils.toString(response.getEntity(),Charset.forName("UTF-8"));;
+			re =EntityUtils.toString(response.getEntity(),Charset.forName("UTF-8"));
 			return  re;
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();
@@ -54,7 +54,7 @@ public class PushService {
 		String re="";
 		try {
 			HttpResponse response = client.execute(httppost);
-			re =EntityUtils.toString(response.getEntity(),Charset.forName("UTF-8"));;
+			re =EntityUtils.toString(response.getEntity(),Charset.forName("UTF-8"));
 			return  re;
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();

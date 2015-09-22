@@ -11,5 +11,5 @@ import com.ykh.tang.agent.message.IMessage;
  */
 public interface IMessageHandler
 {
-	public void handler(IMessage msg);
+	void handler(IMessage msg);
 }
