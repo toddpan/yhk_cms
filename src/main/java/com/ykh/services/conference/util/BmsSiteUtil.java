@@ -1,15 +1,12 @@
 package com.ykh.services.conference.util;
 
 
+import org.apache.log4j.Logger;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Properties;
-import org.apache.log4j.Logger;
+import java.util.*;
 
 /**
  * PropertiesUtil:多tang-uc属性文件操作工具类

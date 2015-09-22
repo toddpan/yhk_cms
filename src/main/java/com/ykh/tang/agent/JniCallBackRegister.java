@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 /**
  * Created by ant_shake_tree on 15/8/30.
@@ -26,6 +27,10 @@ public class JniCallBackRegister {
         LOGGER.info("[Tang CMS addMessageHandler && AddServiceMessageHandler regist ......]");
         this.regist();
         LOGGER.info("[Tang CMS addMessageHandler && AddServiceMessageHandler regist success!]");
+    }
+    @PreDestroy
+    public void destroy(){
+        agent.agentDestroy();
     }
 
     private void regist() {

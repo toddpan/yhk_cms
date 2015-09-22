@@ -1,8 +1,8 @@
 package com.ykh.tang.agent.message;
 
-import java.util.List;
-
 import com.ykh.tang.agent.vo.BMSUserInfo;
+
+import java.util.List;
 
 /**
  * 42.查询用户列表成功消息，0x000100f2

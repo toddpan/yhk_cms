@@ -71,11 +71,7 @@ public class TempConferenceInfo implements Serializable {
 
 		// 判断tempConferenceID是否相等，如果相等，则该TempConferenceInfo是同一个TempConferenceInfo
 		TempConferenceInfo confinfo = (TempConferenceInfo) o;
-		if (this.tempConferenceID.equals(confinfo.tempConferenceID)) {
-			return true;
-		} else {
-			return false;
-		}
+		return this.tempConferenceID.equals(confinfo.tempConferenceID);
 	}
 
 	/**

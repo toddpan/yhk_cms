@@ -4,9 +4,6 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
-import java.lang.String;
-import java.lang.System;
-
 /**
  * Unit test for simple App.
  */

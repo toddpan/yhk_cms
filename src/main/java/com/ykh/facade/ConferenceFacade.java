@@ -28,4 +28,8 @@ public interface ConferenceFacade {
     UserChannelResponse joinConference(User request);
 
     BmsResponse getBMSConferenceInfo(ConferenceSeedBody conference);
+
+    PageResponse searchConferenceTemp(Conference conference);
+
+    UserChannelResponse startConferecneWithUser(User request);
 }

@@ -21,44 +21,44 @@
  */
 package com.ykh.services.conference.impl;
 
+<<<<<<< HEAD
+=======
 import java.util.Date;
 
+import com.maxc.rest.common.RestBeanUtils;
+>>>>>>> upstream/master
 import com.ykh.dao.conference.ConfJoinTempConfDao;
 import com.ykh.dao.conference.domain.ConfJoinTempConf;
 import com.ykh.dao.user.TempUserDao;
 import com.ykh.dao.user.domain.TempUser;
+<<<<<<< HEAD
+import com.ykh.tang.agent.IMessageHandler;
+import com.ykh.tang.agent.message.*;
+=======
+import com.ykh.services.TempUserService;
+>>>>>>> upstream/master
 import org.apache.log4j.Logger;
 import org.hibernate.exception.ConstraintViolationException;
-
-import com.ykh.tang.agent.IMessageHandler;
-import com.ykh.tang.agent.message.ChangeUserRoleMsgResult;
-import com.ykh.tang.agent.message.ConfStartMsgResult;
-import com.ykh.tang.agent.message.ConfStopMsgResult;
-import com.ykh.tang.agent.message.ExpelUserMsgResult;
-import com.ykh.tang.agent.message.IMessage;
-import com.ykh.tang.agent.message.Ip;
-import com.ykh.tang.agent.message.JoinUserInfo;
-import com.ykh.tang.agent.message.UserExitConfMsgResult;
-import com.ykh.tang.agent.message.UserJoinConfResult;
-import com.ykh.tang.agent.message.UserOfflineMsgResult;
-import com.ykh.tang.agent.message.UserOnlineMsgResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+
+import java.util.Date;
 
 @Component
 @Qualifier("getmessageHandler")
 public class GetmessageHandler implements IMessageHandler {
 	
 	private final static Logger LOGGER = Logger.getLogger(GetmessageHandler.class);
+
 	@Autowired
-	TempUserDao tempUserDao;
+	TempUserService tempUserService;
 	@Autowired
 	ConfJoinTempConfDao confJoinTempConfDao;
 	/**
 	 * handle接口实现，判断接收信号的类型，做相应的处理
 	 * 
-	 * @param messageHandler
+	 * @param msg
 	 *            消息操作句柄
 	 */
 	@Override
@@ -76,7 +76,7 @@ public class GetmessageHandler implements IMessageHandler {
 				ConfStartMsgResult confStartMsgResult = (ConfStartMsgResult)msg;			
 				Integer tempConfID = confStartMsgResult.getConfID();
 				LOGGER.info("Tang CMS receive start conference message=" + tempConfID);
-			TempUser tempUser =new TempUser();
+				//TempUser tempUser =new TempUser();
 
 
 //				/********************add by lilonglong 2011-09-22*********************/
@@ -88,10 +88,9 @@ public class GetmessageHandler implements IMessageHandler {
 //				/******************end***********************/
 //				
 //				//add by tanyunhua 2011-10-31		user online时，start conference后，修改会议状态
-				ConfJoinTempConf confJoinTempConf = confJoinTempConfDao.findByTempConfIdAndBmsStatus(tempConfID, new Integer(1));
+				ConfJoinTempConf confJoinTempConf = confJoinTempConfDao.findByTempConfIdAndBmsStatus(tempConfID, 1);
 				if(confJoinTempConf != null){
-					confJoinTempConf.setBmsStatus(Consts.CONF_STATUS_BMS_START);
-					confJoinTempConfDao.save(confJoinTempConf);
+					confJoinTempConfDao.excuteHql("update ConfJoinTempConf set bmsStatus=? where id=?",Consts.CONF_STATUS_BMS_START,confJoinTempConf.getId());
 				}
 				//end add
 //				Cdrconferenceinfo cdrconf = ConferenceBusinessImpl.getCdrConferenceInfoManager().queryCdrConfByConfIDAndTempID(tempConfID);
@@ -114,14 +113,13 @@ public class GetmessageHandler implements IMessageHandler {
 			UserOnlineMsgResult userOnlineMsgResult = (UserOnlineMsgResult)msg;
 			
 			LOGGER.info("Tang Tang CMS receive user online message=" + userOnlineMsgResult.getConfID()
-			+"|" + userOnlineMsgResult.getUserID() + "|" + Consts.ONLINE + "|" + 
-			userOnlineMsgResult.getTimestamp());
+					+ "|" + userOnlineMsgResult.getUserID() + "|" + Consts.ONLINE + "|" +
+					userOnlineMsgResult.getTimestamp());
 
 
 			Integer onLineUserid = userOnlineMsgResult.getUserID();
-			TempUser tempUser =tempUserDao.find(onLineUserid);
-			tempUser.setStatus(Consts.ONLINE);
-			tempUserDao.save(tempUser);
+
+			tempUserService.updateStatus(onLineUserid, Consts.ONLINE);
 
 
 //			// 添加数据库cdruser记录
@@ -152,9 +150,9 @@ public class GetmessageHandler implements IMessageHandler {
 			
 			Ip ip = (Ip)joinUserInfo.getIP();
 			String ips = ip.getIP0() + "." + ip.getIP1() + "." + ip.getIP2() + "." + ip.getIP3();
-			TempUser joinUser=tempUserDao.find(joinUserInfo.getUserID());
-			joinUser.setStatus(Consts.JOIN);
-			tempUserDao.save(joinUser);
+			Integer id=joinUserInfo.getUserID();
+
+			tempUserService.updateStatus(id, Consts.JOIN);
 
 			// 添加数据库cdruser记录
 //			Cdruserinfo cdruserinfoJoin = new Cdruserinfo();
@@ -191,12 +189,10 @@ public class GetmessageHandler implements IMessageHandler {
 			UserOfflineMsgResult userOfflineMsgResult = (UserOfflineMsgResult)msg;
 			
 			LOGGER.info("Tang Tang CMS receive user offline message=" + userOfflineMsgResult.getConfID()
-					+"|" + userOfflineMsgResult.getUserID() + "|" + Consts.OFFLINE + "|" + 
+					+ "|" + userOfflineMsgResult.getUserID() + "|" + Consts.OFFLINE + "|" +
 					userOfflineMsgResult.getTimestamp());
+			tempUserService.updateStatus(userOfflineMsgResult.getUserID(), Consts.OFFLINE);
 
-			TempUser off=tempUserDao.find(userOfflineMsgResult.getUserID());
-			off.setStatus(Consts.OFFLINE);
-			tempUserDao.save(off);
 			break;
 		case Consts.BMS_SUB_CONF_USER_JOIN_NOTIFY&0xFFFF:
 			// 收到用户加入子会成功消息
@@ -239,9 +235,9 @@ public class GetmessageHandler implements IMessageHandler {
 //				} catch (Exception e) {
 //					dealKeysException(e);
 //				}
-				TempUser exit=tempUserDao.find(Integer.parseInt(userid));
-				exit.setStatus(Consts.EXIT);
-				tempUserDao.save(exit);
+				tempUserService.updateStatus(Integer.parseInt(userid), Consts.EXIT);
+
+
 			}
 			break;
 		case Consts.BMS_CONF_USER_EXPEL_ERR_NOTIFY&0xFFFF:
@@ -265,7 +261,7 @@ public class GetmessageHandler implements IMessageHandler {
 				
 				Date endtime = new Date();
 				confJoinTempConfDao.deleteByTempConfId(tempConfID);
-				tempUserDao.deleteByTempConferenceId(tempConfID);
+				tempUserService.deleteByTempConferenceId(tempConfID);
 //				/********************add by lilonglong 2011-09-22*********************/
 //				Cdrconferencemsg cdrconferencemsg =  new Cdrconferencemsg();
 //				cdrconferencemsg.setTempconferenceid(tempConfID);

@@ -1,12 +1,16 @@
 package com.ykh.services.conference;
 
+import com.ykh.dao.Dao;
 import com.ykh.dao.conference.domain.ConfJoinTempConf;
 import com.ykh.dao.conference.domain.Conference;
 import com.ykh.pojo.User;
+import com.ykh.pojo.UserServiceDTO;
 import com.ykh.tang.agent.vo.ConferenceInfoBMS;
 import com.ykh.tang.agent.vo.UserChannel;
 import com.ykh.tang.agent.vo.UserConferenceStatus;
 import com.ykh.vo.req.ConferenceRequest;
+import com.ykh.vo.res.PageResponse;
+
 
 public interface ConferenceService {
 	/**
@@ -26,7 +30,7 @@ public interface ConferenceService {
 	 * 注意事项：会议的具体服务值信息通过32为二进制码表示，具体编码值和业务管理协议。
 	 * 临时会议ID（32位二进制）的生成遵从一定的业务规则——前24位代表主会ID，后八位代表子会ID。 该方法创建会议后，会议没有启动。
 	 *
-	 * @param conferenceID
+	 * @param conference
 	 *            会议标识
 	 * @return boolean 返回是否创建成功
 	 * @throws Exception
@@ -37,7 +41,7 @@ public interface ConferenceService {
 	 * @par 需求:REQ1.10[Tang]: svn://vobserver/tang/doc/SRS.doc
 	 * @see
 	 */
-	public ConferenceInfoBMS createConference(  Conference conference)
+	ConferenceInfoBMS createConference(Conference conference)
 			throws RuntimeException;
 	/**
 	 * 停止会议，没有释放会议资源
@@ -49,7 +53,7 @@ public interface ConferenceService {
 	 * @return
 	 * @throws Exception
 	 */
-	public Boolean stopConference(String applicationID, Integer tempConferenceID)
+	Boolean stopConference(String applicationID, Integer tempConferenceID)
 			throws RuntimeException;
 	/**
 	 * 会议删除，提供给会议监控使用，释放所有会议资源
@@ -66,7 +70,7 @@ public interface ConferenceService {
 	 * @see
 	 */
 	// @Override
-	public Boolean deleteConference(String applicationID, Integer conferenceID)
+	Boolean deleteConference(String applicationID, Integer conferenceID)
 			throws RuntimeException;
 	/**
 	 * 查询指定会议的在会用户数，动态
@@ -74,21 +78,20 @@ public interface ConferenceService {
 	 * @param tempConfID
 	 *            临时会议ID
 	 * @return
-	 * @throws JNIException
+	 * @throws Exception
 	 */
-	public Integer queryUserNum(String applicationID, Integer tempConfID)
+	Integer queryUserNum(Integer tempConfID)
 			throws Exception;
 	/**
 	 * 直接启动一个会议
 	 *
-	 * @param applicationID
-	 *            应用ID
+	 *           用户信息
 	 * @param tempConferenceID
 	 *            临时会议ID
 	 * @return
 	 * @throws Exception
 	 */
-	public Boolean startConference(Integer tempConferenceID) throws RuntimeException;
+	Boolean startConference(Integer tempConferenceID) throws RuntimeException;
 	/**
 	 * 用户加入--用户使用
 	 *
@@ -98,8 +101,8 @@ public interface ConferenceService {
 	 * @return
 	 * @throws Exception
 	 */
-	public UserChannel joinConference(String applicationID,
-									  Integer tempConferenceID, User user) throws Exception;
+	UserChannel joinConference(String applicationID,
+							   Integer tempConferenceID, User user) throws Exception;
 	/**
 	 * 实时会议创建后，用户发起轮询请求，根据临时会议ID查询会议状态信息
 	 *
@@ -110,7 +113,7 @@ public interface ConferenceService {
 	 * @return
 	 * @throws Exception
 	 */
-	public Integer getBMSConferenceInfo(String applicationID, Integer tempConfID)
+	Integer getBMSConferenceInfo(String applicationID, Integer tempConfID)
 			throws Exception;
 	/**
 	 * 根据临时会议ID和临时用户ID查询该用户在该会议中的状态
@@ -122,10 +125,10 @@ public interface ConferenceService {
 	 * @param tempUserID
 	 *            临时用户ID
 	 * @return
-	 * @throws JNIException
+	 * @throws Exception
 	 */
-	public UserConferenceStatus getUserConferenceStatus(String applicationID, Integer tempConfID,
-														Integer tempUserID) throws Exception;
+	UserConferenceStatus getUserConferenceStatus(String applicationID, Integer tempConfID,
+												 Integer tempUserID) throws Exception;
 	/**
 	 * 创建临时会议，生成一个临时会议ID，向BMS发送create with out user命令，记录一个会议cdr 创建会议时需要考虑并发
 	 *
@@ -136,7 +139,7 @@ public interface ConferenceService {
 	 * @return 临时会议ID（会议对象）
 	 * @throws Exception
 	 */
-	public Integer createConference(String applicationID, String billingCode)
+	Integer createConference(String applicationID, String billingCode)
 			throws Exception;
 	/**
 	 * 初始化一场预约会议。
@@ -149,6 +152,16 @@ public interface ConferenceService {
 	 * @return 临时会议ID（会议对象）
 	 * @throws Exception
 	 */
-	public Integer initConference(String applicationID, Integer conferenceID)
+	Integer initConference(String applicationID, Integer conferenceID)
 			throws Exception;
+
+	void openConference(Conference conference);
+
+	Conference modifyConference(Conference conference);
+
+	UserServiceDTO userJoinConference(User request);
+
+	Dao.PageVO<Conference> searchConference(Conference conference);
+	UserServiceDTO startConferecneWithUser(Integer conferenceId, User request);
+	UserServiceDTO startConferenceWithUser(User request);
 }

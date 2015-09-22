@@ -1,20 +1,17 @@
 package com.ykh.dao.suport;
-
-
-
+import com.ykh.dao.PageRequest;
 import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
 import org.springframework.transaction.annotation.Transactional;
 import com.ykh.dao.Dao;
 import com.ykh.dao.Request;
+import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import java.io.Serializable;
 import java.util.List;
 
-/**
- * Created by ant_shake_tree on 15/7/24.
- */
 @Transactional
 public class DaoSupport<T,ID extends  Serializable>  extends SimpleJpaRepository<T,ID> implements Dao<T, ID> {
     private final EntityManager entityManager;
@@ -29,7 +26,6 @@ public class DaoSupport<T,ID extends  Serializable>  extends SimpleJpaRepository
         Query q = this.entityManager.createQuery("select count(*) " + hql);
         return prepareParamlizedQuery(q, values).getFirstResult();
     }
-
 
     public void excuteNative(String hql, Object... args) {
         prepareParamlizedQuery(this.entityManager.createNativeQuery(hql), args)
@@ -107,7 +103,17 @@ public class DaoSupport<T,ID extends  Serializable>  extends SimpleJpaRepository
             return null;
         }
     }
-
+    @Override
+    public PageVO<T> findPages(PageRequest<T> request) {
+        QueryUtil queryUtil = QueryUtil.getHqlByDomain(request);
+        PageView pageView=new PageView(request.getPageSize(),request.getCurrentpage());
+        pageView.setTotalpage(getCount(queryUtil.getHql(), queryUtil.getValues().toArray()));
+        List<T> ls= this.entityManager.createQuery(queryUtil.getHql()).setFirstResult(pageView.getFirstResult()).setMaxResults(pageView.getPageSize()).getResultList();
+        PageVO<T> pageVO =new PageVO<>();
+        pageVO.setContents(ls);
+        pageVO.setPage(pageView);
+        return pageVO;
+    }
     public T find(ID id) {
         return this.findOne(id);
     }

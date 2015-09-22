@@ -1,8 +1,5 @@
 package com.ykh.tang.agent.excep;
 
-import com.maxc.rest.common.exception.RestException;
-import sun.applet.Main;
-
 public class CMSException extends RuntimeException
 {
 

@@ -1,77 +1,16 @@
 package com.ykh.tang.agent;
 
+import com.alibaba.fastjson.JSON;
+import com.ykh.tang.agent.excep.CMSException;
+import com.ykh.tang.agent.message.*;
+import com.ykh.tang.agent.vo.*;
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import com.alibaba.fastjson.JSON;
-import com.ykh.tang.agent.vo.RoleInfo;
-import com.ykh.tang.agent.excep.CMSException;
-import com.ykh.tang.agent.message.BlackUserMsgFault;
-import com.ykh.tang.agent.message.BlackUserMsgResult;
-import com.ykh.tang.agent.message.ChangeUserRoleMsgFault;
-import com.ykh.tang.agent.message.ChangeUserRoleMsgResult;
-import com.ykh.tang.agent.message.Channel;
-import com.ykh.tang.agent.message.ChannelAndUserInfo;
-import com.ykh.tang.agent.message.ChannelInfo;
-import com.ykh.tang.agent.message.ConfStartMsgResult;
-import com.ykh.tang.agent.message.ConfStopMsgFault;
-import com.ykh.tang.agent.message.ConfStopMsgResult;
-import com.ykh.tang.agent.message.ConfSysLockMsgResult;
-import com.ykh.tang.agent.message.ConfSysUnlockMsgFault;
-import com.ykh.tang.agent.message.ConfUserLockMsgFault;
-import com.ykh.tang.agent.message.ConfUserLockMsgResult;
-import com.ykh.tang.agent.message.ConfUserUnlockMsgFault;
-import com.ykh.tang.agent.message.ConfUserUnlockMsgResult;
-import com.ykh.tang.agent.message.ConferenceInfo;
-import com.ykh.tang.agent.message.CreateSubConfMsgFault;
-import com.ykh.tang.agent.message.CreateSubConfMsgResult;
-import com.ykh.tang.agent.message.ExpelUserMsgFault;
-import com.ykh.tang.agent.message.ExpelUserMsgResult;
-import com.ykh.tang.agent.message.IMessage;
-import com.ykh.tang.agent.message.Ip;
-import com.ykh.tang.agent.message.JoinUserInfo;
-import com.ykh.tang.agent.message.PhoneUserOfflineMsgResult;
-import com.ykh.tang.agent.message.PhoneUserOnlineMsgResult;
-import com.ykh.tang.agent.message.QueryConfChannelMsgFault;
-import com.ykh.tang.agent.message.QueryConfChannelMsgResult;
-import com.ykh.tang.agent.message.QueryConfInfoMsgFault;
-import com.ykh.tang.agent.message.QueryConfInfoMsgResult;
-import com.ykh.tang.agent.message.QueryUserListFault;
-import com.ykh.tang.agent.message.QueryUserListResult;
-import com.ykh.tang.agent.message.ServiceOfflineMsgResult;
-import com.ykh.tang.agent.message.ServiceOnlineMsgResult;
-import com.ykh.tang.agent.message.StartServiceMsgFault;
-import com.ykh.tang.agent.message.StartServiceMsgResult;
-import com.ykh.tang.agent.message.StopServiceMsgFault;
-import com.ykh.tang.agent.message.StopServiceMsgResult;
-import com.ykh.tang.agent.message.SubConfInfo;
-import com.ykh.tang.agent.message.SysDTSIPModify;
-import com.ykh.tang.agent.message.Time0;
-import com.ykh.tang.agent.message.UnblackUserMsgFault;
-import com.ykh.tang.agent.message.UnblackUserMsgResult;
-import com.ykh.tang.agent.message.UpdateConfConfigMsgFault;
-import com.ykh.tang.agent.message.UpdateConfConfigMsgResult;
-import com.ykh.tang.agent.message.UpdateConfDesMsgFault;
-import com.ykh.tang.agent.message.UpdateConfDesMsgResult;
-import com.ykh.tang.agent.message.UserDefineMsgFault;
-import com.ykh.tang.agent.message.UserExitConfMsgFault;
-import com.ykh.tang.agent.message.UserExitConfMsgResult;
-import com.ykh.tang.agent.message.UserInfo;
-import com.ykh.tang.agent.message.UserJoinConfResult;
-import com.ykh.tang.agent.message.UserJoinSubConfMsgFault;
-import com.ykh.tang.agent.message.UserJoinSubConfMsgResult;
-import com.ykh.tang.agent.message.UserOfflineMsgResult;
-import com.ykh.tang.agent.message.UserOnlineMsgResult;
-import com.ykh.tang.agent.vo.BMSUserBillInfo;
-import com.ykh.tang.agent.vo.BMSUserInfo;
-import com.ykh.tang.agent.vo.ConferenceBillInfoBMS;
-import com.ykh.tang.agent.vo.ConferenceInfoBMS;
-import com.ykh.tang.agent.vo.SubConferenceInfo;
-import com.ykh.tang.agent.vo.UserChannel;
-import com.ykh.tang.agent.vo.UserConferenceStatus;
-import com.ykh.tang.agent.vo.UserServiceAddr;
-import org.apache.log4j.Logger;
-import org.springframework.stereotype.Component;
 
 /**
  * @author xianchao.ji
@@ -83,15 +22,18 @@ public class ICMSAgent
 
 {
 	Logger logger=Logger.getLogger(ICMSAgent.class);
+	@Autowired
+	@Qualifier("getmessageHandler")
 	private IMessageHandler handler;
-
+	@Autowired
+	@Qualifier("getmessageHandlerByGroup")
 	private IMessageHandler serviceHandler;
 
 	static
 	{
 		try{
 			System.out.println("load cmsagent start!!!!!!!");
-			System.loadLibrary("cmsagent");
+			System.load("/tang/lib/libcmsagent.so.1.0.0");
 			System.out.println("load cmsagent end!!!!!!!");
 		}catch(Exception e){
 			e.printStackTrace();
@@ -99,7 +41,7 @@ public class ICMSAgent
 		}
 	}
 
-	private static  final  ICMSAgent ICMS_AGENT=new ICMSAgent();
+//	private static  final  ICMSAgent ICMS_AGENT=new ICMSAgent();
 
 
 	// 初始化
@@ -486,13 +428,13 @@ public class ICMSAgent
 	public ICMSAgent() {
 	}
 
-	public ICMSAgent(IMessageHandler handler,IMessageHandler serviceHandler){
-		this.handler=handler;
-		this.serviceHandler=serviceHandler;
-	}
+//	public ICMSAgent(IMessageHandler handler,IMessageHandler serviceHandler){
+//		this.handler=handler;
+//		this.serviceHandler=serviceHandler;
+//	}
 
-	public static ICMSAgent getInstance(){
-		return ICMS_AGENT;
-	}
+//	public static ICMSAgent getInstance(){
+//		return ICMS_AGENT;
+//	}
 
 }

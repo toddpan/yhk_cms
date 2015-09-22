@@ -3,9 +3,10 @@ package com.ykh.config;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import com.google.common.collect.Lists;
 import com.maxc.rest.common.Constants;
-import com.ykh.config.PersistenceContext;
 import org.springframework.context.MessageSource;
-import org.springframework.context.annotation.*;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.format.datetime.DateFormatter;
 import org.springframework.format.datetime.DateFormatterRegistrar;
@@ -14,7 +15,6 @@ import org.springframework.format.support.DefaultFormattingConversionService;
 import org.springframework.format.support.FormattingConversionService;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.HandlerAdapter;
 import org.springframework.web.servlet.HandlerMapping;
 import org.springframework.web.servlet.ViewResolver;
@@ -211,7 +211,6 @@ public class WebConfig extends WebMvcConfigurationSupport {
         registrar.setFormatter(new DateFormatter(Constants.DATE_FORMAT_HOURE_MINUTE_SENCOND));
 
         registrar.registerFormatters(conversionService);
-//super.mvcConversionService()
         return conversionService;
     }
 

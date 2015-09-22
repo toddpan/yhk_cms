@@ -8,9 +8,8 @@
  */
 package com.ykh.dao.user.domain;
 
-import java.util.Date;
-
 import javax.persistence.*;
+import java.util.Date;
 
 
 /**

@@ -7,9 +7,12 @@
  */
 package com.ykh.pojo;
 
+import com.google.common.collect.Lists;
+
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -58,7 +61,7 @@ public class UserDTO implements java.io.Serializable {
 	/**
 	 * 角色列表
 	 */
-	private Map<Integer, ArrayList<Integer>>  rolemap = new HashMap<Integer, ArrayList<Integer>> ();			//
+	private List<String> rolemap = Lists.newArrayList();
 	
 	public Integer getSeqNo() {
 		return seqNo;
@@ -114,11 +117,12 @@ public class UserDTO implements java.io.Serializable {
 	public void setUserStatus(Integer userStatus) {
 		this.userStatus = userStatus;
 	}
-	
-	public Map<Integer, ArrayList<Integer>> getRolemap() {
+
+	public List<String> getRolemap() {
 		return rolemap;
 	}
-	public void setRolemap(Map<Integer, ArrayList<Integer>> rolemap) {
+
+	public void setRolemap(List<String> rolemap) {
 		this.rolemap = rolemap;
 	}
 }

@@ -1,11 +1,10 @@
 package com.ykh.services.conference.impl;
 
-import org.apache.log4j.Logger;
-
 import com.ykh.tang.agent.IMessageHandler;
 import com.ykh.tang.agent.message.IMessage;
 import com.ykh.tang.agent.message.ServiceOfflineMsgResult;
 import com.ykh.tang.agent.message.ServiceOnlineMsgResult;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 

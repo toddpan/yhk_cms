@@ -13,10 +13,9 @@
 package com.ykh.pojo;
 
 import com.google.common.collect.Lists;
-
+import javax.persistence.Transient;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * ClassName:User
@@ -42,7 +41,8 @@ public class User implements java.io.Serializable {
 	private String ipaddr;
 	private Boolean isowner;
 	private Integer userStatus;
-
+	@Transient
+	private Integer conferenceId;
 	private Integer tempConferenceId;
 	private List<String> rolemap = Lists.newArrayList();
 
@@ -91,11 +91,7 @@ public class User implements java.io.Serializable {
 
 		// 判断tempuserid是否相等，如果相等，则该user是同一个user
 		User user = (User) o;
-		if (this.tempuserid.equals(user.tempuserid)) {
-			return true;
-		} else {
-			return false;
-		}
+		return this.tempuserid.equals(user.tempuserid);
 	}
 
 	/**
@@ -245,6 +241,14 @@ public class User implements java.io.Serializable {
 
 	public Integer getTempConferenceId() {
 		return tempConferenceId;
+	}
+
+	public Integer getConferenceId() {
+		return conferenceId;
+	}
+
+	public void setConferenceId(Integer conferenceId) {
+		this.conferenceId = conferenceId;
 	}
 
 	public void setTempConferenceId(Integer tempConferenceId) {

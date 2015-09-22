@@ -70,11 +70,7 @@ public class SubConference implements Serializable {
 
 		// 判断subconferenceID是否相等，如果相等，则是同一个子会议
 		SubConference subconfinfo = (SubConference) o;
-		if (this.subconferenceID.equals(subconfinfo.subconferenceID)) {
-			return true;
-		} else {
-			return false;
-		}
+		return this.subconferenceID.equals(subconfinfo.subconferenceID);
 	}
 
 	/**
