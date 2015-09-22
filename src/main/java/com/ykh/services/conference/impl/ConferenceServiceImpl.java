@@ -182,7 +182,7 @@ public  class ConferenceServiceImpl implements ConferenceService {
 		return null;
 	}
 
-public  static void main(String[] args){
+	public  static void main(String[] args){
 	System.out.print(ConfigUtil.getByKey("site"));
 }
 

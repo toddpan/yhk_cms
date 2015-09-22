@@ -9,7 +9,7 @@ public class BmsResponse {
 
     public static class BmsBody{
 
-            Integer bmsId;
+        Integer bmsId;
 
         public Integer getBmsId() {
             return bmsId;

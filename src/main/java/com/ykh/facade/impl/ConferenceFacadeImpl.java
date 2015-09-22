@@ -148,7 +148,7 @@ public class ConferenceFacadeImpl implements ConferenceFacade {
     @Override
     public BmsResponse getBMSConferenceInfo(ConferenceSeedBody conference) {
 
-//        conferenceService.getBMSConferenceInfo(conference.getTempConferenceId());
+        conferenceService.getBMSConferenceInfo(conference.getTempConferenceId());
         return new BmsResponse();
     }
 }
